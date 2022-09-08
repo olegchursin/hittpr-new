@@ -2,7 +2,8 @@
 import { useEffect, useState } from 'react';
 
 function BackToTop() {
-  const [hasScrolled, setHasScrolled] = useState('false');
+  const [hasScrolled, setHasScrolled] = useState(0);
+
   useEffect(() => {
     window.addEventListener('scroll', onScroll);
     return () => {
@@ -12,9 +13,9 @@ function BackToTop() {
 
   const onScroll = () => {
     if (window.scrollY > 100 && !hasScrolled) {
-      setHasScrolled(true);
+      setHasScrolled(1);
     } else if (window.scrollY < 100 && hasScrolled) {
-      setHasScrolled(false);
+      setHasScrolled(0);
     }
   };
 
