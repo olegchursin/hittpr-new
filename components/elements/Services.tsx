@@ -43,7 +43,8 @@ const Services = () => {
               <h4 className="text-heading-4 color-gray-900 mb-15">Коучинг</h4>
               <p className="text-body-text-md color-gray-600">
                 Редактор СМИ. Управление командой журналистов. Привлечение и
-                удержание рекламодателей. Работа с "селебрити". Спортивный PR.
+                удержание рекламодателей. Работа с &quot;селебрити&quot;.
+                Спортивный PR.
               </p>
               <div className="box-image-inner bg-color-2">
                 <img src="/assets/imgs/hittpr/coaching.png" alt="Hittpr" />

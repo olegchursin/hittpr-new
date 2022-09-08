@@ -20,9 +20,9 @@ const Testimonials = () => {
               <div className="col-lg-6 col-md-12 col-sm-12">
                 <div className="card-grid-style-2 card-square hover-up mb-20">
                   <p className="text-body-text color-gray-600 text-comment">
-                    "Четко выстроена работа в плане коммуникаций с клиентом.
-                    Грамотно организовано еженедельное планирование и отчеты по
-                    проделанным работам."
+                    &quot;Четко выстроена работа в плане коммуникаций с
+                    клиентом. Грамотно организовано еженедельное планирование и
+                    отчеты по проделанным работам.&quot;
                   </p>
                   <div className="box-img-user">
                     <div className="img-user img-user-round">
@@ -38,9 +38,9 @@ const Testimonials = () => {
               <div className="col-lg-6 col-md-12 col-sm-12">
                 <div className="card-grid-style-2 card-square hover-up mb-20">
                   <p className="text-body-text color-gray-600 text-comment">
-                    "Спасибо огромное за проделанную работу, все очень быстро,
-                    четко и по делу. Ваша работа на очень профессиональном
-                    уровне, сейчас это редкость."
+                    &quot;Спасибо огромное за проделанную работу, все очень
+                    быстро, четко и по делу. Ваша работа на очень
+                    профессиональном уровне, сейчас это редкость.&quot;
                   </p>
                   <div className="box-img-user">
                     <div className="img-user img-user-round">
@@ -59,10 +59,10 @@ const Testimonials = () => {
               <div className="col-lg-6 col-md-12 col-sm-12">
                 <div className="card-grid-style-2 card-square hover-up mb-20">
                   <p className="text-body-text color-gray-600 text-comment">
-                    "С помощью статей мы постоянно рассказываем о себе и нашем
-                    продукте в топовых СМИ, привлекаем трафик на сайт и таким
-                    образом увеличиваем продажи. Прогресс очевиден. Планируем
-                    продолжать сотрудничество и дальше."
+                    &quot;С помощью статей мы постоянно рассказываем о себе и
+                    нашем продукте в топовых СМИ, привлекаем трафик на сайт и
+                    таким образом увеличиваем продажи. Прогресс очевиден.
+                    Планируем продолжать сотрудничество и дальше.&quot;
                   </p>
                   <div className="box-img-user">
                     <div className="img-user img-user-round">
@@ -72,7 +72,7 @@ const Testimonials = () => {
                       Анна Чекалкина
                     </h4>
                     <p className="text-body-text-md">
-                      Помощник управляющего БК "FACTORY FIGHT"
+                      Помощник управляющего БК &quot;FACTORY FIGHT&quot;
                     </p>
                   </div>
                 </div>
