@@ -40,8 +40,8 @@ function About3() {
                   <div className="item-icon none-bd">
                     <span className="icon-left">
                       <img
-                        src="/assets/imgs/page/homepage2/icon-acquis.svg"
-                        alt="Agon"
+                        src="/assets/imgs/hittpr/icon-acquis.svg"
+                        alt="Hittpr"
                       />
                     </span>
                     <h4 className="text-heading-4">Принципы</h4>
@@ -58,8 +58,8 @@ function About3() {
                   <div className="item-icon none-bd">
                     <span className="icon-left">
                       <img
-                        src="/assets/imgs/page/homepage2/icon-active.svg"
-                        alt="Agon"
+                        src="/assets/imgs/hittpr/icon-active.svg"
+                        alt="Hittpr"
                       />
                     </span>
                     <h4 className="text-heading-4">Как мы работаем</h4>
@@ -75,8 +75,8 @@ function About3() {
                   <div className="item-icon none-bd">
                     <span className="icon-left">
                       <img
-                        src="/assets/imgs/page/homepage2/icon-retent.svg"
-                        alt="Agon"
+                        src="/assets/imgs/hittpr/icon-retent.svg"
+                        alt="Hittpr"
                       />
                     </span>
                     <h4 className="text-heading-4">Наши цены</h4>

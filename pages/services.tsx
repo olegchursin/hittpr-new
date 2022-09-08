@@ -39,8 +39,8 @@ function Services() {
                   <div className="item-icon none-bd">
                     <span className="icon-left">
                       <img
-                        src="/assets/imgs/page/services/1/icon-support.svg"
-                        alt="Agon"
+                        src="/assets/imgs/hittpr/icon-support.svg"
+                        alt="Hittpr"
                       />
                     </span>
                     <h4 className="text-heading-6">
@@ -59,8 +59,8 @@ function Services() {
                   <div className="item-icon none-bd">
                     <span className="icon-left">
                       <img
-                        src="/assets/imgs/page/services/1/icon-web.svg"
-                        alt="Agon"
+                        src="/assets/imgs/hittpr/icon-web.svg"
+                        alt="Hittpr"
                       />
                     </span>
                     <h4 className="text-heading-6">
@@ -79,8 +79,8 @@ function Services() {
                   <div className="item-icon none-bd">
                     <span className="icon-left">
                       <img
-                        src="/assets/imgs/page/services/1/icon-business.svg"
-                        alt="Agon"
+                        src="/assets/imgs/hittpr/icon-business.svg"
+                        alt="Hittpr"
                       />
                     </span>
                     <h4 className="text-heading-6">

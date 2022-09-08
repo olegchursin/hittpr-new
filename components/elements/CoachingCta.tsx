@@ -76,13 +76,13 @@ const CoachingCta = () => {
               <img
                 className="bdrd-16 img-responsive"
                 src="assets/imgs/hittpr/coaching-1.jpg"
-                alt="Agon"
+                alt="Hittpr"
               />
               <div className="block-image-bottom">
                 <img
                   className="bdrd-16 img-responsive"
-                  src="assets/imgs/page/homepage2/img-built-2.png"
-                  alt="Agon"
+                  src="assets/imgs/hittprimg-built-2.png"
+                  alt="Hittpr"
                 />
               </div>
             </div>
