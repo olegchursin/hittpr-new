@@ -1,4 +1,3 @@
-import Testimonials from '../components/elements/Testimonials';
 import Layout from '../components/layout/Layout';
 
 function About3() {
@@ -92,8 +91,6 @@ function About3() {
             </div>
           </div>
         </section>
-
-        <Testimonials />
       </Layout>
     </>
   );
