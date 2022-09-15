@@ -1,7 +1,8 @@
+import Copyright from '../elements/Copyright';
+import EmailLink from '../elements/EmailLink';
 import Link from 'next/link';
 import SocialIcons from '../elements/SocialIcons';
 import { navLinks } from '../../util/routes';
-import Copyright from '../elements/Copyright';
 
 const renderSocialIcons = false;
 
@@ -34,7 +35,7 @@ const Footer = () => {
                 SoHo, New York 10013 USA
               </div>
               <div className="text-body-text color-gray-600">
-                privet@hittpr.com
+                <EmailLink />
               </div>
             </div>
 

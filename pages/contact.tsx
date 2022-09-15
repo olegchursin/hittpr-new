@@ -1,3 +1,4 @@
+import EmailLink from '../components/elements/EmailLink';
 import Layout from '../components/layout/Layout';
 
 function Contact() {
@@ -46,7 +47,7 @@ function Contact() {
                   <p className="text-body-text color-gray-600">
                     Марина Хитт
                     <br />
-                    marina@hittpr.com
+                    <EmailLink />
                   </p>
                 </div>
               </div>
