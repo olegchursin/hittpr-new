@@ -34,11 +34,6 @@ export const navLinks = [
     href: COACHING_ROUTE
   },
   {
-    id: 'blog',
-    label: 'Блог',
-    href: BLOG_ROUTE
-  },
-  {
     id: 'contact',
     label: 'Контакты',
     href: CONTACT_US_ROUTE
