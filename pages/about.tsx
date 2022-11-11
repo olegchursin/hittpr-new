@@ -1,3 +1,4 @@
+import BannerHero from '../components/elements/BannerHero';
 import Layout from '../components/layout/Layout';
 
 function About3() {
@@ -5,17 +6,11 @@ function About3() {
     <>
       <Layout>
         <section className="section-box">
-          <div className="banner-hero banner-breadcrums">
-            <div className="container text-center">
-              <h1 className="text-heading-2 color-gray-1000 mb-20">
-                Коротко о нас
-              </h1>
-              <p className="text-body-text color-gray-500">
-                Продвижение бизнеса современными инструментами рекламы,
-                маркетинга и PR
-              </p>
-            </div>
-          </div>
+          <BannerHero
+            title="Коротко о нас"
+            subtitle="Продвижение бизнеса современными инструментами рекламы,
+          маркетинга и PR"
+          />
         </section>
 
         <section className="section-box mt-100">
