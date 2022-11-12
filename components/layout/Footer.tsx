@@ -29,12 +29,6 @@ const Footer = () => {
             <div className="col-lg-3 width-20 mb-30">
               <h4 className="text-heading-5">Контакты</h4>
               <div className="mt-20 text-body-text color-gray-600">
-                154 Grand Street
-              </div>
-              <div className=" text-body-text color-gray-600 mb-20">
-                SoHo, New York 10013 USA
-              </div>
-              <div className="text-body-text color-gray-600">
                 <EmailLink />
               </div>
             </div>
