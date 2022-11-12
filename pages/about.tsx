@@ -1,4 +1,5 @@
 import BannerHero from '../components/elements/BannerHero';
+import LeadParagraph from '../components/elements/LeadParagraph';
 import Layout from '../components/layout/Layout';
 
 function About() {
@@ -12,20 +13,17 @@ function About() {
         />
       </section>
 
-      <section className="section-box mt-100">
+      <section className="section-box mt-80">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-1 col-sm-1 col-12" />
-            <div className="col-lg-10 col-sm-10 col-12 text-center">
-              <p className="text-body-lead-large color-gray-600">
-                Стратегическое видение и внимание к мельчайшим деталям, отличные
-                идеи и их тщательное выполнение – все это помогает нам
-                максимально эффективно решать поставленные задачи.
-              </p>
-            </div>
-            <div className="col-lg-1 col-sm-1 col-12" />
+          <div className="col-12 text-center">
+            <LeadParagraph
+              text="Стратегическое видение и внимание к мельчайшим деталям, отличные
+              идеи и их тщательное выполнение – все это помогает нам максимально
+              эффективно решать поставленные задачи."
+            />
           </div>
         </div>
+
         <div className="container mt-40">
           <div className="row">
             <div className="col-lg-4 col-md-12 col-sm-12">
