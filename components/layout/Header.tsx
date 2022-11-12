@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { navLinks } from '../../util/routes';
+import { ABOUT_US_ROUTE, NavLink, navLinks } from '../../util/routes';
 import { useEffect, useState } from 'react';
 
 const Header = ({ handleOpen, headerStyle }) => {
@@ -13,6 +13,20 @@ const Header = ({ handleOpen, headerStyle }) => {
       }
     });
   });
+
+  const childrenLinks = (links: NavLink[]) => {
+    return (
+      <ul className="sub-menu">
+        {links.map(link => {
+          return (
+            <li key={link.id}>
+              <Link href={link.href}>{link.label}</Link>
+            </li>
+          );
+        })}
+      </ul>
+    );
+  };
 
   return (
     <>
@@ -49,10 +63,14 @@ const Header = ({ handleOpen, headerStyle }) => {
                   <ul className="main-menu">
                     {navLinks.map(link => {
                       return (
-                        <li key={link.id}>
+                        <li
+                          key={link.id}
+                          className={link.children ? 'has-children' : ''}
+                        >
                           <Link href={link.href}>
                             <a>{link.label}</a>
                           </Link>
+                          {link.children ? childrenLinks(link.children) : null}
                         </li>
                       );
                     })}

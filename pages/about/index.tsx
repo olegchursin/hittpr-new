@@ -1,6 +1,6 @@
-import BannerHero from '../components/elements/BannerHero';
-import LeadParagraph from '../components/elements/LeadParagraph';
-import Layout from '../components/layout/Layout';
+import BannerHero from '../../components/elements/BannerHero';
+import LeadParagraph from '../../components/elements/LeadParagraph';
+import Layout from '../../components/layout/Layout';
 
 function About() {
   return (
