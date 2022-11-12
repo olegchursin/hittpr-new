@@ -24,7 +24,7 @@ const Layout: React.FC<any> = ({ children, headerStyle }) => {
 
       <Header handleOpen={handleOpen} headerStyle={headerStyle} />
       <Sidebar openClass={openClass} />
-      <main className="main">{children}</main>
+      <main className="main mt-80">{children}</main>
       <Footer />
       <BackToTop />
     </>

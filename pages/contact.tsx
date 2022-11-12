@@ -19,7 +19,7 @@ function Contact() {
         </section>
         <section className="section-box">
           <div className="container mb-20 mt-60">
-            <div className="bdrd-58 box-gray-100 icon-wave">
+            <div className="bdrd-24 box-gray-100 icon-wave">
               <div className="row">
                 <div className="col-lg-12 mb-60">
                   <span className="text-body-capitalized text-uppercase">
