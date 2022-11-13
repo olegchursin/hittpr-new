@@ -1,18 +1,22 @@
+// active
 export const HOME_ROUTE = '/';
 export const ABOUT_US_ROUTE = '/about';
 export const CONTACT_US_ROUTE = '/contact';
-export const PRESS_PR = '/press-pr';
-export const PR = '/pr';
-export const PR_SPORT = '/pr/sport';
-export const PR_FASHION = '/pr/fashion';
-export const PR_PERSONAL_BRAND = '/pr/personal-brand';
-export const PR_PSYCHOLOGY = '/pr/psychology';
+export const PRESS_PR_ROUTE = '/press-pr';
+export const PR_ROUTE = '/pr';
+export const PR_SPORT_ROUTE = '/pr/sport';
+export const PR_FASHION_ROUTE = '/pr/fashion';
+export const PR_PERSONAL_BRAND_ROUTE = '/pr/personal-brand';
+export const PR_PSYCHOLOGY_ROUTE = '/pr/psychology';
 export const TRAINING_ROUTE = '/training';
 export const TRAINING_INTERVIEW_ROUTE = '/training/interview';
 export const TRAINING_JOURNALISM_ROUTE = '/training/journalism';
 export const TRAINING_SPORTSPR_CLUB_ROUTE = '/training/sportspr-club';
 export const TRAINING_SPORTSPR_PACKAGE_ROUTE = '/training/sportspr-package';
-export const TRAINING_SPORTSPR_INDIVIDUAL_ROUTE = '/training/sportspr-individual';
+export const TRAINING_SPORTSPR_INDIVIDUAL_ROUTE =
+  '/training/sportspr-individual';
+
+// non-active
 export const BLOG_ROUTE = '/blog';
 
 // deprecated
@@ -40,29 +44,29 @@ export const navLinks: NavLink[] = [
       {
         id: 'pr-sport',
         label: 'Спорт',
-        href: PR_SPORT
+        href: PR_SPORT_ROUTE
       },
       {
         id: 'pr-fashion',
         label: 'Fashion',
-        href: PR_FASHION
+        href: PR_FASHION_ROUTE
       },
       {
         id: 'pr-personal-brand',
         label: 'Личный бренд',
-        href: PR_PERSONAL_BRAND
+        href: PR_PERSONAL_BRAND_ROUTE
       },
       {
         id: 'pr-psychology',
         label: 'Психология',
-        href: PR_PSYCHOLOGY
+        href: PR_PSYCHOLOGY_ROUTE
       }
     ]
   },
   {
     id: 'press-pr',
     label: 'PR в СМИ',
-    href: PRESS_PR
+    href: PRESS_PR_ROUTE
   },
   {
     id: 'training',

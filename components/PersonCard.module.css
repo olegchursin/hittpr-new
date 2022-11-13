@@ -1,0 +1,19 @@
+.img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.icons > svg {
+  fill: #222;
+  width: 32px;
+  height: 32px;
+}
+.icons > svg:hover {
+  fill: #fe055a;
+  cursor: pointer;
+}
