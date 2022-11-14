@@ -1,7 +1,12 @@
 import { FC } from 'react';
 import BannerHero from '../../components/elements/BannerHero';
-import LeadParagraph from '../../components/elements/LeadParagraph';
 import Layout from '../../components/layout/Layout';
+import LinkList from '../../components/LinkList';
+import { PrCategory, prContent } from '../../util/pr-content';
+
+const content = Object.values(prContent).filter(
+  content => content.category === PrCategory.FASHION
+);
 
 const Fashion: FC = () => {
   return (
@@ -16,13 +21,14 @@ const Fashion: FC = () => {
 
       <section className="section-box mt-80">
         <div className="container">
-          <div className="col-12 text-center">
-            <LeadParagraph
-              text="Стратегическое видение и внимание к мельчайшим деталям, отличные
-              идеи и их тщательное выполнение – все это помогает нам максимально
-              эффективно решать поставленные задачи."
-            />
-          </div>
+          {content.map(item => {
+            return (
+              <div className="mb-40">
+                <h4 className="mb-20">{item.title}</h4>
+                <LinkList links={item.links} />
+              </div>
+            );
+          })}
         </div>
       </section>
     </Layout>
