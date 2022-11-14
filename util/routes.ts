@@ -39,7 +39,7 @@ export const navLinks: NavLink[] = [
   {
     id: 'pr',
     label: 'PR',
-    href: '#',
+    href: PR_ROUTE,
     children: [
       {
         id: 'pr-sport',

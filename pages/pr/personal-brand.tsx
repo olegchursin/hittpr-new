@@ -8,7 +8,7 @@ const PersonalBrand: FC = () => {
     <Layout>
       <section className="section-box">
         <BannerHero
-          title="PR - личный бренд"
+          title="PR - Личный бренд"
           subtitle="Продвижение бизнеса современными инструментами рекламы,
           маркетинга и PR"
         />
