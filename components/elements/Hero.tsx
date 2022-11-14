@@ -1,3 +1,4 @@
+import Badge from './Badge';
 import Link from 'next/link';
 
 const Hero = () => {
@@ -7,7 +8,7 @@ const Hero = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-7 mt-50">
-              <span className="tag-1 bg-green-900">PR Агенство</span>
+              <Badge text="PR Агентство" />
               <h1 className="text-display-3 mt-30">
                 Продвижение бизнеса в новых условиях
               </h1>

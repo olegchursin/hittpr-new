@@ -11,7 +11,7 @@ const CoachingCta = () => {
             <h3 className="text-heading-1 mt-30">
               Для самых требовательных клиентов
             </h3>
-            <p className="text-body-lead-large color-gray-600 mt-30">
+            <div className="text-body-lead-large color-gray-600 mt-30">
               Программа обучения создается исходя из Ваших потребностей, знаний
               и занятости. Занятия проходят в формате видео звонка один-на-один
               (Skype, Google Hangout, FaceTime). Тренер доступен для вопросов
@@ -28,7 +28,7 @@ const CoachingCta = () => {
                   Марина Хитт (marina@hittpr.com).
                 </h6>
               </div>
-            </p>
+            </div>
 
             <div className="line-bd-green mt-50" />
 
@@ -81,7 +81,7 @@ const CoachingCta = () => {
               <div className="block-image-bottom">
                 <img
                   className="bdrd-16 img-responsive"
-                  src="assets/imgs/hittprimg-built-2.png"
+                  src="assets/imgs/hittpr/img-built-2.png"
                   alt="Hittpr"
                 />
               </div>

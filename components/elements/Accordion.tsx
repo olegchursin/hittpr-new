@@ -3,7 +3,7 @@ import { useState } from 'react';
 export interface IAccordionData {
   id: string;
   title: string;
-  content: string;
+  content: any;
 }
 
 interface IAccordionProps {

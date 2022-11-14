@@ -55,7 +55,7 @@ export const courses = [
   },
 
   {
-    id: 'sportPRIndividual',
+    id: 'sportPRFull',
     title: 'Спортивный PR',
     subtitle: 'Полный курс',
     description:

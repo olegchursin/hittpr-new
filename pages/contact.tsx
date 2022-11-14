@@ -19,7 +19,7 @@ function Contact() {
         </section>
         <section className="section-box">
           <div className="container mb-20 mt-60">
-            <div className="bdrd-58 box-gray-100 icon-wave">
+            <div className="bdrd-24 box-gray-100 icon-wave">
               <div className="row">
                 <div className="col-lg-12 mb-60">
                   <span className="text-body-capitalized text-uppercase">
@@ -35,14 +35,6 @@ function Contact() {
                   </p>
                 </div>
                 <div className="col-lg-4 mb-40">
-                  <h4 className="text-heading-6 color-gray-900 icon-home mb-10 mt-10">
-                    hittpr
-                  </h4>
-                  <p className="text-body-text color-gray-600">
-                    154 Grand Street
-                    <br />
-                    SoHo, New York 10013 USA
-                  </p>
                   <hr />
                   <p className="text-body-text color-gray-600">
                     Марина Хитт
