@@ -1,6 +1,7 @@
 // active
 export const HOME_ROUTE = '/';
 export const ABOUT_US_ROUTE = '/about';
+export const TESTIMOPNIALS_ROUTE = '/testimonials';
 export const CONTACT_US_ROUTE = '/contact';
 export const PRESS_PR_ROUTE = '/press-pr';
 export const PR_ROUTE = '/pr';
@@ -34,7 +35,19 @@ export const navLinks: NavLink[] = [
   {
     id: 'about',
     label: 'О нас',
-    href: ABOUT_US_ROUTE
+    href: ABOUT_US_ROUTE,
+    children: [
+      {
+        id: 'about',
+        label: 'Кто мы',
+        href: ABOUT_US_ROUTE
+      },
+      {
+        id: 'testimonials',
+        label: 'Отзывы',
+        href: TESTIMOPNIALS_ROUTE
+      }
+    ]
   },
   {
     id: 'pr',
