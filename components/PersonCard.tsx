@@ -18,7 +18,6 @@ const PersonCard: FC = () => {
       <p className="text-body-excerpt text-desc color-gray-500 mt-15 mb-20">
         Автор, сценарист и режиссер
       </p>
-      <span className="text-body-text-md color-gray-600">Соц сети</span>
       <div className="social-bottom">
         <div className={styles.icons}>
           <Link href="https://www.youtube.com/channel/UC5Y7mWK-FtD3nh_AG367y-g">

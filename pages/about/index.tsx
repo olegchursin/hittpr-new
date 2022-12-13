@@ -1,7 +1,6 @@
 import Accordion, { IAccordionData } from '../../components/elements/Accordion';
 import BackgroundActor from '../../components/content/BackgroundActor';
 import BannerHero from '../../components/elements/BannerHero';
-import Career from '../../components/content/Career';
 import Education from '../../components/content/Education';
 import InvestigativeJournalism from '../../components/content/InvestigativeJournalism';
 import Layout from '../../components/layout/Layout';
@@ -11,11 +10,6 @@ import { CONTACT_US_ROUTE, PRESS_PR_ROUTE } from '../../util/routes';
 import PersonCard from '../../components/PersonCard';
 
 const aboutUsAccordionData: IAccordionData[] = [
-  {
-    id: 'career',
-    title: 'Карьера',
-    content: <Career />
-  },
   {
     id: 'projects',
     title: 'Проекты',

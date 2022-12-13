@@ -4,6 +4,7 @@ export interface IAccordionData {
   id: string;
   title: string;
   content: any;
+  isHidden?: boolean;
 }
 
 interface IAccordionProps {
@@ -11,7 +12,6 @@ interface IAccordionProps {
 }
 
 const Accordion: React.FC<IAccordionProps> = ({ data }) => {
-  console.log('data', data);
   const [isActive, setIsActive] = useState({
     status: false,
     index: 0
@@ -34,9 +34,9 @@ const Accordion: React.FC<IAccordionProps> = ({ data }) => {
   return (
     <div className="accordion" id="accordionFAQ">
       {data?.map((dataPoint, i) => {
-        const { title, id, content } = dataPoint;
+        const { title, id, content, isHidden } = dataPoint;
 
-        return (
+        return !isHidden ? (
           <div key={id} className="accordion-item">
             <h2 className="accordion-header" onClick={() => handleToggle(i)}>
               <button
@@ -60,7 +60,7 @@ const Accordion: React.FC<IAccordionProps> = ({ data }) => {
               <div className="accordion-body">{content}</div>
             </div>
           </div>
-        );
+        ) : null;
       })}
     </div>
   );

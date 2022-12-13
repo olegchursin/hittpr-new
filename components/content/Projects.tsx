@@ -1,8 +1,13 @@
 import { FC } from 'react';
+import Career from './Career';
 
 const Projects: FC = () => {
   return (
     <div>
+      <div className="mb-20">
+        <Career />
+      </div>
+
       <div className="mb-20">
         <h4 className="mb-10">Печатные и интернет-СМИ</h4>
         <ul>
