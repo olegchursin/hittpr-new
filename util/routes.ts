@@ -83,7 +83,7 @@ export const navLinks: NavLink[] = [
   },
   {
     id: 'training',
-    label: 'Тренинги',
+    label: 'Обучение',
     href: TRAINING_ROUTE
   },
   {
