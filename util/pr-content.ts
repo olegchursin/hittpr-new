@@ -34,7 +34,6 @@ export const prContent = {
     category: PrCategory.SPORT,
     links: [
       'https://prosports.kz/news/405560',
-      '​https://www.championat.com/boxing/news-3809061-kovaljov-treshtok-pered-boem-s-uordom-eto-pechalnyj-primer-togo-kak-sluchaetsja.html​',
       'https://allboxing.ru/news/20151001-0413/ismail-sillah-v-boyu-golovkin-leme-budet-nastoyashchaya-draka',
       'https://allboxing.ru/news/20170518-0807/ivan-golub-posle-obshcheniya-s-nami-oba-trenera-zagovorili-chutok-po-russki',
       'https://www.sports.ru/boxing/1076487686.html',

@@ -8,7 +8,7 @@ function Training() {
       <section className="section-box">
         <div className="banner-hero banner-breadcrums">
           <div className="container text-center">
-            <h1 className="text-heading-2 color-gray-1000 mb-20">Тренинги</h1>
+            <h1 className="text-heading-2 color-gray-1000 mb-20">Обучение</h1>
             <p className="text-body-text color-gray-500">
               Делаем бизнес привлекательным для партнеров и инвесторов.
             </p>
@@ -21,9 +21,7 @@ function Training() {
           <div className="row">
             <div className="col-lg-2 col-sm-1 col-12" />
             <div className="col-lg-8 col-sm-10 col-12 text-center mt-100">
-              <h2 className="text-heading-1 color-gray-900">
-                Индивидуальные и групповые тренинги
-              </h2>
+              <h2 className="text-heading-1 color-gray-900">Инфопродукты</h2>
               <p className="text-body-lead-large color-gray-600 mt-20">
                 Поможем разобраться, на какие сильные стороны компании или
                 персоны стоит делать акцент в продвижении.
