@@ -2,7 +2,8 @@ export enum PrCategory {
   PSYCHOLOGY = 'psychology',
   SPORT = 'sport',
   PERSONAL_BRAND = 'personal-brand',
-  FASHION = 'fashion'
+  FASHION = 'fashion',
+  OTHER = 'other'
 }
 
 export const prContent = {
@@ -57,14 +58,30 @@ export const prContent = {
       'https://www.glamour.ru/fashion-news/ya-hochu-priehat-v-rossiyu-i-potusovatsya-s-vami-hudozhnik-po-kostyumam-i-stilist-patriciya-fild'
     ]
   },
+  psychoFashion: {
+    title: 'PSYCHOLOGIES.RU',
+    category: PrCategory.FASHION,
+    links: [
+      'https://www.psychologies.ru/articles/privyichka-byit-seroy-myishyu-ili-kak-odejda-pomogaet-dostich-uspeha'
+    ]
+  },
+  hotHitNewYork: {
+    title: 'Hot Hit New York',
+    category: PrCategory.FASHION,
+    links: [
+      'https://hothitnewyork.com/patricia-field',
+      'https://hothitnewyork.com/megan-hess',
+      'https://hothitnewyork.com/sjp'
+    ]
+  },
   lofficielKz: {
     title: "L'Officiel (Kазахстан)",
-    category: PrCategory.FASHION,
+    category: PrCategory.OTHER,
     links: ['http://lofficiel.kz/blog/2016/08/18/zvezdnyj-stomatolog/']
   },
   cosmo: {
     title: 'Cosmo.ru',
-    category: PrCategory.FASHION,
+    category: PrCategory.OTHER,
     links: [
       'https://www.cosmo.ru/lifestyle/stil-zhizni/v-poiskah-svoego-lica-odin-na-odin-s-dermatilomaniey'
     ]
