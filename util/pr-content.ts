@@ -6,7 +6,17 @@ export enum PrCategory {
   OTHER = 'other'
 }
 
-export const prContent = {
+interface PrContentItem {
+  readonly title: string;
+  readonly category: PrCategory;
+  readonly links: string[];
+}
+
+interface PrContent {
+  [key: string]: PrContentItem;
+}
+
+export const prContent: PrContent = {
   psychology: {
     title: 'PSYCHOLOGIES.RU',
     category: PrCategory.PSYCHOLOGY,
@@ -63,6 +73,13 @@ export const prContent = {
     category: PrCategory.FASHION,
     links: [
       'https://www.psychologies.ru/articles/privyichka-byit-seroy-myishyu-ili-kak-odejda-pomogaet-dostich-uspeha'
+    ]
+  },
+  kiz: {
+    title: 'Красота и Здоровье',
+    category: PrCategory.FASHION,
+    links: [
+      'https://www.kiz.ru/content/stil-zhizni/svobodnoe-vremya/patrishiya-fild-moy-garderob-eto-edinyy-orkestr'
     ]
   },
   hotHitNewYork: {
