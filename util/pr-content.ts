@@ -6,10 +6,17 @@ export enum PrCategory {
   OTHER = 'other'
 }
 
+export interface PdfItem {
+  readonly title: string;
+  readonly subtitle: string;
+  readonly url: string;
+}
+
 interface PrContentItem {
   readonly title: string;
   readonly category: PrCategory;
-  readonly links: string[];
+  readonly links?: string[];
+  readonly pdfs?: PdfItem[];
 }
 
 interface PrContent {
@@ -89,6 +96,17 @@ export const prContent: PrContent = {
       'https://hothitnewyork.com/patricia-field',
       'https://hothitnewyork.com/megan-hess',
       'https://hothitnewyork.com/sjp'
+    ]
+  },
+  rabotnica: {
+    title: 'Работница',
+    category: PrCategory.FASHION,
+    pdfs: [
+      {
+        title: 'Патришия Филд',
+        subtitle: 'Модная темя феминизма не живет в моей голове',
+        url: 'https://drive.google.com/file/d/15hf_xnVLxqkbH8sSmISKNhXPQQm3xqEN/view?usp=sharing_eil_m&ts=638d79ae'
+      }
     ]
   },
   lofficielKz: {

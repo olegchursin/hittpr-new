@@ -16,11 +16,15 @@ const PersonalBrand: FC = () => {
 
       <section className="section-box mt-80">
         <div className="container">
-          <div className="col-12 text-center">
-            <LeadParagraph
-              text="Личный бренд (personal branding) ― это образ, который складывается
+          <div className="row">
+            <div className="col-lg-1" />
+            <div className="col-lg-10 text-center">
+              <LeadParagraph
+                text="Личный бренд (personal branding) ― это образ, который складывается
               о вас в профессиональном сообществе."
-            />
+              />
+            </div>
+            <div className="col-lg-1" />
           </div>
         </div>
       </section>

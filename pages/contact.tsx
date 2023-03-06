@@ -8,9 +8,7 @@ function Contact() {
         <section className="section-box">
           <div className="banner-hero banner-breadcrums">
             <div className="container text-center">
-              <h1 className="text-heading-2 color-gray-1000 mb-20">
-                Свяжитесь с нами
-              </h1>
+              <h1 className="text-heading-2 color-gray-1000 mb-20">Контакты</h1>
               <p className="text-body-text color-gray-500">
                 Мы открыты для общения и готовы к полному контакту.
               </p>
@@ -26,7 +24,7 @@ function Contact() {
                     Наши контакты
                   </span>
                   <h2 className="text-heading-3 color-gray-900 mt-10">
-                    Давайте работать вместе
+                    Свяжитесь с нами
                   </h2>
                   <p className="text-body-text color-gray-600 mt-20">
                     Оставьте свои контакты, чтобы получить&nbsp;
@@ -37,7 +35,6 @@ function Contact() {
                 <div className="col-lg-4 mb-40">
                   <hr />
                   <p className="text-body-text color-gray-600">
-                    Марина Хитт
                     <br />
                     <EmailLink />
                   </p>

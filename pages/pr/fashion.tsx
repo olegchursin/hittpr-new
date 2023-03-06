@@ -25,7 +25,7 @@ const Fashion: FC = () => {
             return (
               <div className="mb-40">
                 <h4 className="mb-20">{item.title}</h4>
-                <LinkList links={item.links} />
+                <LinkList links={item.links} pdfs={item.pdfs} />
               </div>
             );
           })}

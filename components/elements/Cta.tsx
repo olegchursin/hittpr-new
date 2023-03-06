@@ -35,13 +35,6 @@ const Cta: React.FC<ICtaProps> = ({ bgColorVariant = 6 }) => {
                     </Link>
                   </div>
                 </div>
-                <div className="col-lg-7 col-md-5 mt-30 mt-lg-0 mt-md-30 mt-sm-30 position-relative text-end">
-                  <img
-                    className="img-responsive img-newsletter"
-                    src="assets/imgs/hittpr/live-create.jpg"
-                    alt="Agon"
-                  />
-                </div>
               </div>
             </div>
           </div>
