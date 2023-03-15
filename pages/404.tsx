@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import Layout from '../components/layout/Layout';
-import { HOME_ROUTE } from '../util/routes';
+import { HOME_ROUTE } from '../utils/routes';
 
 function Error() {
   return (

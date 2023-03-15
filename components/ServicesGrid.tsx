@@ -5,7 +5,7 @@ import {
   PR_PERSONAL_BRAND_ROUTE,
   PR_PSYCHOLOGY_ROUTE,
   PR_SPORT_ROUTE
-} from '../util/routes';
+} from '../utils/routes';
 
 const services = [
   {

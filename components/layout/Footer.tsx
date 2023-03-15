@@ -2,7 +2,7 @@ import Copyright from '../elements/Copyright';
 import EmailLink from '../elements/EmailLink';
 import Link from 'next/link';
 import SocialIcons from '../elements/SocialIcons';
-import { navLinks } from '../../util/routes';
+import { navLinks } from '../../utils/routes';
 
 const renderSocialIcons = false;
 

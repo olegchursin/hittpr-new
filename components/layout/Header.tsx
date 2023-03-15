@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { NavLink, navLinks } from '../../util/routes';
+import { NavLink, navLinks } from '../../utils/routes';
 
 const Header = ({ handleOpen, headerStyle }) => {
   const childrenLinks = (links: NavLink[]) => {

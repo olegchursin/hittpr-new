@@ -2,7 +2,7 @@ import { FC } from 'react';
 import BannerHero from '../../components/elements/BannerHero';
 import Layout from '../../components/layout/Layout';
 import LinkList from '../../components/LinkList';
-import { prContent } from '../../util/pr-content';
+import { prContent } from '../../utils/pr-content';
 
 const { title, links } = prContent.sport;
 

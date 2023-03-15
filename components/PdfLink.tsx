@@ -1,7 +1,7 @@
 // import Link from 'next/link';
 import { FC } from 'react';
 import { FaFileDownload } from 'react-icons/fa';
-import { PdfItem } from '../util/pr-content';
+import { PdfItem } from '../utils/pr-content';
 
 interface PdfItemProps {
   readonly pdfItem: PdfItem;

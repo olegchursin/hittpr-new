@@ -2,7 +2,7 @@ import { FC } from 'react';
 import BannerHero from '../../components/elements/BannerHero';
 import Layout from '../../components/layout/Layout';
 import LinkList from '../../components/LinkList';
-import { PrCategory, prContent } from '../../util/pr-content';
+import { PrCategory, prContent } from '../../utils/pr-content';
 
 const content = Object.values(prContent).filter(
   content => content.category === PrCategory.FASHION

@@ -1,6 +1,6 @@
 import Layout from '../../components/layout/Layout';
 import Link from 'next/link';
-import { courses } from '../../util/courses';
+import { courses } from '../../utils/courses';
 
 function Training() {
   return (
