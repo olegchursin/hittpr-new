@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { CONTACT_US_ROUTE } from '../../util/routes';
+import { CONTACT_US_ROUTE } from '../../utils/routes';
 
 const ContactUsBtn = () => {
   return (

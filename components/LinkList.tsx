@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { PdfItem } from '../util/pr-content';
+import { PdfItem } from '../utils/pr-content';
 import LinkItem from './LinkItem';
 import PdfLink from './PdfLink';
 

@@ -6,7 +6,7 @@ import InvestigativeJournalism from '../../components/content/InvestigativeJourn
 import Layout from '../../components/layout/Layout';
 import Link from 'next/link';
 import Projects from '../../components/content/Projects';
-import { CONTACT_US_ROUTE, PRESS_PR_ROUTE } from '../../util/routes';
+import { CONTACT_US_ROUTE, PRESS_PR_ROUTE } from '../../utils/routes';
 import PersonCard from '../../components/PersonCard';
 
 const aboutUsAccordionData: IAccordionData[] = [

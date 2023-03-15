@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import 'react-perfect-scrollbar/dist/css/styles.css';
-import { navLinks } from '../../util/routes';
+import { navLinks } from '../../utils/routes';
 import Copyright from '../elements/Copyright';
 
 const Sidebar = ({ openClass }) => {
