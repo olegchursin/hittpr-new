@@ -18,6 +18,7 @@ const Layout: React.FC<any> = ({ children, headerStyle }) => {
       document.body.classList.remove('mobile-menu-active');
     }
   };
+
   return (
     <>
       <div className={openClass && 'body-overlay-1'} onClick={handleRemove} />

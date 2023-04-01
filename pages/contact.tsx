@@ -1,3 +1,5 @@
+import { FaTelegram } from 'react-icons/fa';
+
 import EmailLink from '../components/elements/EmailLink';
 import Layout from '../components/layout/Layout';
 
@@ -19,7 +21,7 @@ function Contact() {
           <div className="container mb-20 mt-60">
             <div className="bdrd-24 box-gray-100 icon-wave">
               <div className="row">
-                <div className="col-lg-12 mb-60">
+                <div className="col-lg-12 mb-20">
                   <span className="text-body-capitalized text-uppercase">
                     Наши контакты
                   </span>
@@ -31,13 +33,21 @@ function Contact() {
                     <br className="d-lg-block d-none" />
                     индивидуальную консультацию.
                   </p>
-                </div>
-                <div className="col-lg-4 mb-40">
-                  <hr />
-                  <p className="text-body-text color-gray-600">
+                  <div className="text-body-text color-gray-600">
                     <br />
                     <EmailLink />
-                  </p>
+                  </div>
+                </div>
+                <div className="col-lg-4">
+                  <hr />
+                  <div className="text-body-text color-gray-600">
+                    <br />
+                    <h4>
+                      <a href="https://t.me/hitt_pr_nyc">
+                        <FaTelegram />
+                      </a>
+                    </h4>
+                  </div>
                 </div>
               </div>
             </div>

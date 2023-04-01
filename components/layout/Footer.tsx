@@ -1,8 +1,10 @@
+import Link from 'next/link';
+import { FaTelegram } from 'react-icons/fa';
+
+import { navLinks } from '../../utils/routes';
 import Copyright from '../elements/Copyright';
 import EmailLink from '../elements/EmailLink';
-import Link from 'next/link';
 import SocialIcons from '../elements/SocialIcons';
-import { navLinks } from '../../utils/routes';
 
 const renderSocialIcons = false;
 
@@ -29,6 +31,11 @@ const Footer = () => {
             <h4 className="text-heading-5">Контакты</h4>
             <div className="mt-20 text-body-text color-gray-600">
               <EmailLink />
+              <h4 className="mt-20">
+                <a href="https://t.me/hitt_pr_nyc">
+                  <FaTelegram />
+                </a>
+              </h4>
             </div>
           </div>
 
