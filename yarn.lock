@@ -346,10 +346,10 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
-"@types/react@^18.0.31":
-  version "18.0.31"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.31.tgz#a69ef8dd7bfa849734d258c793a8fe343a338205"
-  integrity sha512-EEG67of7DsvRDU6BLLI0p+k1GojDLz9+lZsnCpCRTa/lOokvyPBvp8S5x+A24hME3yyQuIipcP70KJ6H7Qupww==
+"@types/react@^18.0.32":
+  version "18.0.32"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.32.tgz#5e88b2af6833251d54ec7fe86d393224499f41d5"
+  integrity sha512-gYGXdtPQ9Cj0w2Fwqg5/ak6BcK3Z15YgjSqtyDizWUfx7mQ8drs0NBUzRRsAdoFVTO8kJ8L2TL8Skm7OFPnLUw==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -3939,6 +3939,11 @@ new-github-release-url@^1.0.0:
   integrity sha512-dle7yf655IMjyFUqn6Nxkb18r4AOAkzRcgcZv6WZ0IqrOH4QCEZ8Sm6I7XX21zvHdBeeMeTkhR9qT2Z0EJDx6A==
   dependencies:
     type-fest "^0.4.1"
+
+next-themes@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/next-themes/-/next-themes-0.2.1.tgz#0c9f128e847979daf6c67f70b38e6b6567856e45"
+  integrity sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==
 
 next@12.1.5:
   version "12.1.5"

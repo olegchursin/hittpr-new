@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply dark:bg-gray-800 bg-white;
+  }
+}
+
 html,
 body {
   padding: 0;

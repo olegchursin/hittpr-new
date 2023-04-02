@@ -10,10 +10,8 @@ const renderSocialIcons = false;
 
 const Footer = () => {
   return (
-    <footer className="footer mt-50">
+    <footer className="footer mt-10 bg-gray-100 dark:bg-black dark:text-white pt-4">
       <div className="container">
-        <div className="footer-top"></div>
-
         <div className="row">
           <div className="col-lg-3 width-20 mb-30">
             <Link href="/">
@@ -57,13 +55,11 @@ const Footer = () => {
           <div className="col-lg-3 width-16"></div>
         </div>
 
-        <div className="footer-bottom mt-20">
+        <div className="footer-bottom mt-20 bg-gray-100">
           <div className="row">
-            <div className="col-md-6">
-              <span className="color-gray-400 text-body-lead">
-                <Copyright />
-              </span>
-            </div>
+            <p className="text-gray-400 font-bold ">
+              <Copyright />
+            </p>
 
             {renderSocialIcons ? <SocialIcons /> : null}
           </div>
