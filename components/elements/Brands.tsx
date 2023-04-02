@@ -53,7 +53,10 @@ const Brands = () => {
         <div className="row justify-content-md-center">
           {logos.map(logo => {
             return (
-              <div className="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+              <div
+                key={logo.alt}
+                className="col-lg-2 col-md-3 col-sm-4 col-6 text-center"
+              >
                 <div className="item-logo box-hover-shadow hover-up">
                   <Image
                     height={logo.height}
