@@ -75,36 +75,13 @@ export const prContent: PrContent = {
       'https://www.glamour.ru/fashion-news/ya-hochu-priehat-v-rossiyu-i-potusovatsya-s-vami-hudozhnik-po-kostyumam-i-stilist-patriciya-fild'
     ]
   },
-  psychoFashion: {
-    title: 'PSYCHOLOGIES.RU',
-    category: PrCategory.FASHION,
-    links: [
-      'https://www.psychologies.ru/articles/privyichka-byit-seroy-myishyu-ili-kak-odejda-pomogaet-dostich-uspeha'
-    ]
-  },
-  kiz: {
-    title: 'Красота и Здоровье',
-    category: PrCategory.FASHION,
-    links: [
-      'https://www.kiz.ru/content/stil-zhizni/svobodnoe-vremya/patrishiya-fild-moy-garderob-eto-edinyy-orkestr'
-    ]
-  },
-  hotHitNewYork: {
-    title: 'Hot Hit New York',
-    category: PrCategory.FASHION,
-    links: [
-      'https://hothitnewyork.com/patricia-field',
-      'https://hothitnewyork.com/megan-hess',
-      'https://hothitnewyork.com/sjp'
-    ]
-  },
   rabotnica: {
     title: 'Работница',
     category: PrCategory.FASHION,
     pdfs: [
       {
         title: 'Патришия Филд',
-        subtitle: 'Модная темя феминизма не живет в моей голове',
+        subtitle: 'Модная тема феминизма не живет в моей голове',
         url: 'https://drive.google.com/file/d/15hf_xnVLxqkbH8sSmISKNhXPQQm3xqEN/view?usp=sharing_eil_m&ts=638d79ae'
       }
     ]
@@ -191,6 +168,7 @@ export const prContent: PrContent = {
     title: 'Красота и здоровье',
     category: PrCategory.PSYCHOLOGY,
     links: [
+      'https://www.kiz.ru/content/stil-zhizni/svobodnoe-vremya/patrishiya-fild-moy-garderob-eto-edinyy-orkestr/',
       'https://www.kiz.ru/content/psikhologiya/lichnoe/nizkiy-i-vysokiy-tembr-kak-nash-golos-vliyaet-na-lichnuyu-zhizn/',
       'https://www.kiz.ru/content/stil-zhizni/svobodnoe-vremya/kak-nauchitsya-legko-i-bez-stressa-govorit-na-italyanskom/',
       'https://www.kiz.ru/content/zdorove/novosti/tochki-zdorovya-dlya-snizheniya-vesa-i-metody-pokhudeniya-vostochnoy-meditsiny-/',

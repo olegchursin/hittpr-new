@@ -16,7 +16,7 @@ const PersonCard: FC = () => {
       <span className="text-body-text-md color-gray-500">Founder and CEO</span>
       <h3 className="text-heading-5 mb-5 mt-5">Марина Хитт</h3>
       <p className="text-body-excerpt text-desc color-gray-500 mt-15 mb-20">
-        Автор, сценарист и режиссер
+        Автор, сценарист, режиссер
       </p>
       <div className="social-bottom">
         <div className={styles.icons}>

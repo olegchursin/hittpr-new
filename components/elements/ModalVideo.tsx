@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
-import 'react-modal-video/css/modal-video.css';
 import dynamic from 'next/dynamic';
+import React, { useState } from 'react';
+import styles from './ModalVideo.module.css';
+import { BsPlayCircle } from 'react-icons/bs';
+import 'react-modal-video/css/modal-video.css';
 
 const ModalVideoInternal = dynamic(import('react-modal-video'), {
   ssr: false
@@ -9,24 +11,20 @@ const ModalVideoInternal = dynamic(import('react-modal-video'), {
 interface IModalVideoProps {
   channel?: any;
   videoId: string;
+  iconSize?: string;
 }
 
-const ModalVideo: React.FC<IModalVideoProps> = ({ channel, videoId }) => {
+const ModalVideo: React.FC<IModalVideoProps> = ({
+  channel,
+  videoId,
+  iconSize = '1em'
+}) => {
   const [isOpen, setOpen] = useState(false);
   return (
     <>
-      <div className="box-image">
-        <a
-          className="popup-youtube btn-play-video btn-play-middle"
-          onClick={() => setOpen(true)}
-        ></a>
-        <img
-          className="img-responsive bdrd-16"
-          src="../assets/imgs/hittpr/blog-klitchko-1.jpg"
-          alt="Hittpr"
-        />
+      <div className={styles.icon} onClick={() => setOpen(true)}>
+        <BsPlayCircle size={iconSize} />
       </div>
-
       <ModalVideoInternal
         channel={channel}
         isOpen={isOpen}

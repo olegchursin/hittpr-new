@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="banner-hero banner-2">
         <div className="container">
           <div className="row">
-            <div className="col-lg-7 mt-50">
+            <div className="col-lg-7 mt-50 mb-60">
               <Badge text="PR Агентство" />
               <h1 className="text-display-3 mt-30">
                 Продвижение бизнеса в новых условиях
@@ -27,22 +27,6 @@ const Hero = () => {
                     Коротко о нас
                   </a>
                 </Link>
-              </div>
-            </div>
-
-            <div className="col-lg-5 d-none d-lg-block">
-              <div className="banner-imgs">
-                <div className="block-1 shape-2">
-                  <img src="/assets/imgs/hittpr/balance.png" alt="Hittpr" />
-                </div>
-                <div className="block-2 shape-3">
-                  <img src="/assets/imgs/hittpr/payment.png" alt="Hittpr" />
-                </div>
-                <img
-                  className="img-responsive shape-1"
-                  alt="Hittpr"
-                  src="assets/imgs/hittpr/banner.png"
-                />
               </div>
             </div>
           </div>

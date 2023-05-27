@@ -1,47 +1,55 @@
 import { FC } from 'react';
 import BannerHero from '../components/elements/BannerHero';
 import Layout from '../components/layout/Layout';
+import ModalVideo from '../components/elements/ModalVideo';
+import styles from './testimonials.module.css';
 
 const testimonials = [
   {
     id: 'andreina',
     title: 'Наталья Андреина',
     at: '@nataly.coach',
-    url: 'https://www.youtube.com/embed/Vue7dxJwfJw'
+    url: 'https://www.youtube.com/embed/Vue7dxJwfJw',
+    videoId: 'Vue7dxJwfJw'
   },
   {
     id: 'bekieva',
     title: 'Виктория Бекиева',
     at: '@center_psy_viktoria_bekieva',
-    url: 'https://www.youtube.com/embed/jvDr0ZKGzRw'
-  },
-  {
-    id: 'chekalkina',
-    title: 'Anna Chekalkina',
-    at: 'БК “Factory Fight”',
-    url: 'https://www.youtube.com/embed/yUxUvQaXKD0'
+    url: 'https://www.youtube.com/embed/jvDr0ZKGzRw',
+    videoId: 'jvDr0ZKGzRw'
   },
   {
     id: 'sillakh',
     title: 'Исмайл Силлах',
     at: '@ismaylsillah',
-    url: 'https://www.youtube.com/embed/PgWKdggMIn4'
+    url: 'https://www.youtube.com/embed/PgWKdggMIn4',
+    videoId: 'PgWKdggMIn4'
   },
+  {
+    id: 'chekalkina',
+    title: 'Anna Chekalkina',
+    url: 'https://www.youtube.com/embed/yUxUvQaXKD0',
+    videoId: 'yUxUvQaXKD0'
+  },
+
   {
     id: 'belan',
     title: 'Анастасия Белан',
-    at: '@mindbelany',
-    url: 'https://www.youtube.com/embed/V_rv0ao9oU0'
+    url: 'https://www.youtube.com/embed/V_rv0ao9oU0',
+    videoId: 'V_rv0ao9oU0'
   },
   {
     id: 'borisenko',
     title: 'Евгения Борисенко',
-    url: 'https://www.youtube.com/embed/j7sXxcV8GPc'
+    url: 'https://www.youtube.com/embed/j7sXxcV8GPc',
+    videoId: 'j7sXxcV8GPc'
   },
   {
     id: 'teiban',
     title: 'Екатерина Тейбан',
-    url: 'https://www.youtube.com/embed/NDA-FLsCDE0'
+    url: 'https://www.youtube.com/embed/NDA-FLsCDE0',
+    videoId: 'NDA-FLsCDE0'
   }
 ];
 
@@ -59,34 +67,29 @@ const Testimonials: FC = () => {
       <section className="section-box mt-80">
         <div className="container">
           <div className="row">
-            {testimonials.map(t => {
+            {testimonials.map(testimonial => {
               return (
                 <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                  <div className="product-item-2 product-item-3">
-                    <div className="product-image">
-                      <iframe
-                        key={t.id}
-                        src={t.url}
-                        height="160px"
-                        width="280px"
-                        title={t.title}
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-
-                    <div className="product-info">
+                  <div
+                    className={`product-item-2 product-item-3 ${styles.card}`}
+                  >
+                    <div>
                       <h3 className="text-body-lead color-gray-900">
-                        {t.title}
+                        {testimonial.title}
                       </h3>
 
                       <div className="mt-10">
                         <div className="box-prices">
-                          <span>{t.at}</span>
+                          <span>{testimonial.at}</span>
                         </div>
                       </div>
                     </div>
+
+                    <ModalVideo
+                      iconSize="3em"
+                      channel="youtube"
+                      videoId={testimonial.videoId}
+                    />
                   </div>
                 </div>
               );

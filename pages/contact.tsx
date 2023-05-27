@@ -3,6 +3,8 @@ import { FaTelegram } from 'react-icons/fa';
 import EmailLink from '../components/elements/EmailLink';
 import Layout from '../components/layout/Layout';
 
+const ICON_SIZE = '1.5rem';
+
 function Contact() {
   return (
     <>
@@ -35,18 +37,17 @@ function Contact() {
                   </p>
                   <div className="text-body-text color-gray-600">
                     <br />
-                    <EmailLink />
+                    <EmailLink hasIcon={true} iconSize={ICON_SIZE} />
                   </div>
                 </div>
                 <div className="col-lg-4">
-                  <hr />
                   <div className="text-body-text color-gray-600">
-                    <br />
-                    <h4>
-                      <a href="https://t.me/hitt_pr_nyc">
-                        <FaTelegram />
-                      </a>
-                    </h4>
+                    <a href="https://t.me/hitt_pr_nyc">
+                      <span className="mr-20">
+                        <FaTelegram size={ICON_SIZE} />
+                      </span>
+                      <span>hitt_pr_nyc</span>
+                    </a>
                   </div>
                 </div>
               </div>

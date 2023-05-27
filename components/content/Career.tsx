@@ -6,13 +6,13 @@ const Career = () => {
       <div className="mb-20">
         <ul>
           <li>
-            Автор, сценарист и режиссер{' '}
+            Автор, сценарист, режиссер{' '}
             <a href="https://www.youtube.com/watch?v=Al_OXNN0ph4">
               документального фильма “GREG. THE SECRET TO MY SUCCESS”
             </a>
           </li>
           <li>
-            Автор, сценарист и режиссер{' '}
+            Автор, сценарист, режиссер{' '}
             <a href="https://www.youtube.com/watch?v=og69ZQwmal4&t=550s">
               документального фильма “KRUSHER”
             </a>{' '}

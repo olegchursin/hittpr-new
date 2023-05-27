@@ -6,6 +6,8 @@ import Copyright from '../elements/Copyright';
 import EmailLink from '../elements/EmailLink';
 import SocialIcons from '../elements/SocialIcons';
 
+const ICON_SIZE = '1.5rem';
+
 const renderSocialIcons = false;
 
 const Footer = () => {
@@ -30,12 +32,15 @@ const Footer = () => {
           <div className="col-lg-3 width-20 mb-30">
             <h4 className="text-heading-5">Контакты</h4>
             <div className="mt-20 text-body-text color-gray-600">
-              <EmailLink />
-              <h4 className="mt-20">
+              <EmailLink hasIcon={true} iconSize={ICON_SIZE} />
+              <div className="mt-20">
                 <a href="https://t.me/hitt_pr_nyc">
-                  <FaTelegram />
+                  <span className="mr-20">
+                    <FaTelegram size={ICON_SIZE} />
+                  </span>
+                  <span>hitt_pr_nyc</span>
                 </a>
-              </h4>
+              </div>
             </div>
           </div>
 
