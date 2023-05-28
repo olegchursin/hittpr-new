@@ -1,6 +1,6 @@
 const Services = () => {
   return (
-    <section className="section-box pt-100 pb-100">
+    <section className="section-box pt-60 pb-60">
       <div className="container">
         <div className="row">
           <div className="col-lg-2 col-sm-1 col-12" />
