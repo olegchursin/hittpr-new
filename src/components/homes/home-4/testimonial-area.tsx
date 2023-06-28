@@ -139,7 +139,7 @@ const TestimonialArea = ({ home_6, style_2 = false }: TestimonialAreaProps) => {
             }}
           >
             {testimonial_data.map(item => {
-              const { id, brand_img, desc, user, name, ratings, title } = item;
+              const { id, desc, user, name, ratings, title } = item;
               return (
                 <SwiperSlide key={id}>
                   <div className="tp-testimonial-item-four">
