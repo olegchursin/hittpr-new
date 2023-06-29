@@ -20,7 +20,12 @@ const PRSmi = () => {
       <div className="mt-60 mb-60">
         {Object.values(prContent).map(item => {
           return (
-            <LinkList links={item.links} pdfs={item.pdfs} title={item.title} />
+            <LinkList
+              key={item.title}
+              links={item.links}
+              pdfs={item.pdfs}
+              title={item.title}
+            />
           );
         })}
       </div>

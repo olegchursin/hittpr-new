@@ -8,7 +8,7 @@ interface PdfItemProps {
 
 const PdfLink: FC<PdfItemProps> = ({ pdfItem }) => {
   return (
-    <div key={pdfItem.url}>
+    <div>
       <a href={pdfItem.url} target="_blank" rel="noopener noreferrer">
         <span className="mr-20">
           <FaFileDownload />

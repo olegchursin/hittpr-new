@@ -1,5 +1,4 @@
 import React from 'react';
-import ContactForm from '../forms/contact-form';
 
 const ContactArea = () => {
   return (
@@ -24,19 +23,7 @@ const ContactArea = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-6 col-lg-6">
-              {false ? (
-                <div className="tpcontact">
-                  <h4 className="tp-contact-big-title">Let’s Talk...</h4>
-                  <div className="tpcontact__form tpcontact__form-3">
-                    {/* ContactForm start */}
-                    <ContactForm />
-                    {/* ContactForm end */}
-                  </div>
-                  <p className="ajax-response"></p>
-                </div>
-              ) : null}
-            </div>
+            <div className="col-xl-6 col-lg-6"></div>
           </div>
         </div>
       </div>

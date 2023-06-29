@@ -19,7 +19,7 @@ const NewsLetter = () => {
                 title="HotHitNewYork.com"
                 href="https://hothitnewyork.com"
                 target="_blank"
-                rel="noopener noferrer"
+                rel="noreferrer noopener"
               >
                 <div
                   className="tp-newsletter-left-img pt-60 p-relative wow tpfadeLeft"
@@ -45,7 +45,7 @@ const NewsLetter = () => {
                   title="HotHitNewYork.com"
                   href="https://hothitnewyork.com"
                   target="_blank"
-                  rel="noopener noferrer"
+                  rel="noreferrer noopener"
                   className="tp-btn-border"
                 >
                   {btn_text}

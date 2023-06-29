@@ -25,7 +25,12 @@ const Fashion = () => {
       <div className="mt-80">
         {content.map(item => {
           return (
-            <LinkList links={item.links} pdfs={item.pdfs} title={item.title} />
+            <LinkList
+              key={item.title}
+              links={item.links}
+              pdfs={item.pdfs}
+              title={item.title}
+            />
           );
         })}
       </div>

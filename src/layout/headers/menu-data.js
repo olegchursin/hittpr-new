@@ -27,12 +27,12 @@ const menu_data = [
     ]
   },
   {
-    id: 'pr-smi',
+    id: 'portfolio',
     render: true,
     mega_menu: false,
     has_dropdown: false,
-    title: 'PR в СМИ',
-    link: '/pr-smi'
+    title: 'Материалы',
+    link: '/portfolio'
   },
   {
     id: 'training',

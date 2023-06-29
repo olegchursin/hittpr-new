@@ -20,11 +20,11 @@ const LinkList: FC<LinkListProps> = ({ links, pdfs, title }) => {
             <div className="cd-info-box">
               {title ? <h3 className="tp-title-sm pb-30">{title}</h3> : null}
               {links?.map(link => {
-                return <LinkItem link={link} />;
+                return <LinkItem key={link} link={link} />;
               })}
 
               {pdfs?.map(pdfItem => {
-                return <PdfLink pdfItem={pdfItem} />;
+                return <PdfLink key={pdfItem.title} pdfItem={pdfItem} />;
               })}
             </div>
           </div>

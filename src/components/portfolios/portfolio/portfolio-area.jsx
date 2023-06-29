@@ -123,7 +123,7 @@ const PortfolioArea = () => {
               <div className="col-12">
                 <div className="tp-project-button text-center">
                   <button onClick={handleLoadData} className="tp-btn-yellow">
-                    Load More
+                    Загрузить еще
                   </button>
                 </div>
               </div>
