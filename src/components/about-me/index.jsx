@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { FooterThree, Header, Wrapper } from '../../layout';
 import { animationCreate } from '../../utils/utils';
 import Breadcrumb from '../common/breadcrumb/breadcrumb';
-import AboutContact from './about-contact';
 import AboutMeArea from './about-me-area';
 import ExperienceArea from './experience-area';
 
