@@ -5,18 +5,13 @@ import { useRouter } from 'next/router';
 
 const portfolio_data = [
   {
-    img: '/assets/img/hittpr/projects/portfolio-patricia.jpg',
+    img: '/assets/img/hittpr/projects/patricia-sofa.webp',
     url: '/patricia',
     category: 'Lifestyle'
   },
   {
     img: '/assets/img/hittpr/projects/portfolio-cena.jpg',
     url: '/john-cena',
-    category: 'Lifestyle'
-  },
-  {
-    img: '/assets/img/hittpr/projects/portfolio-hess.jpg',
-    url: '/megan-hess',
     category: 'Lifestyle'
   },
   {
@@ -27,11 +22,6 @@ const portfolio_data = [
   {
     img: '/assets/img/hittpr/projects/portfolio-factory.jpg',
     url: '/factory-fight',
-    category: 'Спорт'
-  },
-  {
-    img: '/assets/img/hittpr/projects/portfolio-coach.jpg',
-    url: '/sports-coach',
     category: 'Спорт'
   }
 ];

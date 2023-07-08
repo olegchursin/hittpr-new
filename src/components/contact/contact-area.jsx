@@ -18,7 +18,7 @@ const ContactArea = () => {
                 <div className="tp-contact-info mb-40">
                   <h4 className="contact-title">Telegram</h4>
                   <span>
-                    <a href="https://t.me/hitt_pr_nyc">hitt_pr_nyc</a>
+                    <a href="https://t.me/hitt_pr_nyc">hitt_pr</a>
                   </span>
                 </div>
               </div>

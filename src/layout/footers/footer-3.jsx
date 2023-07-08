@@ -23,9 +23,9 @@ const footer_contents = {
       padd: 'pl-20',
       title: 'Контакты',
       widget_lists: [
-        { label: 'pr@hittpr.com', href: 'mailto:pr@hittpr.com' },
+        { label: 'Email: pr@hittpr.com', href: 'mailto:pr@hittpr.com' },
         {
-          label: 'hitt_pr_nyc',
+          label: 'Telegram: hitt_pr',
           href: 'https://t.me/hitt_pr_nyc/'
         }
       ]
