@@ -47,7 +47,7 @@ const testimonial_contents = {
 const { btn_text, highlight_text, subtitle, testimonial_data, title } =
   testimonial_contents;
 
-const TestimonialArea = ({ home_6, style_2 = false }) => {
+const Testimonials = ({ home_6, style_2 = false }) => {
   const [sliderLoop, setSliderLoop] = React.useState(false);
   React.useEffect(() => setSliderLoop(true), []);
   return (
@@ -158,4 +158,4 @@ const TestimonialArea = ({ home_6, style_2 = false }) => {
   );
 };
 
-export default TestimonialArea;
+export default Testimonials;

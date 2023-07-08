@@ -29,7 +29,7 @@ const heroImg = (
   </div>
 );
 
-const HeroArea = () => {
+const Hero = () => {
   return (
     <div className="tp-hero-area tp-hero-space p-relative z-index-1 fix">
       <div className="tp-hero-shape">
@@ -82,4 +82,4 @@ const HeroArea = () => {
   );
 };
 
-export default HeroArea;
+export default Hero;
