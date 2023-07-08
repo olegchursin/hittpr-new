@@ -9,6 +9,7 @@ import IntroduceArea from './introduce-area';
 import ProjectInfoArea from './project-info-area';
 import Accordion from './accordion';
 import Testimonials from '../../common/testimonials';
+import LinkSection from './link-section';
 
 const PortfolioDetails = ({ case_item }) => {
   useEffect(() => {
@@ -17,14 +18,22 @@ const PortfolioDetails = ({ case_item }) => {
     }, 500);
   }, []);
 
-  const { title, subtitle, materials } = case_item;
+  const { title, subtitle, materials, renderMaterials, links } = case_item;
   return (
     <Wrapper>
       <Header />
       <Breadcrumb title={title ? title : 'Case Details'} renderCTA={false} />
       <CaseImageArea case_item={case_item} />
       <ProjectInfoArea item={case_item} />
-      <Accordion items={materials} title={subtitle} />
+
+      {renderMaterials ? (
+        <Accordion items={materials} title={subtitle} />
+      ) : null}
+
+      {links && links.length ? (
+        <LinkSection items={links} title={subtitle} />
+      ) : null}
+
       {false ? (
         <>
           <IntroduceArea />
