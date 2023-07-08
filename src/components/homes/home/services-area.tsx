@@ -10,7 +10,7 @@ const services_contents = {
   btn_text: 'Подробнее'
 };
 
-const { shape_img, title, subtitle, btn_text } = services_contents;
+const { title, subtitle, btn_text } = services_contents;
 const services_items = [
   {
     id: 1,

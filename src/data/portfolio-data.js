@@ -8,7 +8,7 @@ const portfolio_data = [
     sm_text: 'At Collax we specialize in designing, building, shipping...',
     category: 'Website Design',
     big: true,
-    home: true,
+    home: true
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const portfolio_data = [
     sm_text: 'At Collax we specialize in designing, building, shipping...',
     category: 'Website Design',
     sm: true,
-    home: true,
+    home: true
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const portfolio_data = [
     sm_text: 'At Collax we specialize in designing, building, shipping...',
     category: 'Website Design',
     sm: true,
-    home: true,
+    home: true
   },
   // Branding Design
   {
@@ -36,7 +36,7 @@ const portfolio_data = [
     sm_text: 'At Collax we specialize in designing, building, shipping...',
     category: 'Branding Design',
     big: true,
-    home: true,
+    home: true
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const portfolio_data = [
     sm_text: 'At Collax we specialize in designing, building, shipping...',
     category: 'Branding Design',
     sm: true,
-    home: true,
+    home: true
   },
   {
     id: 6,
@@ -54,7 +54,7 @@ const portfolio_data = [
     sm_text: 'At Collax we specialize in designing, building, shipping...',
     category: 'Branding Design',
     sm: true,
-    home: true,
+    home: true
   },
   // App Design
   {
@@ -64,7 +64,7 @@ const portfolio_data = [
     sm_text: 'At Collax we specialize in designing, building, shipping...',
     category: 'App Design',
     big: true,
-    home: true,
+    home: true
   },
   {
     id: 8,
@@ -73,7 +73,7 @@ const portfolio_data = [
     sm_text: 'At Collax we specialize in designing, building, shipping...',
     category: 'App Design',
     sm: true,
-    home: true,
+    home: true
   },
   {
     id: 9,
@@ -82,7 +82,7 @@ const portfolio_data = [
     sm_text: 'At Collax we specialize in designing, building, shipping...',
     category: 'App Design',
     sm: true,
-    home: true,
+    home: true
   },
 
   // home three page
@@ -90,29 +90,25 @@ const portfolio_data = [
     id: 10,
     img: '/assets/img/project/project-9.jpg',
     title: 'Book art design',
-    category: 'Branding',
-    home_3: true,
+    category: 'Branding'
   },
   {
     id: 11,
     img: '/assets/img/project/project-10.jpg',
     title: 'App design',
-    category: 'Marketing',
-    home_3: true,
+    category: 'Marketing'
   },
   {
     id: 12,
     img: '/assets/img/project/project-6.6.jpg',
     title: 'UI UX design',
-    category: 'Web Design',
-    home_3: true,
+    category: 'Web Design'
   },
   {
     id: 13,
     img: '/assets/img/project/project-6.5.jpg',
     title: 'Logo design',
-    category: 'Development',
-    home_3: true,
+    category: 'Development'
   },
   // home four
   // category website
@@ -123,8 +119,7 @@ const portfolio_data = [
     subtitle: 'Branding',
     category: 'Website',
     big: true,
-    home_4: true,
-    portfolio_masonry: true,
+    portfolio_masonry: true
   },
   {
     id: 15,
@@ -132,8 +127,7 @@ const portfolio_data = [
     title: 'Graphic Design',
     subtitle: 'Design',
     category: 'Website',
-    home_4: true,
-    portfolio_masonry: true,
+    portfolio_masonry: true
   },
   {
     id: 16,
@@ -141,8 +135,7 @@ const portfolio_data = [
     title: '3d Digital Art',
     subtitle: 'Design',
     category: 'Website',
-    home_4: true,
-    portfolio_masonry: true,
+    portfolio_masonry: true
   },
   {
     id: 17,
@@ -151,7 +144,7 @@ const portfolio_data = [
     subtitle: 'Design',
     category: 'Website',
     big: true,
-    portfolio_masonry: true,
+    portfolio_masonry: true
   },
   {
     id: 18,
@@ -159,8 +152,7 @@ const portfolio_data = [
     title: 'Mobile App Design',
     subtitle: 'Design',
     category: 'Website',
-    home_4: true,
-    portfolio_masonry: true,
+    portfolio_masonry: true
   },
   // add or portfolio masonry items
   {
@@ -169,7 +161,7 @@ const portfolio_data = [
     title: 'Architecture Design',
     subtitle: 'Design',
     category: 'Website',
-    portfolio_masonry: true,
+    portfolio_masonry: true
   },
   {
     id: 20,
@@ -177,8 +169,7 @@ const portfolio_data = [
     title: 'Web Design',
     subtitle: 'Design',
     category: 'Website',
-    home_4: true,
-    portfolio_masonry: true,
+    portfolio_masonry: true
   },
   // category landing page
   {
@@ -188,8 +179,7 @@ const portfolio_data = [
     subtitle: 'Branding',
     category: 'Landing Page',
     big: true,
-    home_4: true,
-    portfolio_masonry: true,
+    portfolio_masonry: true
   },
   {
     id: 22,
@@ -197,7 +187,7 @@ const portfolio_data = [
     title: 'Web Design',
     subtitle: 'Design',
     category: 'Landing Page',
-    portfolio_masonry: true,
+    portfolio_masonry: true
   },
   {
     id: 23,
@@ -205,7 +195,7 @@ const portfolio_data = [
     title: '3d Digital Art',
     subtitle: 'Design',
     category: 'Landing Page',
-    portfolio_masonry: true,
+    portfolio_masonry: true
   },
   {
     id: 24,
@@ -214,7 +204,7 @@ const portfolio_data = [
     subtitle: 'Design',
     category: 'Landing Page',
     big: true,
-    portfolio_masonry: true,
+    portfolio_masonry: true
   },
   // category ios App
   {
@@ -223,8 +213,7 @@ const portfolio_data = [
     title: 'Graphic Design',
     subtitle: 'Design',
     category: 'ios App',
-    home_4: true,
-    portfolio_masonry: true,
+    portfolio_masonry: true
   },
   {
     id: 26,
@@ -233,7 +222,7 @@ const portfolio_data = [
     subtitle: 'Design',
     category: 'ios App',
     big: true,
-    portfolio_masonry: true,
+    portfolio_masonry: true
   },
   {
     id: 27,
@@ -241,8 +230,7 @@ const portfolio_data = [
     title: 'Web Design',
     subtitle: 'Design',
     category: 'ios App',
-    home_4: true,
-    portfolio_masonry: true,
+    portfolio_masonry: true
   },
   {
     id: 28,
@@ -250,8 +238,7 @@ const portfolio_data = [
     title: '3d Digital Art',
     subtitle: 'Design',
     category: 'ios App',
-    home_4: true,
-    portfolio_masonry: true,
+    portfolio_masonry: true
   },
   // category Branding Design
   {
@@ -261,8 +248,7 @@ const portfolio_data = [
     subtitle: 'Branding',
     category: 'Branding Design',
     big: true,
-    home_4: true,
-    portfolio_masonry: true,
+    portfolio_masonry: true
   },
   {
     id: 30,
@@ -270,8 +256,7 @@ const portfolio_data = [
     title: 'Graphic Design',
     subtitle: 'Design',
     category: 'Branding Design',
-    home_4: true,
-    portfolio_masonry: true,
+    portfolio_masonry: true
   },
   {
     id: 31,
@@ -279,7 +264,7 @@ const portfolio_data = [
     title: 'Architecture Design',
     subtitle: 'Design',
     category: 'Branding Design',
-    portfolio_masonry: true,
+    portfolio_masonry: true
   },
   // portfolio page 2
   // category website
@@ -289,7 +274,7 @@ const portfolio_data = [
     title: 'Hosting Website',
     subtitle: 'Ui/Ux Design',
     category: 'Website',
-    portfolio_2: true,
+    portfolio_2: true
   },
   {
     id: 33,
@@ -297,7 +282,7 @@ const portfolio_data = [
     title: 'Graphic Design',
     subtitle: 'Web Design',
     category: 'Website',
-    portfolio_2: true,
+    portfolio_2: true
   },
   {
     id: 34,
@@ -305,7 +290,7 @@ const portfolio_data = [
     title: 'Book art design',
     subtitle: 'Logo Design',
     category: 'Website',
-    portfolio_2: true,
+    portfolio_2: true
   },
   {
     id: 35,
@@ -313,7 +298,7 @@ const portfolio_data = [
     title: 'Mobile App Design',
     subtitle: 'Branding Design',
     category: 'Website',
-    portfolio_2: true,
+    portfolio_2: true
   },
   {
     id: 36,
@@ -321,7 +306,7 @@ const portfolio_data = [
     title: 'Android App Development',
     subtitle: 'Development',
     category: 'Website',
-    portfolio_2: true,
+    portfolio_2: true
   },
   {
     id: 37,
@@ -329,7 +314,7 @@ const portfolio_data = [
     title: 'IOS App Development',
     subtitle: 'Development',
     category: 'Website',
-    portfolio_2: true,
+    portfolio_2: true
   },
   {
     id: 38,
@@ -337,7 +322,7 @@ const portfolio_data = [
     title: 'Backend Development',
     subtitle: 'Development',
     category: 'Website',
-    portfolio_2: true,
+    portfolio_2: true
   },
   {
     id: 39,
@@ -345,7 +330,7 @@ const portfolio_data = [
     title: 'UI Design',
     subtitle: 'Design',
     category: 'Website',
-    portfolio_2: true,
+    portfolio_2: true
   },
   // portfolio page 2
   // category landing page
@@ -355,7 +340,7 @@ const portfolio_data = [
     title: 'Book art design',
     subtitle: 'Logo Design',
     category: 'Landing Page',
-    portfolio_2: true,
+    portfolio_2: true
   },
   {
     id: 41,
@@ -363,7 +348,7 @@ const portfolio_data = [
     title: 'Android App Development',
     subtitle: 'Development',
     category: 'Landing Page',
-    portfolio_2: true,
+    portfolio_2: true
   },
   {
     id: 42,
@@ -371,7 +356,7 @@ const portfolio_data = [
     title: 'IOS App Development',
     subtitle: 'Development',
     category: 'Landing Page',
-    portfolio_2: true,
+    portfolio_2: true
   },
   {
     id: 43,
@@ -379,7 +364,7 @@ const portfolio_data = [
     title: 'Backend Development',
     subtitle: 'Development',
     category: 'Landing Page',
-    portfolio_2: true,
+    portfolio_2: true
   },
   {
     id: 44,
@@ -387,7 +372,7 @@ const portfolio_data = [
     title: 'UI Design',
     subtitle: 'Design',
     category: 'Landing Page',
-    portfolio_2: true,
+    portfolio_2: true
   },
   // portfolio page 2
   // category ios app
@@ -397,7 +382,7 @@ const portfolio_data = [
     title: 'Hosting Website',
     subtitle: 'Ui/Ux Design',
     category: 'ios App',
-    portfolio_2: true,
+    portfolio_2: true
   },
   {
     id: 46,
@@ -405,7 +390,7 @@ const portfolio_data = [
     title: 'Mobile App Design',
     subtitle: 'Branding Design',
     category: 'ios App',
-    portfolio_2: true,
+    portfolio_2: true
   },
   {
     id: 47,
@@ -413,7 +398,7 @@ const portfolio_data = [
     title: 'Backend Development',
     subtitle: 'Development',
     category: 'ios App',
-    portfolio_2: true,
+    portfolio_2: true
   },
   // portfolio page 2
   // category branding design
@@ -423,7 +408,7 @@ const portfolio_data = [
     title: 'Graphic Design',
     subtitle: 'Web Design',
     category: 'Branding Design',
-    portfolio_2: true,
+    portfolio_2: true
   },
   {
     id: 49,
@@ -431,7 +416,7 @@ const portfolio_data = [
     title: 'Book art design',
     subtitle: 'Logo Design',
     category: 'Branding Design',
-    portfolio_2: true,
+    portfolio_2: true
   },
   {
     id: 50,
@@ -439,36 +424,51 @@ const portfolio_data = [
     title: 'Android App Development',
     subtitle: 'Development',
     category: 'Branding Design',
-    portfolio_2: true,
+    portfolio_2: true
   },
   // service page recent product
   {
     id: 51,
     img: '/assets/img/service/service-9.1.jpg',
     title: 'Godaddy user flow solution',
-    subtitle:<>At Collax we specialize in designing, building, <br/> shipping and scaling beautifu</>,
-    duration:'.3s',
-    delay:'.5s',
-    service_p: true,
+    subtitle: (
+      <>
+        At Collax we specialize in designing, building, <br /> shipping and
+        scaling beautifu
+      </>
+    ),
+    duration: '.3s',
+    delay: '.5s',
+    service_p: true
   },
   {
     id: 52,
     img: '/assets/img/service/service-9.2.jpg',
     title: 'What is ui/ux design trend',
-    subtitle:<>At Collax we specialize in designing, building, <br/> shipping and scaling beautifu</>,
-    duration:'.5s',
-    delay:'.7s',
-    service_p: true,
+    subtitle: (
+      <>
+        At Collax we specialize in designing, building, <br /> shipping and
+        scaling beautifu
+      </>
+    ),
+    duration: '.5s',
+    delay: '.7s',
+    service_p: true
   },
   {
     id: 53,
     img: '/assets/img/service/service-9.3.jpg',
     title: 'Create you design system like',
-    subtitle:<>At Collax we specialize in designing, building, <br/> shipping and scaling beautifu</>,
-    duration:'.7s',
-    delay:'.9s',
-    service_p: true,
-  },
-]
+    subtitle: (
+      <>
+        At Collax we specialize in designing, building, <br /> shipping and
+        scaling beautifu
+      </>
+    ),
+    duration: '.7s',
+    delay: '.9s',
+    service_p: true
+  }
+];
 
 export default portfolio_data;

@@ -6,8 +6,8 @@ import Hero from './hero';
 import Materials from './materials';
 import ServicesArea from './services-area';
 import Services from './services';
-import Testimonials from './testimonials';
 import HotHitNewYork from './hot-hit-ny';
+import Testimonials from '../../common/testimonials';
 
 const Home = () => {
   useEffect(() => {

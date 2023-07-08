@@ -14,8 +14,7 @@ const hero_contents = {
   hero_img: '/assets/img/hero/hero-2.png'
 };
 
-const { title, text, btn_text, btn_text_2, social_links, hero_img } =
-  hero_contents;
+const { title, text, btn_text, btn_text_2, hero_img } = hero_contents;
 
 const heroImg = (
   <div className="col-xl-5 col-lg-5">
