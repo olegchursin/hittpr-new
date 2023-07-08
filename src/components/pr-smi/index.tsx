@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { FooterThree, Header, Wrapper } from '../../layout';
 import { animationCreate } from '../../utils/utils';
 import Breadcrumb from '../common/breadcrumb/breadcrumb';
-import Cta from '../common/cta/cta';
 import { prContent } from '../../data/pr-data';
 import LinkList from '../link-list';
+import Testimonials from '../common/testimonials';
 
 const PRSmi = () => {
   useEffect(() => {
@@ -29,7 +29,7 @@ const PRSmi = () => {
           );
         })}
       </div>
-      <Cta />
+      <Testimonials />
       <FooterThree />
     </Wrapper>
   );

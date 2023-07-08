@@ -106,7 +106,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
               </li>
               <li>
                 <i className="fas fa-star"></i>
-                <a href="https://t.me/hitt_pr_nyc">hitt_pr_nyc</a>
+                <a href="https://t.me/hitt_pr_nyc">hitt_pr</a>
               </li>
             </ul>
           </div>

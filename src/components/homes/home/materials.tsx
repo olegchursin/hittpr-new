@@ -4,7 +4,7 @@ import React from 'react';
 const portfolio_data = [
   {
     id: 1,
-    img: '/assets/img/hittpr/projects/patricia-3.jpg',
+    img: '/assets/img/hittpr/projects/patricia-sofa.webp',
     title: 'Патришия Филд',
     sm_text: 'Художник по костюмам, стилист, модный дизайнер',
     category: 'Lifestyle',
@@ -19,16 +19,6 @@ const portfolio_data = [
     sm_text: '5 СЕКРЕТОВ О ДЖОНЕ СИНЕ',
     category: 'Lifestyle',
     href: '/john-cena',
-    sm: true,
-    home: true
-  },
-  {
-    id: 3,
-    img: '/assets/img/hittpr/projects/megan-hess-2.jpg',
-    title: 'Меган Хесс',
-    sm_text: '“Завтрак” И Работа У Тиффани',
-    category: 'Lifestyle',
-    href: '/megan-hess',
     sm: true,
     home: true
   },
@@ -52,20 +42,10 @@ const portfolio_data = [
     href: '/factory-fight',
     sm: true,
     home: true
-  },
-  {
-    id: 6,
-    img: '/assets/img/hittpr/projects/coach-3.jpg',
-    title: 'Andre Rozier',
-    sm_text: 'ГЛАВНЫЙ ТРЕНЕР ПО БОКСУ',
-    category: 'Спорт',
-    href: '/sports-coach',
-    sm: true,
-    home: true
   }
 ];
 
-const ProjectArea = () => {
+const Materials = () => {
   const [category, setCategory] = React.useState('Lifestyle');
   const items = portfolio_data.filter(p => p.home);
   const [portfolioItems, setPortfolioItems] = React.useState(
@@ -175,4 +155,4 @@ const ProjectArea = () => {
   );
 };
 
-export default ProjectArea;
+export default Materials;

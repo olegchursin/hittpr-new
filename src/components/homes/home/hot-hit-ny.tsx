@@ -8,7 +8,7 @@ const newsLatter_contents = {
 };
 const { btn_text, img, subtitle, title } = newsLatter_contents;
 
-const NewsLetter = () => {
+const HotHitNewYork = () => {
   return (
     <>
       <div className="tp-news-area black-bg fix">
@@ -59,4 +59,4 @@ const NewsLetter = () => {
   );
 };
 
-export default NewsLetter;
+export default HotHitNewYork;

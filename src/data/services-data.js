@@ -62,7 +62,6 @@ const services_data = [
     title: 'Mobile Design',
     text_1:
       'At Collax we specialize in designing, building, shipping and scaling beautiful, usable products with blazing-fast',
-    home_2: true,
     service_p_3: true
   },
   {
@@ -74,7 +73,6 @@ const services_data = [
     title: 'Web Development',
     text_1:
       'At Collax we specialize in designing, building, shipping and scaling beautiful, usable products with blazing-fast',
-    home_2: true,
     service_p_3: true
   },
   {
@@ -86,7 +84,6 @@ const services_data = [
     title: 'UI UX Design',
     text_1:
       'At Collax we specialize in designing, building, shipping and scaling beautiful, usable products with blazing-fast',
-    home_2: true,
     service_p_3: true
   },
   // home three
@@ -99,7 +96,6 @@ const services_data = [
     color: 'service-color-1',
     text_1:
       'At Collax we specialize in designing, building, shipping and scaling beautiful, usable products with blazing-fast',
-    home_3: true,
     service_p_4: true
   },
   {
@@ -111,7 +107,6 @@ const services_data = [
     color: 'service-color-2',
     text_1:
       'At Collax we specialize in designing, building, shipping and scaling beautiful, usable products with blazing-fast',
-    home_3: true,
     service_p_4: true
   },
   {
@@ -123,7 +118,6 @@ const services_data = [
     color: 'service-color-3',
     text_1:
       'At Collax we specialize in designing, building, shipping and scaling beautiful, usable products with blazing-fast',
-    home_3: true,
     service_p_4: true
   },
   // home four

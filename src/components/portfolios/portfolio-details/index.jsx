@@ -2,13 +2,13 @@ import React, { useEffect } from 'react';
 import { FooterThree, Header, Wrapper } from '../../../layout';
 import { animationCreate } from '../../../utils/utils';
 import Breadcrumb from '../../common/breadcrumb/breadcrumb';
-import Cta from '../../common/cta/cta';
 import CaseImageArea from './case-image-area';
 import CaseImageAreaTwo from './case-image-area-2';
 import IntroduceTwo from './introduce-2';
 import IntroduceArea from './introduce-area';
 import ProjectInfoArea from './project-info-area';
 import Accordion from './accordion';
+import Testimonials from '../../common/testimonials';
 
 const PortfolioDetails = ({ case_item }) => {
   useEffect(() => {
@@ -32,7 +32,7 @@ const PortfolioDetails = ({ case_item }) => {
           <IntroduceTwo />
         </>
       ) : null}
-      <Cta />
+      <Testimonials />
       <FooterThree />
     </Wrapper>
   );

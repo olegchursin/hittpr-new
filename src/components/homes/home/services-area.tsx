@@ -6,11 +6,11 @@ import SingleServiceTwo from '../../common/single-service-2';
 const services_contents = {
   shape_img: '/assets/img/service/service-shape.png',
   subtitle: 'PR',
-  title: 'Маркетинг и PR',
+  title: 'PR',
   btn_text: 'Подробнее'
 };
 
-const { shape_img, title, subtitle, btn_text } = services_contents;
+const { title, subtitle, btn_text } = services_contents;
 const services_items = [
   {
     id: 1,
@@ -40,7 +40,7 @@ const services_items = [
     delay: '1.2s',
     img: '/assets/img/service/service-3.png',
     title: 'Fashion',
-    text_1: 'Как работает маркетинг PR в Fashion индустрии',
+    text_1: 'Как работает PR в Fashion индустрии',
     href: '/pr/fashion',
     home: true,
     service_p_2: true

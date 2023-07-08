@@ -14,8 +14,7 @@ const hero_contents = {
   hero_img: '/assets/img/hero/hero-2.png'
 };
 
-const { title, text, btn_text, btn_text_2, social_links, hero_img } =
-  hero_contents;
+const { title, text, btn_text, btn_text_2, hero_img } = hero_contents;
 
 const heroImg = (
   <div className="col-xl-5 col-lg-5">
@@ -29,7 +28,7 @@ const heroImg = (
   </div>
 );
 
-const HeroArea = () => {
+const Hero = () => {
   return (
     <div className="tp-hero-area tp-hero-space p-relative z-index-1 fix">
       <div className="tp-hero-shape">
@@ -82,4 +81,4 @@ const HeroArea = () => {
   );
 };
 
-export default HeroArea;
+export default Hero;

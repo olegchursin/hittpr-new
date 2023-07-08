@@ -2,12 +2,12 @@ import React, { useEffect } from 'react';
 import { FooterThree, Header, Wrapper } from '../../../layout';
 import { animationCreate } from '../../../utils/utils';
 import BrandArea from './brand-area';
-import HeroArea from './hero-area';
-import ProjectArea from './project-area';
+import Hero from './hero';
+import Materials from './materials';
 import ServicesArea from './services-area';
 import Services from './services';
-import TestimonialArea from './testimonial-area';
-import NewsLetter from './newsletter';
+import HotHitNewYork from './hot-hit-ny';
+import Testimonials from '../../common/testimonials';
 
 const Home = () => {
   useEffect(() => {
@@ -18,13 +18,13 @@ const Home = () => {
   return (
     <Wrapper>
       <Header />
-      <HeroArea />
+      <Hero />
+      <HotHitNewYork />
+      <Materials />
       <Services />
       <BrandArea />
       <ServicesArea />
-      <NewsLetter />
-      <ProjectArea />
-      <TestimonialArea />
+      <Testimonials />
       <FooterThree />
     </Wrapper>
   );

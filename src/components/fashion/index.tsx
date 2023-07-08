@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import { FooterThree, Header, Wrapper } from '../../layout';
 import { animationCreate } from '../../utils/utils';
 import Breadcrumb from '../common/breadcrumb/breadcrumb';
-import Cta from '../common/cta/cta';
 import ServiceArea from '../services/pr/service-area';
 import { PrCategory, prContent } from '../../data/pr-data';
 import LinkList from '../link-list';
+import Testimonials from '../common/testimonials';
 
 const content = Object.values(prContent).filter(
   content => content.category === PrCategory.FASHION
@@ -35,7 +35,7 @@ const Fashion = () => {
         })}
       </div>
       <ServiceArea />
-      <Cta />
+      <Testimonials />
       <FooterThree />
     </Wrapper>
   );
