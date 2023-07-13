@@ -48,6 +48,7 @@ const case_item = {
   links: [
     'https://www.glamour.ru/fashion-news/ya-hochu-priehat-v-rossiyu-i-potusovatsya-s-vami-hudozhnik-po-kostyumam-i-stilist-patriciya-fild',
     'https://www.kiz.ru/content/stil-zhizni/svobodnoe-vremya/patrishiya-fild-moy-garderob-eto-edinyy-orkestr/',
+    'https://drive.google.com/file/d/15hf_xnVLxqkbH8sSmISKNhXPQQm3xqEN/view',
     'https://hothitnewyork.com/patricia-field/',
     'https://hothitnewyork.com/pat-in-the-city/',
     'https://youtu.be/Jd9LVVhne5A',
