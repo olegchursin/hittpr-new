@@ -11,6 +11,7 @@ const case_item = {
   title: 'John Cena',
   subtitle: 'Материалы',
   category: { label: 'Lifestyle', href: '/pr/fashion' },
+  renderMaterials: false,
   materials: [
     {
       id: 'two',
@@ -25,6 +26,10 @@ const case_item = {
       desc: 'Нам удалось пообщаться на одном мероприятии и я могу сказать, что он оставляет самые теплые впечатления: культурный, галантный, добрый и с огромной мотивацией, несмотря на успехи в разных сферах, которые достаются тяжелым трудом. Режим – его все.',
       url: 'https://hothitnewyork.com/john_cena/'
     }
+  ],
+  links: [
+    'https://hothitnewyork.com/5-%D1%81%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D0%BE%D0%B2-%D0%BE-%D0%B4%D0%B6%D0%BE%D0%BD%D0%B5-%D1%81%D0%B8%D0%BD%D0%B5-%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D1%83-%D0%BD%D0%B5%D0%B3%D0%BE-%D1%82%D1%80/',
+    'https://hothitnewyork.com/john_cena/'
   ],
   description:
     'Джон Си́на — американский рестлер, выступающий в федерации WWE, автор и исполнитель песен в стиле хип-хоп и рэп, киноактёр.'
