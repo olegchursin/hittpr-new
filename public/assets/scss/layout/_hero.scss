@@ -755,8 +755,9 @@
     & button{
         background-color: var(--tp-theme-primary);
         &:hover{
-            background-color: var(--tp-common-blue);
+            background-color: var(--tp-common-black);
             color: var(--tp-common-white);
+            border: 1px solid var(--tp-common-white);
             transition: .3s;
         }
     }

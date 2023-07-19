@@ -10,6 +10,7 @@ import ProjectInfoArea from './project-info-area';
 import Accordion from './accordion';
 import Testimonials from '../../common/testimonials';
 import LinkSection from './link-section';
+import VideoList from '../../video-list';
 
 const PortfolioDetails = ({ case_item }) => {
   useEffect(() => {
@@ -18,7 +19,28 @@ const PortfolioDetails = ({ case_item }) => {
     }, 500);
   }, []);
 
-  const { title, subtitle, materials, renderMaterials, links } = case_item;
+  const {
+    title,
+    subtitle,
+    materials,
+    renderMaterials,
+    links,
+    videos,
+    renderVideos
+  } = case_item;
+
+  const videoSection = (
+    <div className="sd-accordio-area black-bg pt-80 pb-60">
+      <div className="container">
+        <div>
+          <div className="col-xl-12">
+            <VideoList videos={videos} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <Wrapper>
       <Header />
@@ -30,8 +52,15 @@ const PortfolioDetails = ({ case_item }) => {
         <Accordion items={materials} title={subtitle} />
       ) : null}
 
+      {videos && videos.length ? videoSection : null}
+
       {links && links.length ? (
-        <LinkSection items={links} title={subtitle} />
+        <LinkSection
+          items={links}
+          title={subtitle}
+          videos={videos}
+          renderVideos={renderVideos}
+        />
       ) : null}
 
       {false ? (

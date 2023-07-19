@@ -11,8 +11,14 @@ const case_item = {
   title: 'Сергей Ковалев',
   subtitle: 'Материалы',
   category: { label: 'Спорт', href: '/pr/sport' },
+  renderVideos: true,
+  videos: [
+    {
+      title: 'Документальный фильм “KRUSHER”',
+      videoID: 'og69ZQwmal4'
+    }
+  ],
   links: [
-    'https://www.youtube.com/watch?v=og69ZQwmal4',
     'https://hothitnewyork.com/kovalev-yarde/',
     'https://hothitnewyork.com/kovalev-about-trash-talk/',
     'https://www.championat.com/boxing/news-3803617-kovaljov-mysli-o-boe-s-alvaresom-hodjat-u-promouterov-dalshe-poka-ne-zashlo.html',
@@ -22,10 +28,7 @@ const case_item = {
     'https://www.sports.kz/news/ne-otstupaem-ot-plana-kovalev-sdelal-zayavlenie-o-boe-s-kanelo/',
     'https://russian.rt.com/sport/news/652041-kovalyov-fyuri-ruis-ozhirenie',
     'https://sport24.ru/news/mma/2019-07-22-kovalv-u-fyuri-i-ruisa-ozhireniye-kakoye-to-no-oni-dokazali-chto-i-tak-mozhno-stat-chempionom',
-    'https://www.sports.kz/news/ne-otstupaem-ot-plana-kovalev-sdelal-zayavlenie-o-boe-s-kanelo/',
-    'https://prosports.kz/news/404495',
     'https://vringe.com/news/125873-sergey-kovalyev-gotovimsya-provodit-yarda-obratno-domoy-s-pustymi-rukami.htm',
-    'https://www.championat.com/boxing/news-3803617-kovaljov-mysli-o-boe-s-alvaresom-hodjat-u-promouterov-dalshe-poka-ne-zashlo.html',
     'https://www.sports.kz/news/oligarh-elki-palki-kovalev-udivil-svoim-otnosheniem-k-kanelo',
     'https://sport24.ru/news/mma/2019-10-08-kovalev-kanelo---oligarkh-babok-stolko-chto-ya-voobshche-ne-ponimayu-chto-im-seychas-dvizhet',
     'https://fightnews.info/sergey-kovalev-associacii-s-kanelo-oligarh-elki-palki',
