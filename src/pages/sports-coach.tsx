@@ -10,7 +10,7 @@ const case_item = {
   img: '/assets/img/hittpr/projects/coach-2.jpg',
   title: 'Andre Rozier',
   subtitle: 'Материалы',
-  category: { label: 'Спорт', href: '/pr/sport' },
+  category: { label: 'Sport', href: '/pr/sport' },
   materials: [
     {
       id: '1',

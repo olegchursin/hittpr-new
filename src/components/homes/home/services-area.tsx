@@ -18,7 +18,7 @@ const services_items = [
     delay: '.8s',
     img: '/assets/img/service/service-1.png',
     title: 'Личный Бренд',
-    text_1: 'Как позиционировать себя в медиа-пространстве',
+    text_1: 'Как позиционировать себя в медиапространстве',
     href: '/pr/personal-brand',
     home: true,
     service_p_2: true

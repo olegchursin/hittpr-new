@@ -52,8 +52,8 @@ const case_item = {
     'https://hothitnewyork.com/patricia-field/',
     'https://hothitnewyork.com/pat-in-the-city/',
     'https://youtu.be/Jd9LVVhne5A',
-    'https://trello.com/1/cards/642efe60cac441bacae41daa/attachments/645375cdb3156a49eb0d4a18/download/PATRICIA_FIELD__THE_FASHIONABLE_TOPIC_OF_FEMINISM_DOES_NOT_TAKE_UP_MY_HEAD_SPACE_(Rabotnitsa_Magazine).docx',
-    'https://trello.com/1/cards/642efe60cac441bacae41daa/attachments/645375ce4cd2d66bc953120f/download/Beuty_and_Health_-_Patricia_Field_article_translated.docx'
+    'https://docs.google.com/document/d/1V33Nsdj5NrwFZ-kE9qaJAQ6nXA5aysoJ/edit?usp=sharing&ouid=108433140789937449811&rtpof=true&sd=true',
+    'https://docs.google.com/document/d/1lAqei2AUsTvD2mqyATZ04RZHf8fuA9hB/edit?usp=sharing&ouid=108433140789937449811&rtpof=true&sd=true'
   ],
   description:
     ' Патришия Филд (Patricia Field)  – американский художник по костюмам, стилист, модный дизайнер, лауреат двух премий “Эмми” и номинант на “Оскар”. Широкая публика ассоциирует ее с такими сериалами, как «Секс в большом городе” (Sex and the city), «Эмили в Париже» (Emily in Paris) и кинокартиной “Дьявол носит Prada” (The Devil Wears Prada).'

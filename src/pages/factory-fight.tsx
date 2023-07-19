@@ -10,7 +10,8 @@ const case_item = {
   img: '/assets/img/hittpr/projects/factory.jpg',
   title: 'Factory Fight',
   subtitle: 'Материалы',
-  category: { label: 'Спорт', href: '/pr/sport' },
+  category: { label: 'Sport', href: '/pr/sport' },
+  renderMaterials: true,
   materials: [
     {
       id: 'two',

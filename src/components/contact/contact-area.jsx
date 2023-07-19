@@ -6,7 +6,7 @@ const ContactArea = () => {
       <div className="tp-contact-area pt-135 pb-130">
         <div className="container">
           <div className="row">
-            <h4 className="tp-contact-big-title">Мы открыты для общения </h4>
+            {/* <h4 className="tp-contact-big-title">Мы открыты для общения </h4> */}
             <div className="col-xl-6 col-lg-6 ">
               <div className="tp-contct-wrapper contact-space-40">
                 <div className="tp-contact-info mb-40">

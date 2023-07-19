@@ -17,12 +17,17 @@ const portfolio_data = [
   {
     img: '/assets/img/hittpr/projects/portfolio-kovalev.jpg',
     url: '/kovalev',
-    category: 'Спорт'
+    category: 'Sport'
   },
   {
     img: '/assets/img/hittpr/projects/portfolio-factory.jpg',
     url: '/factory-fight',
-    category: 'Спорт'
+    category: 'Sport'
+  },
+  {
+    img: '/assets/img/hittpr/projects/portfolio-sports.jpg',
+    url: '/sport-marina-hitt',
+    category: 'Sport'
   }
 ];
 const imagePerRow = 4;
