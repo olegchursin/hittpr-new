@@ -10,10 +10,10 @@ const LinkSection = ({ items, title }) => {
         <div className="container">
           <div className="row">
             <div className="col-xl-7">
-              <h3 className="tp-title-sm mb-90">{listTitle}</h3>
+              <h3 className="tp-title-sm mb-40">{listTitle}</h3>
             </div>
           </div>
-          <div className="row">
+          <div>
             <div className="col-xl-12">
               <LinkList links={items} />
             </div>
