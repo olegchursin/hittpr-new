@@ -10,7 +10,7 @@ const case_item = {
   img: '/assets/img/hittpr/projects/kovalev-2.jpg',
   title: 'Сергей Ковалев',
   subtitle: 'Материалы',
-  category: { label: 'Sport', href: '/pr/sport' },
+  category: { label: 'Sports', href: '/pr/sport' },
   renderVideos: true,
   videos: [
     {

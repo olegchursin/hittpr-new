@@ -10,7 +10,7 @@ const case_item = {
   img: '/assets/img/hittpr/projects/sports.jpg',
   title: 'Спорт с Мариной Хитт',
   subtitle: 'Материалы',
-  category: { label: 'Sport', href: '/pr/sport' },
+  category: { label: 'Sports', href: '/pr/sport' },
   videos: [{ title: 'Спорт с Мариной Хитт', videoID: 'luytN6oQcxw' }],
   renderMaterials: false,
   materials: [],
