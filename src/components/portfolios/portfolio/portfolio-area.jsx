@@ -17,17 +17,22 @@ const portfolio_data = [
   {
     img: '/assets/img/hittpr/projects/portfolio-kovalev.jpg',
     url: '/kovalev',
-    category: 'Sport'
+    category: 'Sports'
   },
   {
     img: '/assets/img/hittpr/projects/portfolio-factory.jpg',
     url: '/factory-fight',
-    category: 'Sport'
+    category: 'Sports'
   },
   {
     img: '/assets/img/hittpr/projects/portfolio-sports.jpg',
     url: '/sport-marina-hitt',
-    category: 'Sport'
+    category: 'Sports'
+  },
+  {
+    img: '/assets/img/hittpr/projects/dental-clinic.jpg',
+    url: '/dental-clinic',
+    category: 'Services'
   }
 ];
 const imagePerRow = 4;
