@@ -33,6 +33,11 @@ const portfolio_data = [
     img: '/assets/img/hittpr/projects/dental-clinic.jpg',
     url: '/dental-clinic',
     category: 'Services'
+  },
+  {
+    img: '/assets/img/hittpr/projects/guides.jpg',
+    url: '/guides-interpreters',
+    category: 'Services'
   }
 ];
 const imagePerRow = 4;
