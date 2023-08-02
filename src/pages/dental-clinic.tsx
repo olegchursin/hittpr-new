@@ -1,7 +1,5 @@
 import React from 'react';
-
 import PortfolioDetailsMain from '../components/portfolios/portfolio-details';
-
 import { Wrapper } from '../layout';
 import SEO from '../components/seo';
 
