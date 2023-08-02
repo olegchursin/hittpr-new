@@ -11,7 +11,19 @@ const case_item = {
   title: 'Dental Clinic',
   subtitle: 'Материалы',
   category: { label: 'Services', href: '/pr/services' },
-  renderMaterials: true,
+  links: [
+    'https://drive.google.com/file/d/1aFJ1D9xJk_7nmXfXVzj6kleoCmbuHIX2/view?usp=sharing',
+    'https://drive.google.com/file/d/1i_MuoGF_5jmajFdaeSvMsv8syq-Unf3Z/view?usp=sharing',
+    'https://drive.google.com/file/d/1S095fJ5ZotYQ-8ialAvgmg5tUa5pnAt-/view?usp=sharing',
+    'https://docs.google.com/document/d/1-UlsWX4gEVNNwfgkdTMlBxZecdcpvNnN/edit?usp=sharing&ouid=108433140789937449811&rtpof=true&sd=true',
+    'https://docs.google.com/document/d/1MEbZ9jiZvNbgNrLkWcX7LMOBozb8MFNO/edit?usp=sharing&ouid=108433140789937449811&rtpof=true&sd=true',
+    'http://lofficiel.kz/blog/2016/08/18/zvezdnyj-stomatolog/',
+    'https://lisa.ru/zvezdnyy-stomatolog-rasskazala-o-svo/'
+  ],
+  imgs: [
+    'https://drive.google.com/file/d/1o6JEjJ8E31pyLV14Xyh2QlrKqWLTJfT-/view?usp=sharing'
+  ],
+  renderMaterials: false,
   materials: [
     {
       id: 'dental-clinic',
