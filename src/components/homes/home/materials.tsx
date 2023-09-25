@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react';
+import { useState } from 'react';
 
 const portfolio_data = [
   {
@@ -22,7 +22,6 @@ const portfolio_data = [
     sm: true,
     home: true
   },
-  // Личный Бренд
   {
     id: 4,
     img: '/assets/img/hittpr/projects/kovalev.jpg',
@@ -42,13 +41,33 @@ const portfolio_data = [
     href: '/factory-fight',
     sm: true,
     home: true
+  },
+  {
+    id: 6,
+    img: '/assets/img/hittpr/projects/guides_sm.jpg',
+    title: 'ГИДЫ, переводчики, преподаватели',
+    sm_text: 'ГИДЫ, переводчики, преподаватели',
+    category: 'Services',
+    href: '/guides-interpreters',
+    big: true,
+    home: true
+  },
+  {
+    id: 7,
+    img: '/assets/img/hittpr/projects/dental_clinic_sm.jpg',
+    title: 'Dental Clinic',
+    sm_text: 'Dental Clinic',
+    category: 'Services',
+    href: '/dental-clinic',
+    sm: true,
+    home: true
   }
 ];
 
 const Materials = () => {
-  const [category, setCategory] = React.useState('Lifestyle');
+  const [category, setCategory] = useState('Lifestyle');
   const items = portfolio_data.filter(p => p.home);
-  const [portfolioItems, setPortfolioItems] = React.useState(
+  const [portfolioItems, setPortfolioItems] = useState(
     items.filter(i => i.category === category)
   );
   const categories = [...new Set(items.map(p => p.category))];

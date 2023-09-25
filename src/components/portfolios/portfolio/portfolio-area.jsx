@@ -6,37 +6,62 @@ import { useRouter } from 'next/router';
 const portfolio_data = [
   {
     img: '/assets/img/hittpr/projects/patricia-sofa.webp',
+    label: 'Patricia Field',
     url: '/patricia',
     category: 'Lifestyle'
   },
   {
     img: '/assets/img/hittpr/projects/portfolio-cena.jpg',
+    label: 'John Cena',
     url: '/john-cena',
     category: 'Lifestyle'
   },
   {
     img: '/assets/img/hittpr/projects/portfolio-kovalev.jpg',
+    label: 'Сергей Ковалев',
     url: '/kovalev',
     category: 'Sports'
   },
   {
     img: '/assets/img/hittpr/projects/portfolio-factory.jpg',
+    label: 'Factory Fight',
     url: '/factory-fight',
     category: 'Sports'
   },
   {
     img: '/assets/img/hittpr/projects/portfolio-sports.jpg',
+    label: 'Спорт с Мариной Хитт',
     url: '/sport-marina-hitt',
     category: 'Sports'
   },
   {
     img: '/assets/img/hittpr/projects/dental-clinic.jpg',
+    label: 'Dental Clinic',
     url: '/dental-clinic',
     category: 'Services'
   },
   {
     img: '/assets/img/hittpr/projects/guides.jpg',
+    label: 'ГИДЫ, переводчики, преподаватели',
     url: '/guides-interpreters',
+    category: 'Services'
+  },
+  {
+    img: '/assets/img/hittpr/projects/coaches.jpg',
+    label: 'Коучи, финансовые эксперты',
+    url: '/coaches',
+    category: 'Services'
+  },
+  {
+    img: '/assets/img/hittpr/projects/doctors.jpg',
+    label: 'Врачи',
+    url: '/doctors',
+    category: 'Services'
+  },
+  {
+    img: '/assets/img/hittpr/projects/psychologists-2.jpg',
+    label: 'Психологи',
+    url: '/psychologists',
     category: 'Services'
   }
 ];
@@ -105,23 +130,26 @@ const PortfolioArea = () => {
             </div>
           </div>
           <div className="row grid gx-0 port-space">
-            {items?.slice(0, next)?.map((item, i) => (
-              <div key={i} className="col-xl-6 col-lg-6 col-md-6">
-                <div className="bp-project-item p-relative">
-                  <div className="bp-project-img w-img fix">
-                    <img src={item.img} alt="" />
-                  </div>
-                  <div
-                    className="bp-project-item-link"
-                    onClick={() => handleNavigation(item.url)}
-                  >
-                    <span style={{ cursor: 'pointer' }}>
-                      <PopupArrow />
-                    </span>
+            {items?.slice(0, next)?.map((item, i) => {
+              return (
+                <div key={i} className="col-xl-6 col-lg-6 col-md-6">
+                  <div className="bp-project-item p-relative">
+                    <div className="bp-project-img w-img fix">
+                      <img src={item.img} alt={item.label} />
+                      <div className="label">{item.label}</div>
+                    </div>
+                    <div
+                      className="bp-project-item-link"
+                      onClick={() => handleNavigation(item.url)}
+                    >
+                      <span style={{ cursor: 'pointer' }}>
+                        <PopupArrow />
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
           {next < items.length && (
             <div className="row g-0">

@@ -11,6 +11,7 @@ import Accordion from './accordion';
 import Testimonials from '../../common/testimonials';
 import LinkSection from './link-section';
 import VideoList from '../../video-list';
+import PdfLink from '../../pdf-link';
 
 const PortfolioDetails = ({ case_item }) => {
   useEffect(() => {
@@ -25,8 +26,9 @@ const PortfolioDetails = ({ case_item }) => {
     materials,
     renderMaterials,
     links,
-    videos,
-    renderVideos
+    sectionedLinks,
+    pdfs,
+    videos
   } = case_item;
 
   const videoSection = (
@@ -54,12 +56,12 @@ const PortfolioDetails = ({ case_item }) => {
 
       {videos && videos.length ? videoSection : null}
 
-      {links && links.length ? (
+      {links || sectionedLinks ? (
         <LinkSection
-          items={links}
+          links={links}
+          sectionedLinks={sectionedLinks}
+          pdfs={pdfs}
           title={subtitle}
-          videos={videos}
-          renderVideos={renderVideos}
         />
       ) : null}
 

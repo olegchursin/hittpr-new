@@ -15,8 +15,13 @@ const case_item = {
     'https://hothitnewyork.com/dmitri-petrov/',
     'https://hothitnewyork.com/languages-and-psychology/',
     'https://www.kiz.ru/content/stil-zhizni/svobodnoe-vremya/kak-nauchitsya-legko-i-bez-stressa-govorit-na-italyanskom/',
-    'https://www.forumdaily.com/nyguide/?fbclid=IwAR1VuvrjsApf5cKl8SNDDYz2u4piv0M_creskIQvsy-QNLRnCE0id70OrK0',
-    'https://drive.google.com/file/d/1UtJKzkVMysMckZ_iiJmucoSnYPQLbtGe/view?usp=sharing'
+    'https://www.forumdaily.com/nyguide/?fbclid=IwAR1VuvrjsApf5cKl8SNDDYz2u4piv0M_creskIQvsy-QNLRnCE0id70OrK0'
+  ],
+  pdfs: [
+    {
+      title: '10 лайфхаков для желяющих посетить Италию',
+      url: 'https://drive.google.com/file/d/1UtJKzkVMysMckZ_iiJmucoSnYPQLbtGe/view?usp=sharing'
+    }
   ],
   renderMaterials: false,
   materials: [],

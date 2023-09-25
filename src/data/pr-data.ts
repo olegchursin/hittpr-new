@@ -68,16 +68,34 @@ export const prContent: PrContent = {
       'https://glavred.info/sport/441512-bokser-ivan-golub-my-nastraivaemsya-na-pobedu-ne-rassmatrivaem-drugie-varianty.html'
     ]
   },
+  fashion: {
+    title: 'Fashion',
+    category: PrCategory.FASHION,
+    pdfs: [
+      {
+        title: 'Патришия Филд',
+        subtitle: 'Модная тема феминизма не живет в моей голове',
+        url: 'https://drive.google.com/file/d/15hf_xnVLxqkbH8sSmISKNhXPQQm3xqEN/view?usp=sharing_eil_m&ts=638d79ae'
+      }
+    ],
+    links: [
+      'https://www.glamour.ru/fashion-news/ya-hochu-priehat-v-rossiyu-i-potusovatsya-s-vami-hudozhnik-po-kostyumam-i-stilist-patriciya-fild',
+      'https://hothitnewyork.com/patricia-field/',
+      'https://hothitnewyork.com/megan-hess/',
+      'https://hothitnewyork.com/sjp/  ',
+      'https://drive.google.com/drive/u/0/my-drive'
+    ]
+  },
   glamour: {
     title: 'GLAMOUR.RU',
-    category: PrCategory.FASHION,
+    category: PrCategory.OTHER,
     links: [
       'https://www.glamour.ru/fashion-news/ya-hochu-priehat-v-rossiyu-i-potusovatsya-s-vami-hudozhnik-po-kostyumam-i-stilist-patriciya-fild'
     ]
   },
   rabotnica: {
     title: 'Работница',
-    category: PrCategory.FASHION,
+    category: PrCategory.OTHER,
     pdfs: [
       {
         title: 'Патришия Филд',
