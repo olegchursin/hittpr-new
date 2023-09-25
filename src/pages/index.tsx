@@ -33,7 +33,16 @@ const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const changeTo = router.locale === 'en' ? 'ru' : 'en';
   return (
     <Wrapper>
-      <SEO pageTitle={'Home'} />
+      <SEO pageTitle={t('homepage')} />
+      <div>
+        <Link href="/" locale={changeTo}>
+          <button>{t('change-locale', { changeTo })}</button>
+        </Link>
+
+        <button onClick={() => onToggleLanguageClick(changeTo)}>
+          {t('change-locale', { changeTo })}
+        </button>
+      </div>
       <HomeMain />
     </Wrapper>
   );
