@@ -11,23 +11,25 @@ const case_item = {
   title: 'Врачи',
   subtitle: 'Материалы',
   category: { label: 'Services', href: '/pr/services' },
-  sectionedLinks: {
-    sectionTitle: 'Ада Кондэ',
-    sectionSubtitle:
-      'Мотивационный спикер, основатель проекта об осознанном управлении жизнью',
-    sectionLinks: [
-      'https://hothitnewyork.com/ada-konde/',
-      'https://woman.forumdaily.com/schaste-s-inostrancem-preodolevaya-to-chto-ne-stoit-preodolevat/',
-      'https://www.thevoicemag.ru/lifestyle/stil-zhizni/v-poiskah-svoego-lica-odin-na-odin-s-dermatilomaniey/',
-      'https://www.psychologies.ru/articles/dermatilomaniya-kak-ugomonit-ruki/'
-    ],
-    sectionPdfs: [
-      {
-        title: 'Дерматиломания: как угомонить руки',
-        url: 'https://drive.google.com/file/d/1QVT-LxM7t9js9F57sQeEShqSuzIUyV4a/view?usp=sharing'
-      }
-    ]
-  },
+  sectionedLinks: [
+    {
+      sectionTitle: 'Ада Кондэ',
+      sectionSubtitle:
+        'Мотивационный спикер, основатель проекта об осознанном управлении жизнью',
+      sectionLinks: [
+        'https://hothitnewyork.com/ada-konde/',
+        'https://woman.forumdaily.com/schaste-s-inostrancem-preodolevaya-to-chto-ne-stoit-preodolevat/',
+        'https://www.thevoicemag.ru/lifestyle/stil-zhizni/v-poiskah-svoego-lica-odin-na-odin-s-dermatilomaniey/',
+        'https://www.psychologies.ru/articles/dermatilomaniya-kak-ugomonit-ruki/'
+      ],
+      sectionPdfs: [
+        {
+          title: 'Дерматиломания: как угомонить руки',
+          url: 'https://drive.google.com/file/d/1QVT-LxM7t9js9F57sQeEShqSuzIUyV4a/view?usp=sharing'
+        }
+      ]
+    }
+  ],
   links: [
     'https://hothitnewyork.com/psychiatrist_vilor_shpitalnik/',
     'https://www.psychologies.ru/articles/leto-samyiy-stressovyiy-sezon/',
