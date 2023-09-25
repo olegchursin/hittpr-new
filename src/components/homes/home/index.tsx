@@ -15,6 +15,7 @@ const Home = () => {
       animationCreate();
     }, 500);
   }, []);
+
   return (
     <Wrapper>
       <Header />
