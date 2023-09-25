@@ -62,7 +62,7 @@ const LinkList: FC<LinkListProps> = ({
   const bothLists = (
     <>
       {sectionedList}
-      {links ? (
+      {links && links.length ? (
         <>
           <br />
           <hr />

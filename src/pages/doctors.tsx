@@ -17,7 +17,11 @@ const case_item = {
       sectionSubtitle: 'Психиатр, врач высшей американской категории.',
       sectionLinks: [
         'https://www.psychologies.ru/articles/leto-samyiy-stressovyiy-sezon/',
-        'https://hothitnewyork.com/psychiatrist_vilor_shpitalnik/'
+        'https://hothitnewyork.com/psychiatrist_vilor_shpitalnik/',
+        'https://woman.forumdaily.com/kompleks-kotoryj-byvaet-u-vsex-kak-ne-slomat-sudbu-rebenku/',
+        'https://woman.forumdaily.com/pereezd-v-ssha-kak-pomoch-rebenku-adaptirovatsya/',
+        'https://woman.forumdaily.com/pereezd-v-ssha-i-problemy-adaptacii-chto-ozhidat-i-kak-spravitsya/',
+        'https://woman.forumdaily.com/kak-adaptiruyutsya-v-ssha-pozhilye-roditeli/'
       ],
       sectionPdfs: [
         {
@@ -45,12 +49,7 @@ const case_item = {
       ]
     }
   ],
-  links: [
-    'https://woman.forumdaily.com/kompleks-kotoryj-byvaet-u-vsex-kak-ne-slomat-sudbu-rebenku/',
-    'https://woman.forumdaily.com/pereezd-v-ssha-kak-pomoch-rebenku-adaptirovatsya/',
-    'https://woman.forumdaily.com/pereezd-v-ssha-i-problemy-adaptacii-chto-ozhidat-i-kak-spravitsya/',
-    'https://woman.forumdaily.com/kak-adaptiruyutsya-v-ssha-pozhilye-roditeli/'
-  ],
+  links: [],
   pdfs: [],
   renderMaterials: false,
   materials: [],
