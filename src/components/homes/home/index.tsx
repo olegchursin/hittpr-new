@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FooterThree, Header, Wrapper } from '../../../layout';
+import { FooterThree, Wrapper } from '../../../layout';
 import { animationCreate } from '../../../utils/utils';
 import BrandArea from './brand-area';
 import Hero from './hero';
@@ -18,7 +18,6 @@ const Home = () => {
 
   return (
     <Wrapper>
-      <Header />
       <Hero />
       <HotHitNewYork />
       <Materials />

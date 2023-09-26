@@ -1,4 +1,5 @@
 {
+  "change-locale": "Изменить язык на \"{{changeTo}}\"",
   "homepage": "Домашняя",
-  "change-locale": "Изменить язык на \"{{changeTo}}\""
+  "materials": "Материалы"
 }
