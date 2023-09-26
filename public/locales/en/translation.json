@@ -1,5 +1,16 @@
 {
-  "change-locale": "Change locale to \"{{changeTo}}\"",
-  "homepage": "Home",
-  "materials": "Materials"
+  "common": {
+    "aboutUs": "About us",
+    "aboutUsShort": "Briefly about us",
+    "contacts": "Contacts",
+    "homepage": "Home",
+    "learnMore": "Learn more"
+  },
+  "hero": {
+    "title": "Elevate Your Business in the New Reality!",
+    "description": "Step into a world of unrivaled expertise by joining forces with our team of top-tier journalists, PR specialists, and seasoned business trainers and coaches."
+  },
+  "label": {
+    "materials": "Materials"
+  }
 }

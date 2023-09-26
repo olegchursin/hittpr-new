@@ -17,7 +17,7 @@ export default function index(
 
   return (
     <Wrapper>
-      <SEO pageTitle={t('materials')} />
+      <SEO pageTitle={t('label.materials')} />
       <PortfolioMain />
     </Wrapper>
   );

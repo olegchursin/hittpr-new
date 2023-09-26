@@ -15,7 +15,7 @@ const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 
   return (
     <Wrapper>
-      <SEO pageTitle={t('homepage')} />
+      <SEO pageTitle={t('common.homepage')} />
       <Header />
       <HomeMain />
     </Wrapper>
