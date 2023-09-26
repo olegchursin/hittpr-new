@@ -60,7 +60,7 @@ const Header = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
                   <button onClick={() => onToggleLanguageClick(changeTo)}>
                     <span className="language_switch">
                       <i className="far fa-language"></i>{' '}
-                      {changeTo === 'ru' ? 'EN' : 'РУ'}
+                      {changeTo === 'ru' ? 'РУ' : 'EN'}
                     </span>
                   </button>
                 </div>
