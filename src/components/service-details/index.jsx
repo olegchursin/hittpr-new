@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FooterThree, Header, Wrapper } from '../../layout';
+import { FooterHittpr, Header, Wrapper } from '../../layout';
 import { animationCreate } from '../../utils/utils';
 import Breadcrumb from '../common/breadcrumb/breadcrumb';
 import AccordionArea from './accordion-area';
@@ -27,7 +27,7 @@ const ServiceDetails = ({ service }) => {
         title={service?.additional_info_title}
         items={service?.additional_info}
       />
-      <FooterThree />
+      <FooterHittpr />
     </Wrapper>
   );
 };

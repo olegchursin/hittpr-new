@@ -1,9 +1,9 @@
-import PRSmi from '../components/pr-smi';
-import SEO from '../components/seo';
-import { DEFAULT_LOCALE, I18N_NS } from '../utils/i18n-utils';
+import Psychology from '../../components/psychology';
+import SEO from '../../components/seo';
+import { DEFAULT_LOCALE, I18N_NS } from '../../utils/i18n-utils';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
-import { Wrapper } from '../layout';
+import { Wrapper } from '../../layout';
 
 import type { GetStaticProps, InferGetStaticPropsType } from 'next';
 
@@ -18,8 +18,8 @@ export default function index(
 
   return (
     <Wrapper>
-      <SEO pageTitle={t('common.prSMI')} />
-      <PRSmi />
+      <SEO pageTitle={t('common.psychology')} />
+      <Psychology />
     </Wrapper>
   );
 }

@@ -48,7 +48,7 @@ const {
   subscribe_title
 } = footer_contents;
 
-const FooterThree = ({ home_four = false }) => {
+const FooterHittpr = ({ home_four = false }) => {
   return (
     <React.Fragment>
       <footer>
@@ -159,7 +159,7 @@ const FooterThree = ({ home_four = false }) => {
   );
 };
 
-export default FooterThree;
+export default FooterHittpr;
 
 const InstagramItem = ({ img }) => {
   return (

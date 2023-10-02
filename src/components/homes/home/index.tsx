@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FooterThree, Wrapper } from '../../../layout';
+import { FooterHittpr, Wrapper } from '../../../layout';
 import { animationCreate } from '../../../utils/utils';
 import BrandArea from './brand-area';
 import Hero from './hero';
@@ -25,7 +25,7 @@ const Home = () => {
       <BrandArea />
       <ServicesArea />
       <Testimonials />
-      <FooterThree />
+      <FooterHittpr />
     </Wrapper>
   );
 };

@@ -1,15 +1,18 @@
-import ContactMain from '../components/contact';
-import SEO from '../components/seo';
-import { DEFAULT_LOCALE, I18N_NS } from '../utils/i18n-utils';
+import SEO from '../../components/seo';
+import ServiceDetailsMain from '../../components/service-details';
+import { DEFAULT_LOCALE, I18N_NS } from '../../utils/i18n-utils';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { services_data } from '../../data';
 import { useTranslation } from 'react-i18next';
-import { Wrapper } from '../layout';
+import { Wrapper } from '../../layout';
 
 import type { GetStaticProps, InferGetStaticPropsType } from 'next';
 
 type Props = {
   // Add custom props here
 };
+
+const service_item = services_data[1];
 
 export default function index(
   _props: InferGetStaticPropsType<typeof getStaticProps>
@@ -18,8 +21,8 @@ export default function index(
 
   return (
     <Wrapper>
-      <SEO pageTitle={t('common.contacts')} />
-      <ContactMain />
+      <SEO pageTitle={'Service Details'} />
+      <ServiceDetailsMain service={service_item} />
     </Wrapper>
   );
 }

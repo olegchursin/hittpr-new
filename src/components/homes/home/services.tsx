@@ -1,5 +1,13 @@
 import Link from 'next/link';
-import React from 'react';
+import { DEFAULT_LOCALE, I18N_NS } from '../../../utils/i18n-utils';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'react-i18next';
+
+import type { GetStaticProps, InferGetStaticPropsType } from 'next';
+
+type Props = {
+  // Add custom props here
+};
 
 export const services_items = [
   {
@@ -87,7 +95,11 @@ export const services_items = [
   }
 ];
 
-const Services = () => {
+export default function index(
+  _props: InferGetStaticPropsType<typeof getStaticProps>
+) {
+  const { t } = useTranslation(I18N_NS);
+
   return (
     <>
       <div className="tp-service-area-two p-relative black-bg pt-125 pb-145 z-index-1">
@@ -131,6 +143,10 @@ const Services = () => {
       </div>
     </>
   );
-};
+}
 
-export default Services;
+export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale ?? DEFAULT_LOCALE, [I18N_NS]))
+  }
+});

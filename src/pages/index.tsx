@@ -10,7 +10,9 @@ type Props = {
   // Add custom props here
 };
 
-const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
+export default function index(
+  _props: InferGetStaticPropsType<typeof getStaticProps>
+) {
   const { t } = useTranslation(I18N_NS);
 
   return (
@@ -20,12 +22,10 @@ const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
       <HomeMain />
     </Wrapper>
   );
-};
+}
 
 export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale ?? DEFAULT_LOCALE, [I18N_NS]))
   }
 });
-
-export default Home;

@@ -1,15 +1,29 @@
 {
   "common": {
-    "aboutUs": "About us",
+    "aboutUs": "About",
     "aboutUsShort": "Briefly about us",
+    "allPublications": "All publications",
+    "coaches": "Coaches, financial experts",
     "contacts": "Contacts",
+    "dentalClinic": "Dental clinic",
+    "doctors": "Doctors",
+    "factoryFight": "Factory Fight",
+    "fashion": "Fashion",
+    "guides": "Tour guides, interpreters, teachers",
     "homepage": "Home",
     "learnMore": "Learn more",
     "ourWork": "Our Work",
     "materials": "Materials",
+    "personalBrand": "Personal brand",
+    "pr": "PR",
+    "prSMI": "Media PR",
+    "psychology": "Psychology",
+    "psychologists": "Psychologists",
     "services": "Services",
+    "sport": "Sport",
     "team": "Team",
     "testimonials": "Testimonials",
+    "training": "Training",
     "whoWeAre": "Who we are"
   },
   "hero": {
@@ -24,6 +38,18 @@
     "johnCena": {
       "name": "John Cena",
       "description": "5 SECRETS ABOUT JOHN CENA"
+    },
+    "kovalev": {
+      "name": "Sergey Kovalev",
+      "description": "Professional boxer, former world champion"
+    },
+    "marinaHitt": {
+      "name": "Marina Hitt",
+      "title": "Founder, CEO",
+      "sport": "Sports with Marina Hitt"
+    },
+    "meganHess": {
+      "name": "Megan Hess"
     },
     "patricia": {
       "name": "Patricia Field",

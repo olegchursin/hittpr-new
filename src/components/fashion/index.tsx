@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FooterThree, Header, Wrapper } from '../../layout';
+import { FooterHittpr, Header, Wrapper } from '../../layout';
 import { animationCreate } from '../../utils/utils';
 import Breadcrumb from '../common/breadcrumb/breadcrumb';
 import ServiceArea from '../services/pr/service-area';
@@ -36,7 +36,7 @@ const Fashion = () => {
       </div>
       <ServiceArea />
       <Testimonials />
-      <FooterThree />
+      <FooterHittpr />
     </Wrapper>
   );
 };

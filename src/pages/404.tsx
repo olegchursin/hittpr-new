@@ -1,15 +1,26 @@
-import React from 'react';
 import Breadcrumb from '../components/common/breadcrumb/breadcrumb';
 import SEO from '../components/seo';
-import { FooterThree, Header, Wrapper } from '../layout';
+import { DEFAULT_LOCALE, I18N_NS } from '../utils/i18n-utils';
+import { FooterHittpr, Header, Wrapper } from '../layout';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'react-i18next';
 
-const ErrorPage = () => {
+import type { GetStaticProps, InferGetStaticPropsType } from 'next';
+
+type Props = {
+  // Add custom props here
+};
+
+export default function index(
+  _props: InferGetStaticPropsType<typeof getStaticProps>
+) {
+  const { t } = useTranslation(I18N_NS);
+
   return (
     <Wrapper>
       <SEO pageTitle={'Not Found'} />
       <Header />
       <Breadcrumb title={'404 Page'} back_home={true} />
-      {/* <!--404-area-start --> */}
       <div className="tp-404-area tp-404-circle sky-bg pt-200 pb-150 fix">
         <div className="container">
           <div className="row">
@@ -21,10 +32,13 @@ const ErrorPage = () => {
           </div>
         </div>
       </div>
-      {/* <!-- 404-area-end --> */}
-      <FooterThree />
+      <FooterHittpr />
     </Wrapper>
   );
-};
+}
 
-export default ErrorPage;
+export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale ?? DEFAULT_LOCALE, [I18N_NS]))
+  }
+});

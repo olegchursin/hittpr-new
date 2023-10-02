@@ -2,14 +2,28 @@
   "common": {
     "aboutUs": "О нас",
     "aboutUsShort": "Коротко о нас",
+    "allPublications": "Все публикации",
+    "coaches": "Коучи, финансовые эксперты",
     "contacts": "Контакты",
+    "dentalClinic": "Dental clinic",
+    "doctors": "Врачи",
+    "factoryFight": "Factory Fight",
+    "fashion": "Fashion",
+    "guides": "ГИДЫ, переводчики, преподаватели",
     "homepage": "Домашняя",
     "learnMore": "Узнать больше",
     "ourWork": "Наши работы",
     "materials": "Материалы",
+    "personalBrand": "Персональный бренд",
+    "pr": "PR",
+    "prSMI": "PR в СМИ",
+    "psychology": "Психология",
+    "psychologists": "Психологи",
     "services": "Услуги",
+    "sport": "Спорт",
     "team": "Команда",
     "testimonials": "Отзывы",
+    "training": "Обучение",
     "whoWeAre": "Кто мы"
   },
   "hero": {
@@ -24,6 +38,18 @@
     "johnCena": {
       "name": "Джон Сина",
       "description": "5 СЕКРЕТОВ О ДЖОНЕ СИНЕ"
+    },
+    "kovalev": {
+      "name": "Сергей Ковалев",
+      "description": ""
+    },
+    "marinaHitt": {
+      "name": "Марина Хитт",
+      "title": "Основатель, генеральный директор",
+      "sport": "Спорт с Мариной Хитт"
+    },
+    "meganHess": {
+      "name": "Megan Hess"
     },
     "patricia": {
       "name": "Патришия Филд",

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FooterThree, Header, Wrapper } from '../../layout';
+import { FooterHittpr, Header, Wrapper } from '../../layout';
 import { animationCreate } from '../../utils/utils';
 import Breadcrumb from '../common/breadcrumb/breadcrumb';
 import ContactArea from './contact-area';
@@ -16,7 +16,7 @@ const Contact = () => {
       <Header />
       <Breadcrumb title={'Контакты'} back_home={true} />
       <ContactArea />
-      <FooterThree />
+      <FooterHittpr />
     </Wrapper>
   );
 };
