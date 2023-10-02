@@ -1,14 +1,19 @@
-import React from 'react';
+import { I18N_NS } from '../../../utils/i18n-utils';
+import { TFunction, useTranslation } from 'next-i18next';
 
-const newsLatter_contents = {
-  img: '/assets/img/hittpr/hhny.svg',
-  subtitle: 'ПРОЕКТ МАРИНЫ ХИТТ',
-  title: 'Истории, рассказанные от души, из сердца Большого Яблока',
-  btn_text: 'HotHitNewYork.com'
+const contents = (t: TFunction) => {
+  return {
+    img: '/assets/img/hittpr/hhny.svg',
+    subtitle: t('hhny.project'),
+    title: t('hhny.tagline'),
+    btn_text: 'HotHitNewYork.com'
+  };
 };
-const { btn_text, img, subtitle, title } = newsLatter_contents;
 
 const HotHitNewYork = () => {
+  const { t } = useTranslation(I18N_NS);
+  const { btn_text, img, subtitle, title } = contents(t);
+
   return (
     <>
       <div className="tp-news-area black-bg fix">

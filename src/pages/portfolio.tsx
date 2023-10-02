@@ -1,11 +1,12 @@
-import { Wrapper } from '../layout';
-import SEO from '../components/seo';
 import PortfolioMain from '../components/portfolios/portfolio';
-
-import { useTranslation } from 'next-i18next';
-import type { GetStaticProps, InferGetStaticPropsType } from 'next';
+import SEO from '../components/seo';
+import { DEFAULT_LOCALE, I18N_NS } from '../utils/i18n-utils';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { I18N_NS } from '../utils/i18n-utils';
+import { useTranslation } from 'next-i18next';
+import { Wrapper } from '../layout';
+
+import type { GetStaticProps, InferGetStaticPropsType } from 'next';
+
 type Props = {
   // Add custom props here
 };
@@ -17,7 +18,7 @@ export default function index(
 
   return (
     <Wrapper>
-      <SEO pageTitle={t('label.materials')} />
+      <SEO pageTitle={t('common.materials')} />
       <PortfolioMain />
     </Wrapper>
   );
@@ -25,6 +26,6 @@ export default function index(
 
 export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale ?? 'ru', [I18N_NS]))
+    ...(await serverSideTranslations(locale ?? DEFAULT_LOCALE, [I18N_NS]))
   }
 });
