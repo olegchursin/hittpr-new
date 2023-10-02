@@ -3,7 +3,7 @@ import MobileMenu from './mobile-menu';
 import NavMenus from './nav-menus';
 import React from 'react';
 import useSticky from '../../hooks/use-sticky';
-import { I18N_NS } from '../../utils/i18n-utils';
+import { DEFAULT_LOCALE, I18N_NS } from '../../utils/i18n-utils';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
@@ -76,7 +76,7 @@ const Header = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 
 export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale ?? 'ru', [I18N_NS]))
+    ...(await serverSideTranslations(locale ?? DEFAULT_LOCALE, [I18N_NS]))
   }
 });
 

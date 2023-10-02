@@ -1,11 +1,11 @@
-import { Wrapper, Header } from '../layout';
 import HomeMain from '../components/homes/home';
 import SEO from '../components/seo';
-
-import { useTranslation } from 'next-i18next';
-import type { GetStaticProps, InferGetStaticPropsType } from 'next';
+import { DEFAULT_LOCALE, I18N_NS } from '../utils/i18n-utils';
+import { Header, Wrapper } from '../layout';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { I18N_NS } from '../utils/i18n-utils';
+import { useTranslation } from 'next-i18next';
+
+import type { GetStaticProps, InferGetStaticPropsType } from 'next';
 type Props = {
   // Add custom props here
 };
@@ -24,7 +24,7 @@ const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 
 export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale ?? 'ru', [I18N_NS]))
+    ...(await serverSideTranslations(locale ?? DEFAULT_LOCALE, [I18N_NS]))
   }
 });
 
