@@ -4,13 +4,30 @@
     "aboutUsShort": "Briefly about us",
     "contacts": "Contacts",
     "homepage": "Home",
-    "learnMore": "Learn more"
+    "learnMore": "Learn more",
+    "ourWork": "Our Work",
+    "materials": "Materials",
+    "services": "Services",
+    "team": "Team",
+    "testimonials": "Testimonials",
+    "whoWeAre": "Who we are"
   },
   "hero": {
     "title": "Elevate Your Business in the New Reality!",
     "description": "Step into a world of unrivaled expertise by joining forces with our team of top-tier journalists, PR specialists, and seasoned business trainers and coaches."
   },
-  "label": {
-    "materials": "Materials"
+  "hhny": {
+    "project": "Project by Marina Hitt",
+    "tagline": "Heartfelt Stories from the Big Apple"
+  },
+  "person": {
+    "johnCena": {
+      "name": "John Cena",
+      "description": "5 SECRETS ABOUT JOHN CENA"
+    },
+    "patricia": {
+      "name": "Patricia Field",
+      "description": "Designer, Stylist, Creator"
+    }
   }
 }
