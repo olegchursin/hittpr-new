@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import { DEFAULT_LOCALE, I18N_NS } from '../../../utils/i18n-utils';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { TFunction } from 'next-i18next';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import type { GetStaticProps, InferGetStaticPropsType } from 'next';
-import { TFunction } from 'next-i18next';
 
 type Props = {
   // Add custom props here
@@ -20,9 +21,8 @@ export function getServicesItems(t: TFunction) {
       img: '/assets/img/service/service-3.png',
       img_lg: '/assets/img/hittpr/pr_smi.jpg',
       title: t('common.prSMI'),
-      text_1:
-        'Курс для тех, у кого есть цель поднять уровень дохода, самостоятельно продвигать себя, свой товар/услугу или клиента, сэкономить десятки тысяч долларов на статье расходов “пиар в СМИ”, повысить узнаваемость бренда.',
-      text_2: 'Поурочное содержание',
+      text_1: t('training.mediaPR.description'),
+      text_2: t('common.lessonContent'),
       text_3: (
         <>
           - Зачем нужен пиар в СМИ в эпоху интернета? <br></br>- Какие СМИ
@@ -38,18 +38,20 @@ export function getServicesItems(t: TFunction) {
       ),
       subtitle:
         'Четко. На конкретных примерах. Кейсы компании. Отработка на практике.',
-      additional_info_title: 'Информация',
+      additional_info_title: t('common.information'),
       additional_info: [
         {
           id: 'one',
           show: true,
-          title: 'Бизнес-тренер',
-          desc: 'Марина Хитт'
+          title: t('common.businessTrainer'),
+          desc: t('person.marinaHitt.name')
         },
         {
           id: 'two',
-          title: 'Форма проведения',
-          desc: 'Онлайн вебинар // Персональный коучинг'
+          title: t('common.lessonFormat'),
+          desc: `${t('common.onlineWebinar')} // ${t(
+            'common.personalCoaching'
+          )}}`
         }
       ],
       service_p_3: true
@@ -61,13 +63,12 @@ export function getServicesItems(t: TFunction) {
       color: 'tp-sv-sky-color',
       img: '/assets/img/service/service-1.png',
       img_lg: '/assets/img/hittpr/social-media-smi.jpg',
-      title: 'СМИ и социальные сети',
-      text_1:
-        'Курс для вас, если вы хотите повысить узнаваемость и доход, стать автором публикаций в СМИ, научиться писать креативные тексты для СМИ и соц сетей, начать собирать материалы для книги, если вы эксперт в своей сфере.',
-      text_2: 'Поурочное содержание',
+      title: t('common.socialNetworksAndMedia'),
+      text_1: t('training.socialMedia.description'),
+      text_2: t('common.lessonContent'),
       text_3: (
         <>
-          Направление вашей деятельности и “нужные” СМИ <br></br>- Магия
+          - Направление вашей деятельности и “нужные” СМИ <br></br>- Магия
           заголовка: как самую банальную тему подать захватывающе, избегая
           дешевых уловок. <br></br>- C чего начать: как стать собственным
           “гуглом” и создавать свои идеи. <br></br>- Алгоритм работы над статьей
@@ -80,18 +81,20 @@ export function getServicesItems(t: TFunction) {
       ),
       subtitle:
         'Четко. На конкретных примерах. Кейсы компании, в том числе “звездные”. Отработка на практике.',
-      additional_info_title: 'Информация',
+      additional_info_title: t('common.information'),
       additional_info: [
         {
           id: 'one',
           show: true,
-          title: 'Бизнес-тренер',
-          desc: 'Марина Хитт'
+          title: t('common.businessTrainer'),
+          desc: t('person.marinaHitt.name')
         },
         {
           id: 'two',
-          title: 'Форма проведения',
-          desc: 'Онлайн вебинар // Персональный коучинг'
+          title: t('common.lessonFormat'),
+          desc: `${t('common.onlineWebinar')} // ${t(
+            'common.personalCoaching'
+          )}}`
         }
       ],
       service_p_3: true
@@ -103,7 +106,17 @@ export default function index(
   _props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
   const { t } = useTranslation(I18N_NS);
-  const services_items = getServicesItems(t);
+  const [services_items, setServicesItems] = useState([]);
+  const [meta, setMeta] = useState({ title: '', subtitle: '' });
+  useEffect(() => {
+    const meta = {
+      title: t('common.infoProducts'),
+      subtitle: t('common.workAreas')
+    };
+    const items = getServicesItems(t);
+    setMeta(meta);
+    setServicesItems(items);
+  }, []);
 
   return (
     <>
@@ -112,14 +125,15 @@ export default function index(
           <div className="row">
             <div className="col-xl-12">
               <div className="tp-service-section-box-two text-center">
-                <h5 className="tp-subtitle pb-10">Направления работы</h5>
-                <h2 className="tp-title tp-white-text pb-35">Инфопродукты</h2>
+                <h5 className="tp-subtitle pb-10">{meta.subtitle}</h5>
+                <h2 className="tp-title tp-white-text pb-35">{meta.title}</h2>
               </div>
             </div>
           </div>
           <div className="row gx-12">
-            {services_items.map(ser => {
-              const { delay, duration, id, img, text_1, title, color } = ser;
+            {services_items.map(service => {
+              const { delay, duration, id, img, text_1, title, color } =
+                service;
               return (
                 <div
                   key={id}

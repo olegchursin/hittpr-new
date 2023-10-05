@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { I18N_NS } from '../../../utils/i18n-utils';
 import { TFunction, useTranslation } from 'next-i18next';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 
 const portfolioData = (t: TFunction) => {
   return [
@@ -11,9 +12,8 @@ const portfolioData = (t: TFunction) => {
       title: t('person.patricia.name'),
       sm_text: t('person.patricia.description'),
       category: 'Lifestyle',
-      href: '/patricia',
-      big: true,
-      home: true
+      href: 'patricia',
+      big: true
     },
     {
       id: 2,
@@ -21,9 +21,8 @@ const portfolioData = (t: TFunction) => {
       title: t('person.johnCena.name'),
       sm_text: t('person.johnCena.description'),
       category: 'Lifestyle',
-      href: '/john-cena',
-      sm: true,
-      home: true
+      href: 'john-cena',
+      sm: true
     },
     {
       id: 4,
@@ -31,9 +30,8 @@ const portfolioData = (t: TFunction) => {
       title: 'Сергей Ковалев',
       sm_text: 'Чемпион мира в полутяжелом весе.',
       category: 'Спорт',
-      href: '/kovalev',
-      big: true,
-      home: true
+      href: 'kovalev',
+      big: true
     },
     {
       id: 5,
@@ -41,9 +39,8 @@ const portfolioData = (t: TFunction) => {
       title: 'Factory Fight',
       sm_text: 'PR БОЙЦОВСКОГО КЛУБА',
       category: 'Спорт',
-      href: '/factory-fight',
-      sm: true,
-      home: true
+      href: 'factory-fight',
+      sm: true
     },
     {
       id: 6,
@@ -51,9 +48,8 @@ const portfolioData = (t: TFunction) => {
       title: 'ГИДЫ, переводчики, преподаватели',
       sm_text: 'ГИДЫ, переводчики, преподаватели',
       category: 'Services',
-      href: '/guides-interpreters',
-      big: true,
-      home: true
+      href: 'guides-interpreters',
+      big: true
     },
     {
       id: 7,
@@ -61,20 +57,24 @@ const portfolioData = (t: TFunction) => {
       title: 'Dental Clinic',
       sm_text: 'Dental Clinic',
       category: 'Services',
-      href: '/dental-clinic',
-      sm: true,
-      home: true
+      href: 'dental-clinic',
+      sm: true
     }
   ];
 };
 
 const Materials = () => {
+  const router = useRouter();
   const { t } = useTranslation(I18N_NS);
   const [category, setCategory] = useState('Lifestyle');
-  const items = portfolioData(t).filter(p => p.home);
+  const [items, setItems] = useState(portfolioData(t));
+  useEffect(() => {
+    setItems(portfolioData(t));
+  }, [category]);
   const [portfolioItems, setPortfolioItems] = useState(
     items.filter(i => i.category === category)
   );
+
   const categories = [...new Set(items.map(p => p.category))];
 
   const handleCategory = c => {
@@ -161,7 +161,7 @@ const Materials = () => {
                           </Link>
                         </h3>
                         <p>{item.sm_text}</p>
-                        <Link href={item.href}>
+                        <Link href={`${router.locale}/${item.href}`}>
                           <a className="tp-btn-white-sm">
                             Подробнее <i className="far fa-arrow-right"></i>
                           </a>
