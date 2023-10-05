@@ -1,24 +1,24 @@
 import Link from 'next/link';
-import React from 'react';
-import { services_data } from '../../../data';
+import { useEffect, useState } from 'react';
 import SingleServiceTwo from '../../common/single-service-2';
+import { I18N_NS } from '../../../utils/i18n-utils';
+import { useTranslation } from 'react-i18next';
 
 const services_contents = {
   shape_img: '/assets/img/service/service-shape.png',
   subtitle: 'PR',
   title: 'PR',
-  btn_text: 'Подробнее'
+  btn_text: 'common.learnMore'
 };
 
-const { title, subtitle, btn_text } = services_contents;
-const services_items = [
+const services_data = [
   {
     id: 1,
     duration: '.5s',
     delay: '.8s',
     img: '/assets/img/service/service-1.png',
-    title: 'Личный Бренд',
-    text_1: 'Как позиционировать себя в медиапространстве',
+    title: 'common.personalBrand',
+    text_1: 'services.mediaPositioing',
     href: '/pr/personal-brand',
     home: true,
     service_p_2: true
@@ -28,8 +28,8 @@ const services_items = [
     duration: '.7s',
     delay: '1s',
     img: '/assets/img/service/service-icon-9.1.png',
-    title: 'Спорт PR',
-    text_1: 'Все о PR в профессиональном спорте',
+    title: 'common.prSport',
+    text_1: 'services.proSport',
     href: '/pr/sport',
     home: true,
     service_p_2: true
@@ -39,8 +39,8 @@ const services_items = [
     duration: '.9s',
     delay: '1.2s',
     img: '/assets/img/service/service-3.png',
-    title: 'Fashion',
-    text_1: 'Как работает PR в Fashion индустрии',
+    title: 'common.fashion',
+    text_1: 'services.fashionPr',
     href: '/pr/fashion',
     home: true,
     service_p_2: true
@@ -48,6 +48,14 @@ const services_items = [
 ];
 
 const ServicesArea = () => {
+  const { t } = useTranslation(I18N_NS);
+  const [services_items, setServicesItems] = useState([]);
+  const [meta, setMeta] = useState({} as any);
+  useEffect(() => {
+    setServicesItems(services_data);
+    setMeta(services_contents);
+  }, []);
+
   return (
     <div className="tp-service-area pt-190 pb-100 grey-bg p-relative fix">
       <div className="container">
@@ -58,10 +66,10 @@ const ServicesArea = () => {
               data-wow-duration=".3s"
               data-wow-delay=".6s"
             >
-              <h5 className="tp-subtitle pb-10">{subtitle}</h5>
-              <h2 className="tp-title">{title}</h2>
+              <h5 className="tp-subtitle pb-10">{t(meta.subtitle)}</h5>
+              <h2 className="tp-title">{t(meta.title)}</h2>
               <Link href="/pr">
-                <a className="tp-btn">{btn_text}</a>
+                <a className="tp-btn">{t(meta.btn_text)}</a>
               </Link>
             </div>
           </div>

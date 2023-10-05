@@ -163,7 +163,8 @@ const Materials = () => {
                         <p>{item.sm_text}</p>
                         <Link href={`${router.locale}/${item.href}`}>
                           <a className="tp-btn-white-sm">
-                            Подробнее <i className="far fa-arrow-right"></i>
+                            {t('common.learnMore')}{' '}
+                            <i className="far fa-arrow-right"></i>
                           </a>
                         </Link>
                       </div>

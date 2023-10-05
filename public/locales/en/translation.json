@@ -22,12 +22,14 @@
     "lessonFormat": "Lesson format",
     "lifestyle": "Lifestyle",
     "materials": "Materials",
+    "more": "Learn more",
     "onlineWebinar": "Online webinar",
     "ourWork": "Our Work",
     "personalBrand": "Personal brand",
     "personalCoaching": "Personal coaching",
     "pr": "PR",
     "prSMI": "Media PR",
+    "prSport": "Sport PR",
     "psychology": "Psychology",
     "psychologists": "Psychologists",
     "services": "Services",
@@ -36,9 +38,11 @@
     "tailorPR": "We Tailor Your PR for Long-Term Client Attraction",
     "team": "Team",
     "testimonials": "Testimonials",
+    "testimonialsAll": "View All",
     "training": "Training",
     "whoWeAre": "Who we are",
     "workAreas": "Areas of work",
+    "whyUs": "Why Clients Choose Our Services",
     "whyWe": "Why We Come Highly Recommended"
   },
   "hero": {
@@ -69,6 +73,25 @@
     "patricia": {
       "name": "Patricia Field",
       "description": "Designer, Stylist, Creator"
+    }
+  },
+  "services": {
+    "fashionPr": "Dynamics of Public Relations in the Fashion Industry",
+    "mediaPositioing": "Establishing Your Presence in the Media Landscape",
+    "proSport": "Power of Public Relations in Professional Sports"
+  },
+  "testimonials": {
+    "andreina": {
+      "name": "Natalie Andreina",
+      "description": "Exceptional professionalism and creativity that have propelled my company to new heights in terms of reputation and market visibility."
+    },
+    "bekieva": {
+      "name": "Victoria Bekieva",
+      "description": "Our collaboration was remarkably pleasant and successful, thanks to their excellent approach and effective communication."
+    },
+    "sillah": {
+      "name": "Ismail Sillah",
+      "description": "From the personal touch to the outstanding content and media exposure, the work was impeccable in every aspect."
     }
   },
   "training": {
