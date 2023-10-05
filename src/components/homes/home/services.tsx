@@ -19,8 +19,8 @@ export default function index(
   const [meta, setMeta] = useState({} as any);
   useEffect(() => {
     const meta = {
-      title: t('common.infoProducts'),
-      subtitle: t('common.workAreas')
+      title: 'common.infoProducts',
+      subtitle: 'common.workAreas'
     };
     const items = getServicesItems(t);
     setMeta(meta);
@@ -34,8 +34,10 @@ export default function index(
           <div className="row">
             <div className="col-xl-12">
               <div className="tp-service-section-box-two text-center">
-                <h5 className="tp-subtitle pb-10">{meta.subtitle}</h5>
-                <h2 className="tp-title tp-white-text pb-35">{meta.title}</h2>
+                <h5 className="tp-subtitle pb-10">{t(meta.subtitle)}</h5>
+                <h2 className="tp-title tp-white-text pb-35">
+                  {t(meta.title)}
+                </h2>
               </div>
             </div>
           </div>

@@ -1,27 +1,28 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import SocialLinks from '../social-links';
 import CopyrightArea from './component/copyright-area';
+import { useTranslation } from 'react-i18next';
+import { I18N_NS } from '../../utils/i18n-utils';
 
 const footer_contents = {
   logo: '/assets/img/logo/hittpr-logo-white.png',
-  widget_desc:
-    'Приобщитесь к опыту и знаниям ведущих экспертов в области журналистики и PR.',
+  widget_desc: 'common.connect',
   footer_widgets: [
     {
       w_class: 'd-flex justify-content-lg-center',
-      title: 'Компания',
+      title: 'common.company',
       widget_lists: [
-        { label: 'О Нас', href: '/about' },
-        { label: 'PR', href: '/pr' },
-        { label: 'PR в СМИ', href: '/pr-smi' },
-        { label: 'Обучение', href: '/training' },
-        { label: 'Контакты', href: '/contact' }
+        { label: 'common.aboutUs', href: '/about' },
+        { label: 'common.pr', href: '/pr' },
+        { label: 'common.prSMI', href: '/pr-smi' },
+        { label: 'common.training', href: '/training' },
+        { label: 'common.contacts', href: '/contact' }
       ]
     },
     {
       padd: 'pl-20',
-      title: 'Контакты',
+      title: 'common.contacts',
       widget_lists: [
         { label: 'Email: pr@hittpr.com', href: 'mailto:pr@hittpr.com' },
         {
@@ -38,17 +39,23 @@ const footer_contents = {
   conditions: []
 };
 
-const {
-  conditions,
-  copy_right_text,
-  footer_widgets,
-  logo,
-  widget_desc,
-  subscribe_text,
-  subscribe_title
-} = footer_contents;
-
 const FooterHittpr = ({ home_four = false }) => {
+  const { t } = useTranslation(I18N_NS);
+  const [contents, setContents] = useState({} as any);
+  useEffect(() => {
+    setContents(footer_contents);
+  }, []);
+
+  const {
+    conditions,
+    copy_right_text,
+    footer_widgets,
+    logo,
+    widget_desc,
+    subscribe_text,
+    subscribe_title
+  } = contents;
+
   return (
     <React.Fragment>
       <footer>
@@ -72,18 +79,18 @@ const FooterHittpr = ({ home_four = false }) => {
                   )}
                   {home_four && (
                     <div className="tp-footer-widget__title mb-30">
-                      <h3 className="footer-title">About Collax</h3>
+                      <h3 className="footer-title">About HittPR</h3>
                     </div>
                   )}
                   <div className="tp-footer-widget__text mb-30">
-                    <p>{widget_desc}</p>
+                    <p>{t(widget_desc)}</p>
                   </div>
                   <div className="tp-footer-widget__social-link">
                     <SocialLinks />
                   </div>
                 </div>
               </div>
-              {footer_widgets.map((w, i) => {
+              {footer_widgets?.map((w, i) => {
                 const { title, widget_lists, w_class, padd } = w;
                 return (
                   <div
@@ -94,13 +101,13 @@ const FooterHittpr = ({ home_four = false }) => {
                   >
                     <div className={`tp-footer-widget ${padd ? padd : ''}`}>
                       <div className="tp-footer-widget__title pb-15">
-                        <h3 className="footer-title">{title}</h3>
+                        <h3 className="footer-title">{t(title)}</h3>
                       </div>
                       <div className="tp-footer-widget__list">
                         <ul>
                           {widget_lists.map(item => (
                             <li key={item.href}>
-                              <Link href={item.href}>{item.label}</Link>
+                              <Link href={item.href}>{t(item.label)}</Link>
                             </li>
                           ))}
                         </ul>
