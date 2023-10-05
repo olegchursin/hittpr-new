@@ -1,26 +1,30 @@
-import React, { useEffect } from 'react';
-import { FooterHittpr, Header, Wrapper } from '../../../layout';
-import { animationCreate } from '../../../utils/utils';
 import Breadcrumb from '../../common/breadcrumb/breadcrumb';
-import CtaTwo from '../../common/cta/cta-2';
-import TestimonialArea from '../../homes/home-4/testimonial-area';
 import Services from '../../homes/home/services';
+import Testimonials from '../../common/testimonials';
+import { animationCreate } from '../../../utils/utils';
+import { FooterHittpr, Header, Wrapper } from '../../../layout';
+import { I18N_NS } from '../../../utils/i18n-utils';
+import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const ServiceThree = () => {
+  const { t } = useTranslation(I18N_NS);
+  const [labels, setLabels] = useState({} as any);
   useEffect(() => {
     setTimeout(() => {
       animationCreate();
     }, 500);
+    setLabels({ training: 'common.training' });
   }, []);
 
   return (
     <Wrapper>
       <Header />
-      <Breadcrumb title={'Обучение'} />
+      <Breadcrumb title={t(labels.training)} />
       <div className="mb-80">
         <Services />
       </div>
-      <TestimonialArea style_2={true} />
+      <Testimonials />
       <FooterHittpr />
     </Wrapper>
   );

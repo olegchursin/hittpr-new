@@ -45,7 +45,7 @@ const testimonial_contents = {
   ]
 };
 
-const Testimonials = ({ home_6 = false, style_2 = false }) => {
+const Testimonials = () => {
   const { t } = useTranslation(I18N_NS);
   const [sliderLoop, setSliderLoop] = useState(false);
   const [info, setInfo] = useState({} as any);
@@ -55,11 +55,7 @@ const Testimonials = ({ home_6 = false, style_2 = false }) => {
   }, []);
 
   return (
-    <div
-      className={`tp-testimonial-area ${
-        style_2 ? 'pb-130' : 'pt-130 pb-130'
-      } p-relative`}
-    >
+    <div className={`tp-testimonial-area pt-130 pb-130 p-relative`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
@@ -70,13 +66,7 @@ const Testimonials = ({ home_6 = false, style_2 = false }) => {
               </div>
               <div className="tp-testi-button-right-side">
                 <Link href="/testimonials">
-                  <a
-                    className={`${
-                      home_6 || style_2 ? 'tp-btn-yellow' : 'tp-btn'
-                    }`}
-                  >
-                    {t(info.btn_text)}
-                  </a>
+                  <a className={'tp-btn'}>{t(info.btn_text)}</a>
                 </Link>
               </div>
             </div>
