@@ -1,28 +1,27 @@
 import Link from 'next/link';
-import { getMenuData } from './menu-data';
+import { menuData } from './menu-data';
 import { I18N_NS } from '../../utils/i18n-utils';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const NavMenus = () => {
   const { t } = useTranslation(I18N_NS);
-  const [menuData, setMenuData] = useState([]);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
-    const data = getMenuData(t);
-    setMenuData(data);
+    setData(menuData);
   }, []);
 
   return (
     <ul>
-      {menuData?.map((menu, i) => {
+      {data?.map((menu, i) => {
         const dropdownClass = menu.has_dropdown ? 'has-dropdown' : '';
         const megaMenuClass = menu.mega_menu ? 'has-mega-menu' : '';
         const menuItem = (
           <li key={i} className={`${dropdownClass} ${megaMenuClass}`}>
             <Link href={menu.link}>
               <a>
-                {menu.title}{' '}
+                {t(menu.title)}{' '}
                 {menu.has_dropdown && <i className="fal fa-angle-down" />}
               </a>
             </Link>
@@ -31,7 +30,7 @@ const NavMenus = () => {
                 {menu.sub_menus.map((subMenu, i) => (
                   <li key={i}>
                     <Link href={subMenu.link}>
-                      <a>{subMenu.title}</a>
+                      <a>{t(subMenu.title)}</a>
                     </Link>
                   </li>
                 ))}

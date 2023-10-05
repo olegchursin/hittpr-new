@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import MobileMenu from './mobile-menu';
 import NavMenus from './nav-menus';
-import React from 'react';
 import useSticky from '../../hooks/use-sticky';
 import { DEFAULT_LOCALE, I18N_NS } from '../../utils/i18n-utils';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -20,6 +19,7 @@ const Header = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const { t, i18n } = useTranslation(I18N_NS);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const onToggleLanguageClick = (newLocale: string) => {
+    clientSideLanguageChange(newLocale);
     const { pathname, asPath, query } = router;
     router.push({ pathname, query }, asPath, { locale: newLocale });
   };
