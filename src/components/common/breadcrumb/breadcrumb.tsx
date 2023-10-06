@@ -1,7 +1,15 @@
 import Link from 'next/link';
-import React from 'react';
+import { I18N_NS } from '../../../utils/i18n-utils';
+import { useTranslation } from 'react-i18next';
+import { useEffect, useState } from 'react';
 
 const Breadcrumb = ({ title, back_home = false, renderCTA = true }) => {
+  const { t } = useTranslation(I18N_NS);
+  const [labels, setLabels] = useState({} as any);
+  useEffect(() => {
+    setLabels({ contactUs: 'common.contactUs', backHome: 'common.backHome' });
+  }, []);
+
   return (
     <section
       className="breadcrumb__area breadcrumb__pt-310 include-bg p-relative"
@@ -15,14 +23,14 @@ const Breadcrumb = ({ title, back_home = false, renderCTA = true }) => {
               {!back_home && renderCTA && (
                 <Link href="/contact">
                   <a className="tp-btn-white-border">
-                    Свяжитесь с нами <i className="far fa-arrow-right"></i>
+                    {t(labels.contactUs)} <i className="far fa-arrow-right"></i>
                   </a>
                 </Link>
               )}
               {back_home && (
                 <Link href="/">
                   <a className="tp-btn-white-border">
-                    На домашнюю <i className="far fa-arrow-right"></i>
+                    {t(labels.backHome)} <i className="far fa-arrow-right"></i>
                   </a>
                 </Link>
               )}

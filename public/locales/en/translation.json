@@ -1,0 +1,106 @@
+{
+  "common": {
+    "aboutUs": "About",
+    "aboutUsShort": "Briefly about us",
+    "allPublications": "All publications",
+    "backHome": "Back to home",
+    "businessTrainer": "Business trainer",
+    "coaches": "Coaches, financial experts",
+    "company": "Company",
+    "connect": "Connect with the Expertise and Insights of Top Journalism and PR Professionals.",
+    "contacts": "Contacts",
+    "contactUs": "Contact us",
+    "dentalClinic": "Dental clinic",
+    "doctors": "Doctors",
+    "factoryFight": "Factory Fight",
+    "fashion": "Fashion",
+    "information": "Information",
+    "infoProducts": "Information products",
+    "guides": "Tour guides, interpreters, teachers",
+    "homepage": "Home",
+    "learnMore": "Learn more",
+    "lessonContent": "Lesson content",
+    "lessonFormat": "Lesson format",
+    "lifestyle": "Lifestyle",
+    "materials": "Materials",
+    "more": "Learn more",
+    "onlineWebinar": "Online webinar",
+    "ourWork": "Our Work",
+    "personalBrand": "Personal brand",
+    "personalCoaching": "Personal coaching",
+    "pr": "PR",
+    "prSMI": "Media PR",
+    "prSport": "Sport PR",
+    "psychology": "Psychology",
+    "psychologists": "Psychologists",
+    "services": "Services",
+    "socialNetworksAndMedia": "Media and social networks",
+    "sport": "Sport",
+    "tailorPR": "We Tailor Your PR for Long-Term Client Attraction",
+    "team": "Team",
+    "testimonials": "Testimonials",
+    "testimonialsAll": "View All",
+    "training": "Training",
+    "whoWeAre": "Who we are",
+    "workAreas": "Areas of work",
+    "whyUs": "Why Clients Choose Our Services",
+    "whyWe": "Why We Come Highly Recommended"
+  },
+  "hero": {
+    "title": "Elevate Your Business in the New Reality!",
+    "description": "Step into a world of unrivaled expertise by joining forces with our team of top-tier journalists, PR specialists, and seasoned business trainers and coaches."
+  },
+  "hhny": {
+    "project": "Project by Marina Hitt",
+    "tagline": "Heartfelt Stories from the Big Apple"
+  },
+  "person": {
+    "johnCena": {
+      "name": "John Cena",
+      "description": "5 SECRETS ABOUT JOHN CENA"
+    },
+    "kovalev": {
+      "name": "Sergey Kovalev",
+      "description": "Professional boxer, former world champion"
+    },
+    "marinaHitt": {
+      "name": "Marina Hitt",
+      "title": "Founder, CEO",
+      "sport": "Sports with Marina Hitt"
+    },
+    "meganHess": {
+      "name": "Megan Hess"
+    },
+    "patricia": {
+      "name": "Patricia Field",
+      "description": "Designer, Stylist, Creator"
+    }
+  },
+  "services": {
+    "fashionPr": "Dynamics of Public Relations in the Fashion Industry",
+    "mediaPositioing": "Establishing Your Presence in the Media Landscape",
+    "proSport": "Power of Public Relations in Professional Sports"
+  },
+  "testimonials": {
+    "andreina": {
+      "name": "Natalie Andreina",
+      "description": "Exceptional professionalism and creativity that have propelled my company to new heights in terms of reputation and market visibility."
+    },
+    "bekieva": {
+      "name": "Victoria Bekieva",
+      "description": "Our collaboration was remarkably pleasant and successful, thanks to their excellent approach and effective communication."
+    },
+    "sillah": {
+      "name": "Ismail Sillah",
+      "description": "From the personal touch to the outstanding content and media exposure, the work was impeccable in every aspect."
+    }
+  },
+  "training": {
+    "mediaPR": {
+      "description": "This course is designed for individuals with the ambition to boost their income, effectively self-promote, market their products or services, reduce PR expenses in the media, and enhance overall brand recognition. Join us today and achieve your financial and branding goals."
+    },
+    "socialMedia": {
+      "description": "Tailored to those seeking to elevate their recognition and income. Ideal for individuals aspiring to be published authors in the media, acquire the skill of crafting engaging content for both traditional media and social networks, and gather valuable materials for a future book."
+    }
+  }
+}

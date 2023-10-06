@@ -1,7 +1,10 @@
 import Link from 'next/link';
-import React from 'react';
+import { I18N_NS } from '../../utils/i18n-utils';
+import { useTranslation } from 'react-i18next';
 
 const SingleServiceTwo = ({ service, border = '' }) => {
+  const { t } = useTranslation(I18N_NS);
+
   return (
     <div className="col-lg-6 col-md-12 col-12">
       <div
@@ -12,16 +15,16 @@ const SingleServiceTwo = ({ service, border = '' }) => {
         <div className={`tp-service-item ${border ? border : ''} d-flex mb-30`}>
           <div className="tp-sv-content pl-60">
             <h3 className="tp-sv-title mb-35">
-              <Link href={`/service-details/${service.id}`}>
-                <a>{service.title}</a>
+              <Link href={service.href}>
+                <a>{t(service.title)}</a>
               </Link>
             </h3>
-            <p className="mb-30">{service.text_1}</p>
-            <p>{service.text_2}</p>
+            <p className="mb-30">{t(service.text_1)}</p>
+            <p>{t(service.text_2)}</p>
             <div className="tp-sv-link mt-35">
               <Link href={service.href}>
                 <a>
-                  <i className="far fa-arrow-right"></i> Узнать больше
+                  <i className="far fa-arrow-right"></i> {t('common.learnMore')}
                 </a>
               </Link>
             </div>

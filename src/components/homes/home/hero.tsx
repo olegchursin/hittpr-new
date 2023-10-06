@@ -1,34 +1,32 @@
 import Link from 'next/link';
-import React from 'react';
+import { I18N_NS } from '../../../utils/i18n-utils';
+import { TFunction, useTranslation } from 'next-i18next';
 
-const hero_contents = {
-  title: 'Продвижение бизнеса в новых условиях',
-  text: (
-    <>
-      Приобщитесь к опыту и знаниям ведущих экспертов в области журналистики и
-      PR, профессиональных бизнес-тренеров и практиков
-    </>
-  ),
-  btn_text: 'Узнать больше',
-  btn_text_2: 'Коротко о нас',
-  hero_img: '/assets/img/hero/hero-2.png'
+const hero_contents = (t: TFunction) => {
+  return {
+    title: t('hero.title'),
+    text: <>{t('hero.description')}</>,
+    btn_text: t('common.learnMore'),
+    btn_text_2: t('common.aboutUs'),
+    hero_img: '/assets/img/hero/hero-2.png'
+  };
 };
 
-const { title, text, btn_text, btn_text_2, hero_img } = hero_contents;
-
-const heroImg = (
-  <div className="col-xl-5 col-lg-5">
-    <div
-      className="tp-hero-big-img wow fadeInRight"
-      data-wow-duration=".7s"
-      data-wow-delay="1.2s"
-    >
-      <img src={hero_img} alt="" />
-    </div>
-  </div>
-);
-
 const Hero = () => {
+  const { t } = useTranslation(I18N_NS);
+  const { title, text, btn_text, btn_text_2, hero_img } = hero_contents(t);
+  const heroImg = (
+    <div className="col-xl-5 col-lg-5">
+      <div
+        className="tp-hero-big-img wow fadeInRight"
+        data-wow-duration=".7s"
+        data-wow-delay="1.2s"
+      >
+        <img src={hero_img} alt="" />
+      </div>
+    </div>
+  );
+
   return (
     <div className="tp-hero-area tp-hero-space p-relative z-index-1 fix">
       <div className="tp-hero-shape">

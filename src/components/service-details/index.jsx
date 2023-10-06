@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import { FooterThree, Header, Wrapper } from '../../layout';
+import { FooterHittpr, Header, Wrapper } from '../../layout';
 import { animationCreate } from '../../utils/utils';
 import Breadcrumb from '../common/breadcrumb/breadcrumb';
 import AccordionArea from './accordion-area';
 import ServiceDetailsArea from './service-details-area';
 
-const ServiceDetails = ({ service }) => {
+const ServiceDetails = ({ service, text_3 }) => {
   useEffect(() => {
     setTimeout(() => {
       animationCreate();
@@ -21,13 +21,13 @@ const ServiceDetails = ({ service }) => {
         title={service?.subtitle}
         text_1={service?.text_1}
         text_2={service?.text_2}
-        text_3={service?.text_3}
+        text_3={text_3}
       />
       <AccordionArea
         title={service?.additional_info_title}
         items={service?.additional_info}
       />
-      <FooterThree />
+      <FooterHittpr />
     </Wrapper>
   );
 };

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FooterThree, Header, Wrapper } from '../../layout';
+import { FooterHittpr, Header, Wrapper } from '../../layout';
 import { animationCreate } from '../../utils/utils';
 import Breadcrumb from '../common/breadcrumb/breadcrumb';
 import AboutMeArea from './about-me-area';
@@ -18,7 +18,7 @@ const AboutMe = ({ team }) => {
       <Breadcrumb title={team?.name ? team?.name : 'Ritarexa Diramen'} />
       <AboutMeArea team={team} />
       <ExperienceArea />
-      <FooterThree />
+      <FooterHittpr />
     </Wrapper>
   );
 };

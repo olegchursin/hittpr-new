@@ -1,4 +1,6 @@
 import { ToastContainer } from 'react-toastify';
+import { appWithTranslation } from 'next-i18next';
+
 if (typeof window !== 'undefined') {
   require('bootstrap/dist/js/bootstrap');
 }
@@ -13,4 +15,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp);

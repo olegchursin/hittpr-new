@@ -1,6 +1,8 @@
 import Link from 'next/link';
-import React, { useState } from 'react';
-import menu_data from '../../../layout/headers/menu-data';
+import React, { useEffect, useState } from 'react';
+import { menuData } from '../../../layout/headers/menu-data';
+import { I18N_NS } from '../../../utils/i18n-utils';
+import { useTranslation } from 'next-i18next';
 
 const sidebar_contents = {
   title: (
@@ -18,7 +20,13 @@ const sidebar_contents = {
 const { inst_imgs, title } = sidebar_contents;
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
+  const { t } = useTranslation(I18N_NS);
   const [navTitle, setNavTitle] = useState('');
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    setData(menuData);
+  }, []);
 
   const openMobileMenu = menu => {
     if (navTitle === menu) {
@@ -52,7 +60,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
           <div className="mobile-menu d-lg-none">
             <div className="mm-menu">
               <ul>
-                {menu_data.map((menu, i) =>
+                {data?.map((menu, i) =>
                   menu.render ? (
                     <li
                       key={i}

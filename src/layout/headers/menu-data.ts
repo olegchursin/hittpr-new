@@ -1,14 +1,14 @@
-const menu_data = [
+export const menuData = [
   {
     id: 'about',
     render: true,
     mega_menu: false,
     has_dropdown: true,
-    title: 'О нас',
+    title: 'common.aboutUs',
     link: '/about',
     sub_menus: [
-      { link: '/about', title: 'Кто мы' },
-      { link: '/testimonials', title: 'Отзывы' }
+      { link: '/about', title: 'common.whoWeAre' },
+      { link: '/testimonials', title: 'common.testimonials' }
     ]
   },
   {
@@ -16,14 +16,14 @@ const menu_data = [
     render: true,
     mega_menu: false,
     has_dropdown: true,
-    title: 'PR',
+    title: 'common.pr',
     link: '/pr',
     sub_menus: [
-      { link: '/pr/sport', title: 'Спорт' },
-      { link: '/pr/fashion', title: 'Fashion' },
-      { link: '/pr/personal-brand', title: 'Личный бренд' },
-      { link: '/pr/psychology', title: 'Психология' },
-      { link: '/pr-smi', title: 'Все публикации' }
+      { link: '/pr/sport', title: 'common.sport' },
+      { link: '/pr/fashion', title: 'common.fashion' },
+      { link: '/pr/personal-brand', title: 'common.personalBrand' },
+      { link: '/pr/psychology', title: 'common.psychology' },
+      { link: '/pr-smi', title: 'common.allPublications' }
     ]
   },
   {
@@ -31,7 +31,7 @@ const menu_data = [
     render: true,
     mega_menu: false,
     has_dropdown: false,
-    title: 'Материалы',
+    title: 'common.materials',
     link: '/portfolio'
   },
   {
@@ -39,7 +39,7 @@ const menu_data = [
     render: true,
     mega_menu: false,
     has_dropdown: false,
-    title: 'Обучение',
+    title: 'common.training',
     link: '/training'
   },
   {
@@ -84,7 +84,7 @@ const menu_data = [
     ]
   },
   {
-    id: 4,
+    id: 'blog',
     render: false,
     mega_menu: false,
     has_dropdown: true,
@@ -96,12 +96,11 @@ const menu_data = [
     ]
   },
   {
-    id: 5,
+    id: 'contact',
     render: true,
     mega_menu: false,
     has_dropdown: false,
-    title: 'Контакты',
+    title: 'common.contacts',
     link: '/contact'
   }
 ];
-export default menu_data;

@@ -1,7 +1,6 @@
 import Wrapper from './wrapper';
 import Header from './headers/header';
-import Footer from './footers/footer';
-import FooterThree from './footers/footer-3';
+import FooterHittpr from './footers/footer-hittpr';
 import SocialLinks from './social-links';
 
-export { Wrapper, Header, Footer, FooterThree, SocialLinks };
+export { Wrapper, Header, FooterHittpr, SocialLinks };

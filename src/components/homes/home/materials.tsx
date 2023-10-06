@@ -1,75 +1,80 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import { I18N_NS } from '../../../utils/i18n-utils';
+import { TFunction, useTranslation } from 'next-i18next';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 
-const portfolio_data = [
-  {
-    id: 1,
-    img: '/assets/img/hittpr/projects/patricia-sofa.webp',
-    title: 'Патришия Филд',
-    sm_text: 'Художник по костюмам, стилист, модный дизайнер',
-    category: 'Lifestyle',
-    href: '/patricia',
-    big: true,
-    home: true
-  },
-  {
-    id: 2,
-    img: '/assets/img/hittpr/projects/cena-sq.jpg',
-    title: 'Джон Сина',
-    sm_text: '5 СЕКРЕТОВ О ДЖОНЕ СИНЕ',
-    category: 'Lifestyle',
-    href: '/john-cena',
-    sm: true,
-    home: true
-  },
-  {
-    id: 4,
-    img: '/assets/img/hittpr/projects/kovalev.jpg',
-    title: 'Сергей Ковалев',
-    sm_text: 'Чемпион мира в полутяжелом весе.',
-    category: 'Спорт',
-    href: '/kovalev',
-    big: true,
-    home: true
-  },
-  {
-    id: 5,
-    img: '/assets/img/hittpr/projects/factory-2.jpg',
-    title: 'Factory Fight',
-    sm_text: 'PR БОЙЦОВСКОГО КЛУБА',
-    category: 'Спорт',
-    href: '/factory-fight',
-    sm: true,
-    home: true
-  },
-  {
-    id: 6,
-    img: '/assets/img/hittpr/projects/guides_sm.jpg',
-    title: 'ГИДЫ, переводчики, преподаватели',
-    sm_text: 'ГИДЫ, переводчики, преподаватели',
-    category: 'Services',
-    href: '/guides-interpreters',
-    big: true,
-    home: true
-  },
-  {
-    id: 7,
-    img: '/assets/img/hittpr/projects/dental_clinic_sm.jpg',
-    title: 'Dental Clinic',
-    sm_text: 'Dental Clinic',
-    category: 'Services',
-    href: '/dental-clinic',
-    sm: true,
-    home: true
-  }
-];
+const portfolioData = (t: TFunction) => {
+  return [
+    {
+      id: 1,
+      img: '/assets/img/hittpr/projects/patricia-sofa.webp',
+      title: t('person.patricia.name'),
+      sm_text: t('person.patricia.description'),
+      category: 'Lifestyle',
+      href: 'patricia',
+      big: true
+    },
+    {
+      id: 2,
+      img: '/assets/img/hittpr/projects/cena-sq.jpg',
+      title: t('person.johnCena.name'),
+      sm_text: t('person.johnCena.description'),
+      category: 'Lifestyle',
+      href: 'john-cena',
+      sm: true
+    },
+    {
+      id: 4,
+      img: '/assets/img/hittpr/projects/kovalev.jpg',
+      title: 'Сергей Ковалев',
+      sm_text: 'Чемпион мира в полутяжелом весе.',
+      category: 'Спорт',
+      href: 'kovalev',
+      big: true
+    },
+    {
+      id: 5,
+      img: '/assets/img/hittpr/projects/factory-2.jpg',
+      title: 'Factory Fight',
+      sm_text: 'PR БОЙЦОВСКОГО КЛУБА',
+      category: 'Спорт',
+      href: 'factory-fight',
+      sm: true
+    },
+    {
+      id: 6,
+      img: '/assets/img/hittpr/projects/guides_sm.jpg',
+      title: 'ГИДЫ, переводчики, преподаватели',
+      sm_text: 'ГИДЫ, переводчики, преподаватели',
+      category: 'Services',
+      href: 'guides-interpreters',
+      big: true
+    },
+    {
+      id: 7,
+      img: '/assets/img/hittpr/projects/dental_clinic_sm.jpg',
+      title: 'Dental Clinic',
+      sm_text: 'Dental Clinic',
+      category: 'Services',
+      href: 'dental-clinic',
+      sm: true
+    }
+  ];
+};
 
 const Materials = () => {
+  const router = useRouter();
+  const { t } = useTranslation(I18N_NS);
   const [category, setCategory] = useState('Lifestyle');
-  const items = portfolio_data.filter(p => p.home);
+  const [items, setItems] = useState(portfolioData(t));
+  useEffect(() => {
+    setItems(portfolioData(t));
+  }, [category]);
   const [portfolioItems, setPortfolioItems] = useState(
     items.filter(i => i.category === category)
   );
+
   const categories = [...new Set(items.map(p => p.category))];
 
   const handleCategory = c => {
@@ -87,8 +92,8 @@ const Materials = () => {
         <div className="row align-items-center mb-15">
           <div className="col-xl-5 col-lg-12 col-md-12">
             <div className="tp-project-section-box">
-              <h5 className="tp-subtitle">Наши работы</h5>
-              <h2 className="tp-title">Материалы</h2>
+              <h5 className="tp-subtitle">{t('common.ourWork')}</h5>
+              <h2 className="tp-title">{t('common.materials')}</h2>
             </div>
           </div>
           <div className="col-xl-7 col-lg-12 col-md-12">
@@ -156,9 +161,10 @@ const Materials = () => {
                           </Link>
                         </h3>
                         <p>{item.sm_text}</p>
-                        <Link href={item.href}>
+                        <Link href={`${router.locale}/${item.href}`}>
                           <a className="tp-btn-white-sm">
-                            Подробнее <i className="far fa-arrow-right"></i>
+                            {t('common.learnMore')}{' '}
+                            <i className="far fa-arrow-right"></i>
                           </a>
                         </Link>
                       </div>

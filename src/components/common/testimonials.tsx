@@ -1,20 +1,21 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Link from 'next/link';
+import { I18N_NS } from '../../utils/i18n-utils';
+import { useTranslation } from 'react-i18next';
 
 const testimonial_contents = {
-  subtitle: 'Отзывы',
-  title: 'Почему клиенты ',
-  highlight_text: 'выбирают нас',
-  btn_text: 'Смотреть все отзывы',
+  subtitle: 'common.testimonials',
+  title: 'common.whyUs',
+  btn_text: 'common.testimonialsAll',
   testimonial_data: [
     {
       id: 1,
       brand: '/assets/img/testimonial/testi-brands-1.png',
       ratings: [1, 2, 3, 4, 5],
-      desc: 'Восхищена профессионализмом и креативностью, которые помогли моей компании достичь новых высот в области репутации.',
+      desc: 'testimonials.andreina.description',
       user: '/assets/img/hittpr/persona-female.png',
-      name: 'Наталья Андреина',
+      name: 'testimonials.andreina.name',
       title: '@nataly.coach',
       videoId: 'Vue7dxJwfJw',
       delay: '.3s'
@@ -23,9 +24,9 @@ const testimonial_contents = {
       id: 2,
       brand: '/assets/img/testimonial/testi-brands-2.png',
       ratings: [1, 2, 3, 4, 5],
-      desc: 'Отличный подход и эффективная коммуникация сделали сотрудничество невероятно приятным и успешным.',
+      desc: 'testimonials.bekieva.description',
       user: '/assets/img/hittpr/persona-female.png',
-      name: 'Виктория Бекиева',
+      name: 'testimonials.bekieva.name',
       title: '@center_psy_viktoria_bekieva',
       videoId: 'jvDr0ZKGzRw',
       delay: '.5s'
@@ -34,9 +35,9 @@ const testimonial_contents = {
       id: 3,
       brand: '/assets/img/testimonial/testi-brands-2.png',
       ratings: [1, 2, 3, 4, 5],
-      desc: 'Работа была безупречной: от индивидуального подхода до высококачественного контента и медийной экспозиции.',
+      desc: 'testimonials.sillah.description',
       user: '/assets/img/hittpr/persona-male.png',
-      name: 'Исмайл Силлах',
+      name: 'testimonials.sillah.name',
       title: '@ismaylsillah',
       videoId: 'PgWKdggMIn4',
       delay: '.7s'
@@ -44,49 +45,28 @@ const testimonial_contents = {
   ]
 };
 
-const { btn_text, highlight_text, subtitle, testimonial_data, title } =
-  testimonial_contents;
+const Testimonials = () => {
+  const { t } = useTranslation(I18N_NS);
+  const [sliderLoop, setSliderLoop] = useState(false);
+  const [info, setInfo] = useState({} as any);
+  useEffect(() => {
+    setSliderLoop(true);
+    setInfo(testimonial_contents);
+  }, []);
 
-const Testimonials = ({ home_6 = false, style_2 = false }) => {
-  const [sliderLoop, setSliderLoop] = React.useState(false);
-  React.useEffect(() => setSliderLoop(true), []);
   return (
-    <div
-      className={`tp-testimonial-area ${
-        style_2 ? 'pb-130' : 'pt-130 pb-130'
-      } p-relative`}
-    >
+    <div className={`tp-testimonial-area pt-130 pb-130 p-relative`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
             <div className="tp-testi-wrapper d-flex pb-70 justify-content-between align-items-end">
               <div className="tp-testimonial-title-box ">
-                <h5 className="tp-subtitle">{subtitle}</h5>
-                <h2 className="tp-title-sm">
-                  {title}
-                  <span className="tp-section-highlight">
-                    {highlight_text}
-                    <svg
-                      width="212"
-                      height="11"
-                      viewBox="0 0 212 11"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M0 0L212 11H0V0Z" fill="#FFDC60" />
-                    </svg>
-                  </span>
-                </h2>
+                <h5 className="tp-subtitle">{t(info.subtitle)}</h5>
+                <h2 className="tp-title-sm">{t(info.title)}</h2>
               </div>
               <div className="tp-testi-button-right-side">
                 <Link href="/testimonials">
-                  <a
-                    className={`${
-                      home_6 || style_2 ? 'tp-btn-yellow' : 'tp-btn'
-                    }`}
-                  >
-                    {btn_text}
-                  </a>
+                  <a className={'tp-btn'}>{t(info.btn_text)}</a>
                 </Link>
               </div>
             </div>
@@ -118,7 +98,7 @@ const Testimonials = ({ home_6 = false, style_2 = false }) => {
               }
             }}
           >
-            {testimonial_data.map(item => {
+            {info?.testimonial_data?.map(item => {
               const { id, desc, user, name, ratings, title } = item;
               return (
                 <SwiperSlide key={id}>
@@ -136,15 +116,15 @@ const Testimonials = ({ home_6 = false, style_2 = false }) => {
                       </div>
                     </div>
                     <div className="tp-testi-paragraph pb-40">
-                      <p>{desc}</p>
+                      <p>{t(desc)}</p>
                     </div>
                     <div className="tp-testimonial-item-four__client d-flex align-items-center">
                       <div className="mr-20">
                         <img src={user} alt="" style={{ width: '60px' }} />
                       </div>
                       <div className="tp-testimonial-item-four__position">
-                        <h4 className="m-0">{name}</h4>
-                        <span>{title}</span>
+                        <h4 className="m-0">{t(name)}</h4>
+                        <span>{t(title)}</span>
                       </div>
                     </div>
                   </div>
