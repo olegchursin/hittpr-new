@@ -31,7 +31,7 @@ const case_item = {
     'За год сотрудничества, БК “FACTORY FIGHT” вошел в 100 лучших клубов Москвы и оценен спортивной делегацией из Китая, как “уникальный”'
 };
 
-export default function index(
+export default function FF(
   _props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
   const { t } = useTranslation(I18N_NS);

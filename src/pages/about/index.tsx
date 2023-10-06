@@ -40,7 +40,7 @@ const teamData = (t: TFunction) => {
   };
 };
 
-const index = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
+const About = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const { t } = useTranslation(I18N_NS);
   const [team, setTeam] = useState({});
   useEffect(() => {
@@ -56,7 +56,7 @@ const index = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
   );
 };
 
-export default index;
+export default About;
 
 export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => ({
   props: {

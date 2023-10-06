@@ -62,7 +62,7 @@ const case_item = {
   description: 'Врачи'
 };
 
-export default function index(
+export default function Doctors(
   _props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
   const { t } = useTranslation(I18N_NS);

@@ -43,7 +43,7 @@ const case_item = {
     'Победа в категории “Дентал клиника года“ журнала MODA TOPICAL. Написание подводок ведущему церемонии. Написание благодарственной речи директору клиники.'
 };
 
-export default function index(
+export default function DentalClinic(
   _props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
   const { t } = useTranslation(I18N_NS);

@@ -11,7 +11,7 @@ type Props = {
   // Add custom props here
 };
 
-export default function index(
+export default function Services(
   _props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
   const { t } = useTranslation(I18N_NS);

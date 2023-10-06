@@ -65,7 +65,7 @@ const case_item = {
     ' Патришия Филд (Patricia Field)  – американский художник по костюмам, стилист, модный дизайнер, лауреат двух премий “Эмми” и номинант на “Оскар”. Широкая публика ассоциирует ее с такими сериалами, как «Секс в большом городе” (Sex and the city), «Эмили в Париже» (Emily in Paris) и кинокартиной “Дьявол носит Prada” (The Devil Wears Prada).'
 };
 
-export default function index(
+export default function Patricia(
   _props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
   const { t } = useTranslation(I18N_NS);

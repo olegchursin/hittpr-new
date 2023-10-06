@@ -30,7 +30,7 @@ const case_item = {
     'Меган Хесс – австралийский художник-иллюстратор, которая известна своими работами для таких мировых брендов, как Prada, Dior, Cartier, Chanel, Fendi, Tiffany&Co., Saint Laurent, Cartier, Louis Vuitton  и многих других. Она оформляла витрины в знаменитом Bergdorf Goodman в Нью-Йорке и обложку книги Кэндес Бушнелл “Sex and the city”.'
 };
 
-export default function index(
+export default function Hess(
   _props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
   const { t } = useTranslation(I18N_NS);

@@ -17,13 +17,11 @@ const Header = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const { headerSticky } = useSticky();
   const router = useRouter();
   const { t, i18n } = useTranslation(I18N_NS);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const onToggleLanguageClick = (newLocale: string) => {
     clientSideLanguageChange(newLocale);
     const { pathname, asPath, query } = router;
     router.push({ pathname, query }, asPath, { locale: newLocale });
   };
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const clientSideLanguageChange = (newLocale: string) => {
     i18n.changeLanguage(newLocale);
   };

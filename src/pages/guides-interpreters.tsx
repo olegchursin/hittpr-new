@@ -34,7 +34,7 @@ const case_item = {
   description: 'ГИДЫ, переводчики, преподаватели'
 };
 
-export default function index(
+export default function GI(
   _props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
   const { t } = useTranslation(I18N_NS);

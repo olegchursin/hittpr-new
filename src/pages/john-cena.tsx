@@ -41,7 +41,7 @@ const case_item = {
     'Джон Си́на — американский рестлер, выступающий в федерации WWE, автор и исполнитель песен в стиле хип-хоп и рэп, киноактёр.'
 };
 
-export default function index(
+export default function John(
   _props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
   const { t } = useTranslation(I18N_NS);
