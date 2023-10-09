@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { menuData } from '../../../layout/headers/menu-data';
 import { I18N_NS } from '../../../utils/i18n-utils';
 import { useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router';
 
 const sidebar_contents = {
   title: (
@@ -20,7 +21,17 @@ const sidebar_contents = {
 const { inst_imgs, title } = sidebar_contents;
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
-  const { t } = useTranslation(I18N_NS);
+  const router = useRouter();
+  const { t, i18n } = useTranslation(I18N_NS);
+  const onToggleLanguageClick = (newLocale: string) => {
+    clientSideLanguageChange(newLocale);
+    const { pathname, asPath, query } = router;
+    router.push({ pathname, query }, asPath, { locale: newLocale });
+  };
+  const clientSideLanguageChange = (newLocale: string) => {
+    i18n.changeLanguage(newLocale);
+  };
+  const changeTo = router.locale === 'ru' ? 'en' : 'ru';
   const [navTitle, setNavTitle] = useState('');
   const [data, setData] = useState([]);
 
@@ -135,6 +146,16 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
               </div>
             </div>
           ) : null}
+
+          <div className="d-flex align-items-center justify-content-between">
+            <div>{t('common.language')}:</div>
+            <button onClick={() => onToggleLanguageClick(changeTo)}>
+              <span className="language_switch">
+                <i className="far fa-language"></i>{' '}
+                {changeTo === 'ru' ? 'РУ' : 'EN'}
+              </span>
+            </button>
+          </div>
         </div>
       </div>
 
