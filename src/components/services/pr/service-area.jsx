@@ -78,9 +78,7 @@ const ServiceArea = () => {
                       </div>
                       <div className="tp-service-item-four__title">
                         <h3 className="tp-sv-sm-title">
-                          <Link href={`/pr/${id}`}>
-                            <a>{title}</a>
-                          </Link>
+                          <Link href={`/pr/${id}`}>{title}</Link>
                         </h3>
                       </div>
                     </div>

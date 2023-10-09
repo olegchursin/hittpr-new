@@ -9,13 +9,18 @@ const HeaderFour = () => {
   return (
     <React.Fragment>
       <header className="d-none d-lg-block">
-        <div id="header-sticky" className={`tp-header-area-two header-transparent header-space-three pl-115 pr-115 pt-35 ${headerSticky ? 'header-sticky' : ''}`}>
+        <div
+          id="header-sticky"
+          className={`tp-header-area-two header-transparent header-space-three pl-115 pr-115 pt-35 ${
+            headerSticky ? 'header-sticky' : ''
+          }`}
+        >
           <div className="container-fluid">
             <div className="row align-items-center">
               <div className="col-xxl-3 col-xl-3 col-lg-3">
                 <div className="tp-logo text-start">
                   <Link href="/">
-                    <a><img src="/assets/img/logo/hittpr-logo.png" alt="" /></a>
+                    <img src="/assets/img/logo/hittpr-logo.png" alt="" />
                   </Link>
                 </div>
               </div>
@@ -32,12 +37,13 @@ const HeaderFour = () => {
                 <div className="tp-header-left d-flex align-items-center justify-content-end">
                   <div className="tp-header-login login-color-black d-none d-xxl-block ">
                     <Link href="/login">
-                      <a> <i className="fal fa-user"></i> Login</a>
+                      {' '}
+                      <i className="fal fa-user"></i> Login
                     </Link>
                   </div>
                   <div className="tp-header-yellow-button tp-yellow-space">
                     <Link href="/contact">
-                      <a className="tp-btn-black">Let’s Talk 👋</a>
+                      <span className="tp-btn-black">Let’s Talk 👋</span>
                     </Link>
                   </div>
                 </div>
@@ -48,7 +54,7 @@ const HeaderFour = () => {
       </header>
 
       {/* <!-- mobile-menu-area --> */}
-      <MobileMenu logo={"hittpr-logo.png"} />
+      <MobileMenu logo={'hittpr-logo.png'} />
       {/* <!-- mobile-menu-area-end --> */}
     </React.Fragment>
   );

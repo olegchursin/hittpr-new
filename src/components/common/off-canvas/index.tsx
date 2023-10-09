@@ -41,9 +41,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
         <div className={`tpoffcanvas ${isOpen ? 'opened' : ''}`}>
           <div className="tpoffcanvas__logo">
             <Link href="/">
-              <a>
-                <img src="/assets/img/logo/hittpr-logo-white.png" alt="" />
-              </a>
+              <img src="/assets/img/logo/hittpr-logo-white.png" alt="" />
             </Link>
           </div>
           <div

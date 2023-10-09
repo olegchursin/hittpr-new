@@ -9,14 +9,17 @@ const HeaderThree = () => {
   return (
     <>
       <header className="d-none d-lg-block">
-        <div id="header-sticky" className={`tp-header-area header-transparent hasdropdown-white pl-170 
-        pr-170 ${headerSticky ? 'header-sticky' : ''}`}>
+        <div
+          id="header-sticky"
+          className={`tp-header-area header-transparent hasdropdown-white pl-170 
+        pr-170 ${headerSticky ? 'header-sticky' : ''}`}
+        >
           <div className="container-fluid">
             <div className="row align-items-center">
               <div className="col-xxl-3 col-xl-3 col-lg-3">
                 <div className="tp-logo text-start">
                   <Link href="/">
-                    <a><img src="/assets/img/logo/hittpr-logo-white.png" alt="" /></a>
+                    <img src="/assets/img/logo/hittpr-logo-white.png" alt="" />
                   </Link>
                 </div>
               </div>
@@ -32,13 +35,13 @@ const HeaderThree = () => {
               <div className="col-xxl-3 col-xl-3 col-lg-3">
                 <div className="tp-header-left d-flex align-items-center justify-content-end">
                   <div className="tp-header-login tp-login-primary  d-lg-none d-xl-block">
-                    <Link href="/login">
-                      <a>Login</a>
-                    </Link>
+                    <Link href="/login">Login</Link>
                   </div>
                   <div className="tp-header-yellow-button ml-55">
                     <Link href="/contact">
-                      <a className="tp-btn-yellow-semilar">Get Collax Free</a>
+                      <span className="tp-btn-yellow-semilar">
+                        Get Collax Free
+                      </span>
                     </Link>
                   </div>
                 </div>
@@ -49,7 +52,7 @@ const HeaderThree = () => {
       </header>
 
       {/* <!-- mobile-menu-area --> */}
-      <MobileMenu logo={"hittpr-logo-white.png"} bg={'tp-green-bg'} />
+      <MobileMenu logo={'hittpr-logo-white.png'} bg={'tp-green-bg'} />
       {/* <!-- mobile-menu-area-end --> */}
     </>
   );

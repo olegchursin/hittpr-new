@@ -40,9 +40,7 @@ const Header = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
               <div className="col-xxl-3 col-xl-3 col-lg-3">
                 <div className="tp-logo text-start">
                   <Link href={'/'}>
-                    <a>
-                      <img src="/assets/img/logo/hittpr-logo.png" alt="" />
-                    </a>
+                    <img src="/assets/img/logo/hittpr-logo.png" alt="" />
                   </Link>
                 </div>
               </div>

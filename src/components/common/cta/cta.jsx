@@ -16,13 +16,13 @@ const Cta = () => {
                   Почему нас рекомендуют
                 </h2>
                 <p className="text-white pb-35">
-                  Настраиваем ваш PR так, чтобы он приносил клиентов даже
-                  после завершения сотрудничества.
+                  Настраиваем ваш PR так, чтобы он приносил клиентов даже после
+                  завершения сотрудничества.
                 </p>
               </div>
               <div className="tp-news-button">
                 <Link href="/contact">
-                  <a className="tp-btn-lg-yellow">Свяжитесь с нами</a>
+                  <span className="tp-btn-lg-yellow">Свяжитесь с нами</span>
                 </Link>
               </div>
             </div>

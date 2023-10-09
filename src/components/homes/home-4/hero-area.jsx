@@ -92,7 +92,7 @@ const HeroArea = () => {
                   data-wow-delay=".9s"
                 >
                   <Link href="/about">
-                    <a className="tp-btn mr-55">{btn_text}</a>
+                    <span className="tp-btn mr-55">{btn_text}</span>
                   </Link>
                   <div className="tp-hero-paly-button-four">
                     <button

@@ -100,13 +100,13 @@ const TestimonialArea = ({ home_6, style_2 = false }: TestimonialAreaProps) => {
               </div>
               <div className="tp-testi-button-right-side">
                 <Link href="/testimonials">
-                  <a
+                  <span
                     className={`${
                       home_6 || style_2 ? 'tp-btn-yellow' : 'tp-btn'
                     }`}
                   >
                     {btn_text}
-                  </a>
+                  </span>
                 </Link>
               </div>
             </div>

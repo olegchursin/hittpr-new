@@ -66,7 +66,7 @@ const Testimonials = () => {
               </div>
               <div className="tp-testi-button-right-side">
                 <Link href="/testimonials">
-                  <a className={'tp-btn'}>{t(info.btn_text)}</a>
+                  <span className={'tp-btn'}>{t(info.btn_text)}</span>
                 </Link>
               </div>
             </div>

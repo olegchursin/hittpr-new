@@ -9,16 +9,17 @@ const HeaderTwo = () => {
   return (
     <React.Fragment>
       <header className="d-none d-lg-block">
-        <div id="header-sticky" className={`tp-header-area-two header-transparent header-space-three pl-115 pr-115
-         ${headerSticky ? 'header-sticky' : ''}`}>
+        <div
+          id="header-sticky"
+          className={`tp-header-area-two header-transparent header-space-three pl-115 pr-115
+         ${headerSticky ? 'header-sticky' : ''}`}
+        >
           <div className="container-fluid">
             <div className="row align-items-center header-space-two">
               <div className="col-xxl-3 col-xl-3 col-lg-3">
                 <div className="tp-logo text-start">
                   <Link href="/">
-                    <a>
-                      <img src="/assets/img/logo/hittpr-logo.png" alt="" />
-                    </a>
+                    <img src="/assets/img/logo/hittpr-logo.png" alt="" />
                   </Link>
                 </div>
               </div>
@@ -34,7 +35,7 @@ const HeaderTwo = () => {
               <div className="col-xxl-3 col-xl-3 col-lg-3">
                 <div className="tp-header-button text-end">
                   <Link href="/contact">
-                    <a className="tp-btn">Let’s Talk 👋</a>
+                    <span className="tp-btn">Let’s Talk 👋</span>
                   </Link>
                 </div>
               </div>
@@ -44,7 +45,7 @@ const HeaderTwo = () => {
       </header>
 
       {/* <!-- mobile-menu-area --> */}
-      <MobileMenu logo={"hittpr-logo.png"} />
+      <MobileMenu logo={'hittpr-logo.png'} />
       {/* <!-- mobile-menu-area-end --> */}
     </React.Fragment>
   );

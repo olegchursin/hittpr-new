@@ -59,13 +59,13 @@ const Hero = () => {
                     data-wow-delay="1s"
                   >
                     <Link href="/portfolio">
-                      <a className="tp-btn mr-30">{btn_text}</a>
+                      <span className="tp-btn mr-30">{btn_text}</span>
                     </Link>
                     <Link href="/about">
-                      <a className="tp-btn-grey">
+                      <span className="tp-btn-grey">
                         {btn_text_2}
                         <i className="far fa-arrow-right"></i>
-                      </a>
+                      </span>
                     </Link>
                   </div>
                 </div>

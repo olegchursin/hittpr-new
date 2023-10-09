@@ -22,9 +22,9 @@ const Breadcrumb = ({ title, back_home = false, renderCTA = true }) => {
               <h3 className="breadcrumb__title">{title}</h3>
               {!back_home && renderCTA && (
                 <Link href="/contact">
-                  <a className="tp-btn-white-border">
+                  <span className="tp-btn-white-border">
                     {t(labels.contactUs)} <i className="far fa-arrow-right"></i>
-                  </a>
+                  </span>
                 </Link>
               )}
               {back_home && (

@@ -6,8 +6,8 @@ const services_contents = {
   shapes: ['bp-chose-6.1.png', 'hero-shape-5.1.png'],
   subtitle: 'Why Choose us',
   title: 'Excellent it solution service and unlimited support for you business',
-  services: services_data.filter(ser => ser.home_6),
-}
+  services: services_data.filter(ser => ser.home_6)
+};
 
 const { title, shapes, services, subtitle } = services_contents;
 
@@ -31,26 +31,32 @@ const ServicesArea = () => {
         <div className="row">
           {services.map((item, i) => {
             const { id, text_1, title, delay, duration, icon, active } = item;
-            return <div key={id} className="col-xl-4 col-lg-4 col-md-6 mb-30 wow tpfadeUp"
-              data-wow-duration={duration} data-wow-delay={delay}>
-              <div className={`bpservice ${active ? 'active' : ''} text-center`}>
-                <div className={`bpservice__item bp-sv-color-${i + 1}`}>
-                  <div className='bpservice__icon'>
-                    <Link href={`/service-details/${id}`}>
-                      <a> {icon} </a>
-                    </Link>
-                  </div>
-                  <div className="bpservice__content">
-                    <h3 className="bp-sv-sm-title bp-sv-color-1">
+            return (
+              <div
+                key={id}
+                className="col-xl-4 col-lg-4 col-md-6 mb-30 wow tpfadeUp"
+                data-wow-duration={duration}
+                data-wow-delay={delay}
+              >
+                <div
+                  className={`bpservice ${active ? 'active' : ''} text-center`}
+                >
+                  <div className={`bpservice__item bp-sv-color-${i + 1}`}>
+                    <div className="bpservice__icon">
                       <Link href={`/service-details/${id}`}>
-                        <a>{title}</a>
+                        <a> {icon} </a>
                       </Link>
-                    </h3>
-                    <p>{text_1.substring(0, 60)}...</p>
+                    </div>
+                    <div className="bpservice__content">
+                      <h3 className="bp-sv-sm-title bp-sv-color-1">
+                        <Link href={`/service-details/${id}`}>{title}</Link>
+                      </h3>
+                      <p>{text_1.substring(0, 60)}...</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            );
           })}
         </div>
       </div>

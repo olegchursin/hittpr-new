@@ -3,22 +3,37 @@ import React from 'react';
 import { ClipPath, UpArrow } from '../../svg';
 
 const footer_contents = {
-  title: <>More than 10 years in the game and {"we're"} <br /> just getting started.🤝</>,
+  title: (
+    <>
+      More than 10 years in the game and {"we're"} <br /> just getting
+      started.🤝
+    </>
+  ),
   btn_text: 'Available for new Project',
-  copyRight_text: <>© {new Date().getFullYear()} Creative Agency , All Right Receved.</>,
+  copyRight_text: (
+    <>© {new Date().getFullYear()} Creative Agency , All Right Receved.</>
+  ),
   conditions: ['Support', 'Privacy policy', 'Terms and conditions'],
   logo: '/assets/img/copyright/copyright-logo.png',
-  social_links: ['fab fa-linkedin-in', 'fab fa-facebook-f', 'fab fa-instagram', 'fab fa-youtube']
-}
+  social_links: [
+    'fab fa-linkedin-in',
+    'fab fa-facebook-f',
+    'fab fa-instagram',
+    'fab fa-youtube'
+  ]
+};
 
-const { btn_text, conditions, copyRight_text, logo, social_links, title } = footer_contents;
+const { btn_text, conditions, copyRight_text, logo, social_links, title } =
+  footer_contents;
 
 const Footer = () => {
   return (
     <footer className="p-relative">
       <button className="scrollTop d-none d-md-block" data-target="html">
         <Link href={'/'}>
-          <div className="tp-backto-top"><UpArrow /></div>
+          <div className="tp-backto-top">
+            <UpArrow />
+          </div>
         </Link>
       </button>
       <div className="footer-clip-shape">
@@ -33,7 +48,11 @@ const Footer = () => {
           <span className="tp-circle-3"></span>
         </div>
         <div className="container">
-          <div className="tp-footer-widget wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".5s">
+          <div
+            className="tp-footer-widget wow tpfadeUp"
+            data-wow-duration=".5s"
+            data-wow-delay=".5s"
+          >
             <div className="row align-items-center">
               <div className="col-xl-7 col-lg-7 col-md-7 col-12">
                 <div className="tp-footer-top">
@@ -43,14 +62,21 @@ const Footer = () => {
               <div className="col-xl-5 col-lg-5 col-md-5 col-12">
                 <div className="tp-footer-button text-start text-md-end">
                   <Link href="/contact">
-                    <a className="tp-btn">{btn_text}<i className="far fa-arrow-right"></i></a>
+                    <span className="tp-btn">
+                      {btn_text}
+                      <i className="far fa-arrow-right"></i>
+                    </span>
                   </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="tp-copyright-area pb-90 wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".7s">
+        <div
+          className="tp-copyright-area pb-90 wow tpfadeUp"
+          data-wow-duration=".5s"
+          data-wow-delay=".7s"
+        >
           <div className="container">
             <div className="tp-copyright-box align-items-center">
               <div className="row align-items-center">
@@ -61,7 +87,11 @@ const Footer = () => {
                 </div>
                 <div className="col-xl-7 col-lg-7 col-md-7 col-12">
                   <div className="tp-copyright-right text-md-end text-start">
-                    {conditions.map((c, i) => <a key={i} href="#">{c}</a>)}
+                    {conditions.map((c, i) => (
+                      <a key={i} href="#">
+                        {c}
+                      </a>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -71,14 +101,16 @@ const Footer = () => {
                 <div className="col-xl-4 col-lg-4 col-md-4 col-12">
                   <div className="tp-copyright-logo mt-35">
                     <Link href="/">
-                      <a><img src={logo} alt="" /></a>
+                      <img src={logo} alt="" />
                     </Link>
                   </div>
                 </div>
                 <div className="col-xl-8 col-lg-8 col-md-8 col-12">
                   <div className="tp-copyright-social text-md-end mt-25">
                     {social_links.map((s, i) => (
-                      <a key={i} href="#"><i className={s}></i></a>
+                      <a key={i} href="#">
+                        <i className={s}></i>
+                      </a>
                     ))}
                   </div>
                 </div>

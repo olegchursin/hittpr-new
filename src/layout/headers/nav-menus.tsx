@@ -20,18 +20,16 @@ const NavMenus = () => {
         const menuItem = (
           <li key={i} className={`${dropdownClass} ${megaMenuClass}`}>
             <Link href={menu.link}>
-              <a>
+              <>
                 {t(menu.title)}{' '}
                 {menu.has_dropdown && <i className="fal fa-angle-down" />}
-              </a>
+              </>
             </Link>
             {menu.has_dropdown && (
               <ul className="submenu text-start">
                 {menu.sub_menus.map((subMenu, i) => (
                   <li key={i}>
-                    <Link href={subMenu.link}>
-                      <a>{t(subMenu.title)}</a>
-                    </Link>
+                    <Link href={subMenu.link}>{t(subMenu.title)}</Link>
                   </li>
                 ))}
               </ul>

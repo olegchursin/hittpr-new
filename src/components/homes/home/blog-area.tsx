@@ -40,10 +40,8 @@ const BlogArea = () => {
                   <div className="tp-blog-item">
                     <div className="tp-blog-img fix mb-35">
                       <Link href={`/blog-details/${id}`}>
-                        <a>
-                          {' '}
-                          <img className="w-100" src={img} alt="" />
-                        </a>
+                        {' '}
+                        <img className="w-100" src={img} alt="" />
                       </Link>
                     </div>
                     <div className="tp-blog-meta d-flex justify-content-between mb-30">
@@ -54,9 +52,7 @@ const BlogArea = () => {
                     </div>
                     <div className="tp-blog-info">
                       <h3 className="tp-blog-title">
-                        <Link href={`/blog-details/${id}`}>
-                          <a>{title}</a>
-                        </Link>
+                        <Link href={`/blog-details/${id}`}>{title}</Link>
                       </h3>
                       <p>{short_desc}</p>
                     </div>
@@ -70,7 +66,7 @@ const BlogArea = () => {
           <div className="col-xl-12">
             <div className="tp-blog-button text-center mt-30">
               <Link href={'/blog'}>
-                <a className="tp-btn">View All Blog</a>
+                <span className="tp-btn">View All Blog</span>
               </Link>
             </div>
           </div>

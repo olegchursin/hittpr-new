@@ -71,9 +71,7 @@ const FooterHittpr = ({ home_four = false }) => {
                   {!home_four && (
                     <div className="tp-footer-widget__logo mb-30">
                       <Link href="/">
-                        <a>
-                          <img src={logo} alt="" />
-                        </a>
+                        <img src={logo} alt="" />
                       </Link>
                     </div>
                   )}

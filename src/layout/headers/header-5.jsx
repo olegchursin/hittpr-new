@@ -20,9 +20,7 @@ const HeaderFive = () => {
               <div className="col-xxl-3 col-xl-3 col-lg-3">
                 <div className="tp-logo text-start">
                   <Link href={'/'}>
-                    <a>
-                      <img src="/assets/img/logo/hittpr-logo.png" alt="" />
-                    </a>
+                    <img src="/assets/img/logo/hittpr-logo.png" alt="" />
                   </Link>
                 </div>
               </div>
@@ -38,9 +36,9 @@ const HeaderFive = () => {
                   <ul className="d-none d-xxl-block">
                     <li>
                       <Link href="/login">
-                        <a className="#">
+                        <span className="#">
                           <i className="far fa-user fa-user"></i> Login
-                        </a>
+                        </span>
                       </Link>
                     </li>
                     <li>
@@ -52,7 +50,7 @@ const HeaderFive = () => {
                   </ul>
                   <div className="tp-header-yellow-button">
                     <Link href="/contact">
-                      <a className="tp-btn-sky">How it Works</a>
+                      <span className="tp-btn-sky">How it Works</span>
                     </Link>
                   </div>
                 </div>

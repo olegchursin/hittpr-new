@@ -7,11 +7,10 @@ import ImageLightBox from '../../common/modals/image-lightbox';
 const portfolio_contents = {
   subtitle: 'Complete Project',
   title: 'Creative work.',
-  project_items: portfolio_data.filter(item => item.portfolio_2),
-}
+  project_items: portfolio_data.filter(item => item.portfolio_2)
+};
 const { subtitle, title, project_items } = portfolio_contents;
 const imagePerRow = 4;
-
 
 const PortfolioItems = () => {
   // category
@@ -27,24 +26,24 @@ const PortfolioItems = () => {
   // image open state
   const [open, setOpen] = useState(false);
   // handleImagePopup
-  const handleImagePopup = (index) => {
-    setPhotoIndex(index)
-    setOpen(true)
-  }
+  const handleImagePopup = index => {
+    setPhotoIndex(index);
+    setOpen(true);
+  };
   // handleLoadData
   const handleLoadData = () => {
-    setNext(value => value + 2)
-  }
-  // images 
+    setNext(value => value + 2);
+  };
+  // images
   const images = items.map(img => img.img);
-  // all categories 
+  // all categories
   const all_categories = [...new Set(project_items.map(c => c.category))];
   // handleCategory
-  const handleCategory = (category) => {
-    setNext(imagePerRow)
-    setCategory(category)
-    setItems(project_items.filter(item => item.category === category))
-  }
+  const handleCategory = category => {
+    setNext(imagePerRow);
+    setCategory(category);
+    setItems(project_items.filter(item => item.category === category));
+  };
   return (
     <React.Fragment>
       <div className="tp-project-area pt-120 pb-120 p-relative">
@@ -61,8 +60,11 @@ const PortfolioItems = () => {
             <div className="col-10 p-0 text-center">
               <div className="tp-project-tab-button masonary-menu">
                 {all_categories.map((c, i) => (
-                  <button key={i} className={`${c === category ? 'active' : ''}`}
-                    onClick={() => handleCategory(c)}>
+                  <button
+                    key={i}
+                    className={`${c === category ? 'active' : ''}`}
+                    onClick={() => handleCategory(c)}
+                  >
                     <span>{c}</span>
                   </button>
                 ))}
@@ -79,13 +81,16 @@ const PortfolioItems = () => {
                   <div className="tp-portfolio-content-box">
                     <h3 className="portfolio-animation-title">
                       <Link href={`/portfolio-details/${item.id}`}>
-                        <a>{item.title}</a>
+                        {item.title}
                       </Link>
                     </h3>
                     <span>{item.subtitle}</span>
                   </div>
                   <div className="portfolio-animation-icon">
-                    <button className="popup-image" onClick={() => handleImagePopup(i)}>
+                    <button
+                      className="popup-image"
+                      onClick={() => handleImagePopup(i)}
+                    >
                       <PopupArrowTwo />
                     </button>
                   </div>
@@ -93,19 +98,28 @@ const PortfolioItems = () => {
               </div>
             ))}
           </div>
-          {next < items.length && <div className="row">
-            <div className="col-12">
-              <div className="tp-project-button text-center mt-25">
-                <button onClick={handleLoadData} className="tp-btn-yellow">Lode more</button>
+          {next < items.length && (
+            <div className="row">
+              <div className="col-12">
+                <div className="tp-project-button text-center mt-25">
+                  <button onClick={handleLoadData} className="tp-btn-yellow">
+                    Lode more
+                  </button>
+                </div>
               </div>
             </div>
-          </div>}
+          )}
         </div>
       </div>
 
       {/* image light box start */}
-      <ImageLightBox images={images} open={open} setOpen={setOpen}
-        photoIndex={photoIndex} setPhotoIndex={setPhotoIndex} />
+      <ImageLightBox
+        images={images}
+        open={open}
+        setOpen={setOpen}
+        photoIndex={photoIndex}
+        setPhotoIndex={setPhotoIndex}
+      />
       {/* image light box end */}
     </React.Fragment>
   );

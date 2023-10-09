@@ -33,7 +33,9 @@ const CtaTwo = () => {
                 data-wow-delay="1s"
               >
                 <Link href="/contact">
-                  <a className="tp-btn-lg-yellow mr-20">Become a Partner</a>
+                  <span className="tp-btn-lg-yellow mr-20">
+                    Become a Partner
+                  </span>
                 </Link>
                 <Link href="/about">
                   <a className="tp-btn-sky">Press Office</a>
