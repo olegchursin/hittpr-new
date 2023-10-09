@@ -74,7 +74,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                     >
                       {menu.has_dropdown && (
                         <button onClick={() => openMobileMenu(menu.title)}>
-                          {menu.title}{' '}
+                          {t(menu.title)}{' '}
                         </button>
                       )}
                       <ul
@@ -86,12 +86,12 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                       >
                         {menu?.sub_menus?.map((sub, i) => (
                           <li key={i}>
-                            <Link href={`${sub.link}`}>{sub.title}</Link>
+                            <Link href={`${sub.link}`}>{t(sub.title)}</Link>
                           </li>
                         ))}
                       </ul>
                       {!menu.has_dropdown && (
-                        <Link href={menu.link}>{menu.title}</Link>
+                        <Link href={menu.link}>{t(menu.title)}</Link>
                       )}
                     </li>
                   ) : null
@@ -100,7 +100,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
             </div>
           </div>
           <div className="tpoffcanvas__contact mt-40">
-            <span>Свяжитесьс с нами</span>
+            <span>{t('common.contactUs')}</span>
             <ul>
               <li>
                 <i className="fas fa-star"></i>{' '}

@@ -17,7 +17,7 @@ const MobileMenu = ({ logo, transparent = true }) => {
           <div className="row align-items-center">
             <div className="col-6">
               <div className="tp-logo">
-                <a href="#">
+                <a href="/">
                   <img src={`/assets/img/logo/${logo}`} alt="" />
                 </a>
               </div>
