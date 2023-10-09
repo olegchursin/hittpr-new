@@ -1,6 +1,7 @@
 import React from 'react';
 import useSticky from '../../hooks/use-sticky';
 import Sidebar from '../../components/common/off-canvas';
+import Link from 'next/link';
 
 const MobileMenu = ({ logo, transparent = true }) => {
   const { headerSticky } = useSticky();
@@ -17,9 +18,11 @@ const MobileMenu = ({ logo, transparent = true }) => {
           <div className="row align-items-center">
             <div className="col-6">
               <div className="tp-logo">
-                <a href="/">
-                  <img src={`/assets/img/logo/${logo}`} alt="" />
-                </a>
+                <Link href={'/'}>
+                  <a>
+                    <img src={`/assets/img/logo/${logo}`} alt="" />
+                  </a>
+                </Link>
               </div>
             </div>
             <div className="col-6">
