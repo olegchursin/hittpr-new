@@ -51,7 +51,7 @@ const ProjectArea = () => {
 
   return (
     <>
-      <div className="tp-project-area pt-120 pb-120 p-relative">
+      <div className="tp-project-area pt-40 pb-40 p-relative">
         {shapes.map((s, i) => <div key={i} className={`tp-project-shape-${s.num}`}>
           <img src={`/assets/img/project/${s.img}`} alt="" />
         </div>)}

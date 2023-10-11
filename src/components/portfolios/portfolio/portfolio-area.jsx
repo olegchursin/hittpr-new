@@ -112,7 +112,7 @@ const PortfolioArea = () => {
 
   return (
     <>
-      <div className="tp-project-area pt-120 pb-120 p-relative">
+      <div className="tp-project-area pt-40 pb-40 p-relative">
         <div className="container-fluid p-0">
           <div className="row g-0 justify-content-center">
             <div className="col-10 text-center">

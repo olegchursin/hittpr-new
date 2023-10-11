@@ -47,7 +47,7 @@ const PortfolioItems = () => {
   }
   return (
     <React.Fragment>
-      <div className="tp-project-area pt-120 pb-120 p-relative">
+      <div className="tp-project-area pt-40 pb-40 p-relative">
         <div className="container">
           <div className="row">
             <div className="col-xl-12">
