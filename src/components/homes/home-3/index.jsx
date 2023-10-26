@@ -8,7 +8,6 @@ import HeroArea from './hero-area';
 import ProjectArea from './project-area';
 import Services from './services';
 import TeamArea from './team-area';
-import TestimonialArea from './testimonial-area';
 
 const HomeThree = () => {
   useEffect(() => {
@@ -16,19 +15,18 @@ const HomeThree = () => {
       animationCreate();
     }, 500);
   }, []);
-  
+
   return (
     <Wrapper>
-      <HeaderThree/>
-      <HeroArea/>
-      <Services/>
-      <ProjectArea/>
-      <TeamArea/>
-      <CountryArea/>
-      <TestimonialArea/>
-      <BrandArea/>
-      <BlogArea/>
-      <FooterHittpr/>
+      <HeaderThree />
+      <HeroArea />
+      <Services />
+      <ProjectArea />
+      <TeamArea />
+      <CountryArea />
+      <BrandArea />
+      <BlogArea />
+      <FooterHittpr />
     </Wrapper>
   );
 };

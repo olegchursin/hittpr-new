@@ -91,7 +91,7 @@ const HeroArea = () => {
                   data-wow-duration=".7s"
                   data-wow-delay=".9s"
                 >
-                  <Link href="/about">
+                  <Link legacyBehavior href="/about">
                     <a className="tp-btn mr-55">{btn_text}</a>
                   </Link>
                   <div className="tp-hero-paly-button-four">

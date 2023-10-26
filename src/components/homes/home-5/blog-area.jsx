@@ -36,7 +36,7 @@ const BlogArea = () => {
               return <div key={id} className="tpblog mb-50">
                 <div className="tpblog__item d-flex align-items-center">
                   <div className="tpblog__thumb fix">
-                    <Link href={`/blog-details/${id}`}>
+                    <Link legacyBehavior href={`/blog-details/${id}`}>
                       <a><img src={img} alt="" /></a>
                     </Link>
                   </div>
@@ -47,7 +47,7 @@ const BlogArea = () => {
                     </div>
                     <div>
                       <h3 className="tp-blg-lg-title">
-                        <Link href={`/blog-details/${id}`}>
+                        <Link legacyBehavior href={`/blog-details/${id}`}>
                           <a>{title}</a>
                         </Link>
                       </h3>

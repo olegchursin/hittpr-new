@@ -8,12 +8,14 @@ const BrandArea = () => {
         <div className="row">
           <div className="col-12">
             <div className="tp-brand-title-four text-center pb-60">
-              <h4 className="tp-brand-title">Over <b>35k+</b> Software business growing with collax</h4>
+              <h4 className="tp-brand-title">
+                Over <b>35k+</b> Software business growing with collax
+              </h4>
             </div>
           </div>
         </div>
         <div className="tp-brand-slider-section">
-          <div className="swiper-container brand-slider-active">
+          <div className="brand-slider-active">
             <Brands />
           </div>
         </div>

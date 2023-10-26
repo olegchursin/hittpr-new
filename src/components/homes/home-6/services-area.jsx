@@ -36,13 +36,13 @@ const ServicesArea = () => {
               <div className={`bpservice ${active ? 'active' : ''} text-center`}>
                 <div className={`bpservice__item bp-sv-color-${i + 1}`}>
                   <div className='bpservice__icon'>
-                    <Link href={`/service-details/${id}`}>
+                    <Link legacyBehavior href={`/service-details/${id}`}>
                       <a> {icon} </a>
                     </Link>
                   </div>
                   <div className="bpservice__content">
                     <h3 className="bp-sv-sm-title bp-sv-color-1">
-                      <Link href={`/service-details/${id}`}>
+                      <Link legacyBehavior href={`/service-details/${id}`}>
                         <a>{title}</a>
                       </Link>
                     </h3>

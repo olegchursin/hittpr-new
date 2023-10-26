@@ -48,7 +48,7 @@ const JobArea = () => {
                   </div>
                   <div className="jobitem__title">
                     <h4 className="job-title-sm">
-                      <Link href={`/job-details/${id}`}>
+                      <Link legacyBehavior href={`/job-details/${id}`}>
                         <a>{title}</a>
                       </Link>
                     </h4>
@@ -58,7 +58,7 @@ const JobArea = () => {
                     <p className="mb-0"><i className="fal fa-clock"></i>{time}</p>
                   </div>
                   <div className="jobitem__button">
-                    <Link href={`/job-details/${id}`}>
+                    <Link legacyBehavior href={`/job-details/${id}`}>
                       <button className="tp-btn-border-sm">Apply now</button>
                     </Link>
                   </div>

@@ -36,14 +36,14 @@ const BlogArea = () => {
                 <div className="bpblog">
                   <div className="bpblog__item mb-30">
                     <div className="bpblog__img w-img fix">
-                      <Link href={`/blog-details/${id}`}>
+                      <Link legacyBehavior href={`/blog-details/${id}`}>
                         <a><img src={img} alt="" /></a>
                       </Link>
                     </div>
                     <div className="bpblog__content">
                       <span><a href="#">{meta_tag}</a></span>
                       <h4 className="bp-blog-title">
-                        <Link href={`/blog-details/${id}`}>
+                        <Link legacyBehavior href={`/blog-details/${id}`}>
                           <a>{title}</a>
                         </Link>
                       </h4>

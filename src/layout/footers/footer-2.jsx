@@ -34,7 +34,7 @@ const FooterTwo = () => {
               <div className="footer-widget-info text-center">
                 <h2 className="tp-footer-title pb-15">{title}</h2>
                 <p>{text}</p>
-                <Link href="/contact">
+                <Link legacyBehavior href="/contact">
                   <a className="tp-btn mb-50">{btn_text}</a>
                 </Link>
                 <p className="right-receved">{copy_right_text}</p>
@@ -46,7 +46,7 @@ const FooterTwo = () => {
               <div className="col-xl-4 col-lg-4 col-md-12 col-12">
                 <div className="tp-copyright-logo-box text-md-center text-center text-lg-start mb-30">
                   <div className="tp-copyright-logo">
-                    <Link href="/">
+                    <Link legacyBehavior href="/">
                       <a><img src="/assets/img/logo/hittpr-logo.png" alt="" /></a>
                     </Link>
                   </div>

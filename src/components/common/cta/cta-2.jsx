@@ -32,10 +32,10 @@ const CtaTwo = () => {
                 data-wow-duration=".7s"
                 data-wow-delay="1s"
               >
-                <Link href="/contact">
+                <Link legacyBehavior href="/contact">
                   <a className="tp-btn-lg-yellow mr-20">Become a Partner</a>
                 </Link>
-                <Link href="/about">
+                <Link legacyBehavior href="/about">
                   <a className="tp-btn-sky">Press Office</a>
                 </Link>
               </div>

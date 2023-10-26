@@ -31,7 +31,7 @@ const Services = () => {
           <div className="row">
             <div className="col-xl-12 wow tpfadeUp" data-wow-duration="1s" data-wow-delay=".5s">
               <div className="tp-service-button text-center pt-55">
-                <Link href="/service-1">
+                <Link legacyBehavior href="/service-1">
                   <a className="tp-btn">View All Services <i className="far fa-arrow-right"></i></a>
                 </Link>
               </div>

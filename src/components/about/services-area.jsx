@@ -33,7 +33,7 @@ const ChoseItem = ({ duration, delay, item_num, icon, title, text, color }) => {
           </div>
           <div className="tpchosebox__content">
             <h4>
-              <Link href="/service-details">
+              <Link legacyBehavior href="/service-details">
                 <a>{title}</a>
               </Link>
             </h4>

@@ -58,10 +58,10 @@ const Hero = () => {
                     data-wow-duration=".7s"
                     data-wow-delay="1s"
                   >
-                    <Link href="/portfolio">
+                    <Link legacyBehavior href="/portfolio">
                       <a className="tp-btn mr-30">{btn_text}</a>
                     </Link>
-                    <Link href="/about">
+                    <Link legacyBehavior href="/about">
                       <a className="tp-btn-grey">
                         {btn_text_2}
                         <i className="far fa-arrow-right"></i>

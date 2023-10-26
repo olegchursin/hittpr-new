@@ -17,7 +17,7 @@ const BrandArea = () => {
           </div>
         ) : null}
         <div className="tp-brand-slider-section">
-          <div className="swiper-container brand-slider-active">
+          <div className="brand-slider-active">
             <Brands />
           </div>
         </div>

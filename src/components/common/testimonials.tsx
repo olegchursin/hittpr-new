@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import Link from 'next/link';
 import { I18N_NS } from '../../utils/i18n-utils';
 import { useTranslation } from 'react-i18next';
@@ -47,10 +46,8 @@ const testimonial_contents = {
 
 const Testimonials = () => {
   const { t } = useTranslation(I18N_NS);
-  const [sliderLoop, setSliderLoop] = useState(false);
   const [info, setInfo] = useState({} as any);
   useEffect(() => {
-    setSliderLoop(true);
     setInfo(testimonial_contents);
   }, []);
 
@@ -65,73 +62,45 @@ const Testimonials = () => {
                 <h2 className="tp-title-sm">{t(info.title)}</h2>
               </div>
               <div className="tp-testi-button-right-side">
-                <Link href="/testimonials">
+                <Link legacyBehavior href="/testimonials">
                   <a className={'tp-btn'}>{t(info.btn_text)}</a>
                 </Link>
               </div>
             </div>
           </div>
         </div>
-        <div className="tp-testimonial-slider-section-four">
-          <Swiper
-            loop={sliderLoop}
-            slidesPerView={3}
-            spaceBetween={20}
-            centeredSlides={true}
-            centeredSlidesBounds={true}
-            className="swiper-container testi-slider-active-five"
-            breakpoints={{
-              1200: {
-                slidesPerView: 3
-              },
-              992: {
-                slidesPerView: 3
-              },
-              768: {
-                slidesPerView: 1
-              },
-              576: {
-                slidesPerView: 1
-              },
-              0: {
-                slidesPerView: 1
-              }
-            }}
-          >
-            {info?.testimonial_data?.map(item => {
-              const { id, desc, user, name, ratings, title } = item;
-              return (
-                <SwiperSlide key={id}>
-                  <div className="tp-testimonial-item-four">
-                    <div
-                      className="tp-testimonial-item-four__meta d-flex justify-content-between 
+        <div className="d-flex align-items-center gap-4 tp-testi-wrapper">
+          {info?.testimonial_data?.map(item => {
+            const { id, desc, user, name, ratings, title } = item;
+            return (
+              <div key={id} className="tp-testimonial-item-four">
+                <div
+                  className="tp-testimonial-item-four__meta d-flex justify-content-between 
                     align-items-center mb-60"
-                    >
-                      <div className="tp-testimonial-item-four__rating">
-                        {ratings.map(r => (
-                          <span key={r}>
-                            <i className="fas fa-star"></i>
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                    <div className="tp-testi-paragraph pb-40">
-                      <p>{t(desc)}</p>
-                    </div>
-                    <div className="tp-testimonial-item-four__client d-flex align-items-center">
-                      <div className="mr-20">
-                        <img src={user} alt="" style={{ width: '60px' }} />
-                      </div>
-                      <div className="tp-testimonial-item-four__position">
-                        <h4 className="m-0">{t(name)}</h4>
-                        <span>{t(title)}</span>
-                      </div>
-                    </div>
+                >
+                  <div className="tp-testimonial-item-four__rating">
+                    {ratings.map(r => (
+                      <span key={r}>
+                        <i className="fas fa-star"></i>
+                      </span>
+                    ))}
                   </div>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
+                </div>
+                <div className="tp-testi-paragraph pb-40">
+                  <p>{t(desc)}</p>
+                </div>
+                <div className="tp-testimonial-item-four__client d-flex align-items-center">
+                  <div className="mr-20">
+                    <img src={user} alt="" style={{ width: '60px' }} />
+                  </div>
+                  <div className="tp-testimonial-item-four__position">
+                    <h4 className="m-0">{t(name)}</h4>
+                    <span>{t(title)}</span>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

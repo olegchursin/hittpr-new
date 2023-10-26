@@ -18,7 +18,7 @@ const ProjectInfoArea = ({ item }) => {
                 <div className="cd-client-details">
                   <p>
                     <span>Категория :</span>{' '}
-                    <Link href={item?.category?.href}>
+                    <Link legacyBehavior href={item?.category?.href}>
                       {item?.category.label}
                     </Link>
                   </p>

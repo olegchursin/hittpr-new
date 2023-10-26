@@ -73,7 +73,7 @@ const FeatureArea = () => {
               <p className="pb-25">{text_1}</p>
               <p className="pb-20">{text_2}</p>
               <div className="tp-fea-button-five">
-                <Link href="/contact">
+                <Link legacyBehavior href="/contact">
                   <a className="tp-btn-sky">{btn_text}</a>
                 </Link>
               </div>

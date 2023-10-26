@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 interface SEOProps {
   pageTitle?: string;
@@ -17,8 +18,8 @@ const SEO = ({ pageTitle, font }: SEOProps) => (
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
 
-      {font && <link href={font} rel="stylesheet" />}
-      <link rel="icon" href="/favicon.ico" />
+      {font && <Link href={font} rel="stylesheet" />}
+      <Link rel="icon" href="/favicon.ico" />
     </Head>
   </>
 );

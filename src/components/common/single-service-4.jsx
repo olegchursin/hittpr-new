@@ -13,7 +13,7 @@ const SingleServiceFour = ({ service, index, m }) => {
         </div>
         <div className="tp-services-item__content">
           <h3 className="tp-sv-title">
-            <Link href={`/service-details/${id}`}>
+            <Link legacyBehavior href={`/service-details/${id}`}>
               <a>{title}</a>
             </Link>
           </h3>

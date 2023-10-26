@@ -510,22 +510,6 @@
 }
 .project-slider-dots {
   padding-top: 60px;
-  & .swiper-pagination-bullet {
-    width: 11px;
-    height: 11px;
-    display: inline-block;
-    border-radius: 50%;
-    background-color: var(--tp-theme-1);
-    margin: 0px 3px;
-    opacity: 0.5;
-    transition: 0.3s;
-  }
-  & .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: var(--tp-theme-1);
-    width: 30px;
-    border-radius: 30px;
-    opacity: 1;
-  }
 }
 
 .tp-project-item-four {
@@ -795,22 +779,6 @@
 }
 .my-dots {
   margin-top: 50px;
-  & .swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
-    display: inline-block;
-    border-radius: 50%;
-    background-color: var(--tp-common-black);
-    margin: 0px 3px;
-    opacity: 0.5;
-  }
-
-  & .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: var(--tp-common-black);
-    width: 30px;
-    border-radius: 30px;
-    opacity: 1;
-  }
 }
 .tp-project-bs-space {
   margin-left: 130px;

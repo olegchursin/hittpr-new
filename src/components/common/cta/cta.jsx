@@ -21,7 +21,7 @@ const Cta = () => {
                 </p>
               </div>
               <div className="tp-news-button">
-                <Link href="/contact">
+                <Link legacyBehavior href="/contact">
                   <a className="tp-btn-lg-yellow">Свяжитесь с нами</a>
                 </Link>
               </div>

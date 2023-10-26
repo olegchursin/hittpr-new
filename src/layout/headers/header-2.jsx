@@ -15,7 +15,7 @@ const HeaderTwo = () => {
             <div className="row align-items-center header-space-two">
               <div className="col-xxl-3 col-xl-3 col-lg-3">
                 <div className="tp-logo text-start">
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>
                       <img src="/assets/img/logo/hittpr-logo.png" alt="" />
                     </a>
@@ -33,7 +33,7 @@ const HeaderTwo = () => {
               </div>
               <div className="col-xxl-3 col-xl-3 col-lg-3">
                 <div className="tp-header-button text-end">
-                  <Link href="/contact">
+                  <Link legacyBehavior href="/contact">
                     <a className="tp-btn">Let’s Talk 👋</a>
                   </Link>
                 </div>

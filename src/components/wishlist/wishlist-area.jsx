@@ -18,7 +18,7 @@ const WishlistArea = () => {
           {wishlists.length === 0 &&
             <div className='text-center'>
               <h3>Your wishlist is empty</h3>
-              <Link href={'/product'}><a className="tp-btn mt-15">Return to shop</a></Link>
+              <Link legacyBehavior href={'/product'}><a className="tp-btn mt-15">Return to shop</a></Link>
             </div>
           }
 
@@ -39,12 +39,12 @@ const WishlistArea = () => {
                     {wishlists.map((item, i) => (
                       <tr key={i}>
                         <td className="product-thumbnail">
-                          <Link href={`/shop-details/${item.id}`}>
+                          <Link legacyBehavior href={`/shop-details/${item.id}`}>
                           <img src={item.img} alt="" />
                          </Link>
                         </td>
                         <td className="product-name">
-                          <Link href={`/product-details/${item.id}`}>{item.title}</Link>
+                          <Link legacyBehavior href={`/product-details/${item.id}`}>{item.title}</Link>
                         </td>
                         <td className="product-price">
                           <span className="amount">$ {item.price}</span>

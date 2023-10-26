@@ -19,7 +19,7 @@ const HeaderFive = () => {
             <div className="row align-items-center">
               <div className="col-xxl-3 col-xl-3 col-lg-3">
                 <div className="tp-logo text-start">
-                  <Link href={'/'}>
+                  <Link legacyBehavior href={'/'}>
                     <a>
                       <img src="/assets/img/logo/hittpr-logo.png" alt="" />
                     </a>
@@ -37,7 +37,7 @@ const HeaderFive = () => {
                 <div className="tp-header-left d-flex align-items-center justify-content-end ">
                   <ul className="d-none d-xxl-block">
                     <li>
-                      <Link href="/login">
+                      <Link legacyBehavior href="/login">
                         <a className="#">
                           <i className="far fa-user fa-user"></i> Login
                         </a>
@@ -51,7 +51,7 @@ const HeaderFive = () => {
                     </li>
                   </ul>
                   <div className="tp-header-yellow-button">
-                    <Link href="/contact">
+                    <Link legacyBehavior href="/contact">
                       <a className="tp-btn-sky">How it Works</a>
                     </Link>
                   </div>

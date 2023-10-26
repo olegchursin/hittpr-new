@@ -37,7 +37,7 @@ const FooterFive = () => {
               <div className="col-xl-4 col-lg-4 col-md-12 col-12">
                 <div className="tp-copyright-logo-box mb-30">
                   <div className="tp-copyright-logo text-center text-lg-start">
-                    <Link href="/">
+                    <Link legacyBehavior href="/">
                       <a><img src={logo} alt="" /></a>
                     </Link>
                   </div>

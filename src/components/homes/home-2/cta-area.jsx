@@ -32,7 +32,7 @@ const CtaArea = () => {
             <div className="tp-cta-section-title-box pl-60 pt-180 z-index wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".6s">
               <h5 className="tp-subtitle">{subtitle}</h5>
               <h2 className="tp-title tp-white-text pb-10">{title}</h2>
-              <Link href="/contact">
+              <Link legacyBehavior href="/contact">
                 <a className="tp-btn-border">Download CV <i className="far fa-download"></i></a>
               </Link>
             </div>

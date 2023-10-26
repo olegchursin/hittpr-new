@@ -51,7 +51,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
       <div className="tp-offcanvas-area">
         <div className={`tpoffcanvas ${isOpen ? 'opened' : ''}`}>
           <div className="tpoffcanvas__logo">
-            <Link href="/">
+            <Link legacyBehavior href="/">
               <a>
                 <img src="/assets/img/logo/hittpr-logo-white.png" alt="" />
               </a>
@@ -97,12 +97,12 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                       >
                         {menu?.sub_menus?.map((sub, i) => (
                           <li key={i}>
-                            <Link href={`${sub.link}`}>{t(sub.title)}</Link>
+                            <Link legacyBehavior href={`${sub.link}`}>{t(sub.title)}</Link>
                           </li>
                         ))}
                       </ul>
                       {!menu.has_dropdown && (
-                        <Link href={menu.link}>{t(menu.title)}</Link>
+                        <Link legacyBehavior href={menu.link}>{t(menu.title)}</Link>
                       )}
                     </li>
                   ) : null

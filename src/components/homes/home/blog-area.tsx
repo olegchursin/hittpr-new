@@ -39,7 +39,7 @@ const BlogArea = () => {
                 >
                   <div className="tp-blog-item">
                     <div className="tp-blog-img fix mb-35">
-                      <Link href={`/blog-details/${id}`}>
+                      <Link legacyBehavior href={`/blog-details/${id}`}>
                         <a>
                           {' '}
                           <img className="w-100" src={img} alt="" />
@@ -54,7 +54,7 @@ const BlogArea = () => {
                     </div>
                     <div className="tp-blog-info">
                       <h3 className="tp-blog-title">
-                        <Link href={`/blog-details/${id}`}>
+                        <Link legacyBehavior href={`/blog-details/${id}`}>
                           <a>{title}</a>
                         </Link>
                       </h3>
@@ -69,7 +69,7 @@ const BlogArea = () => {
         <div className="row">
           <div className="col-xl-12">
             <div className="tp-blog-button text-center mt-30">
-              <Link href={'/blog'}>
+              <Link legacyBehavior href={'/blog'}>
                 <a className="tp-btn">View All Blog</a>
               </Link>
             </div>

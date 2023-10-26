@@ -42,7 +42,7 @@ const HeroArea = () => {
                   <h5>{subtitle}</h5>
                 </div>
                 <div className="tp-hero-section-box-five__subtitle-link">
-                  <Link href="/price">
+                  <Link legacyBehavior href="/price">
                     <a><ArrowRight /></a>
                   </Link>
                 </div>

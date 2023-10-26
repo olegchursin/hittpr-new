@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <footer className="p-relative">
       <button className="scrollTop d-none d-md-block" data-target="html">
-        <Link href={'/'}>
+        <Link legacyBehavior href={'/'}>
           <div className="tp-backto-top"><UpArrow /></div>
         </Link>
       </button>
@@ -42,7 +42,7 @@ const Footer = () => {
               </div>
               <div className="col-xl-5 col-lg-5 col-md-5 col-12">
                 <div className="tp-footer-button text-start text-md-end">
-                  <Link href="/contact">
+                  <Link legacyBehavior href="/contact">
                     <a className="tp-btn">{btn_text}<i className="far fa-arrow-right"></i></a>
                   </Link>
                 </div>
@@ -70,7 +70,7 @@ const Footer = () => {
               <div className="row align-items-center">
                 <div className="col-xl-4 col-lg-4 col-md-4 col-12">
                   <div className="tp-copyright-logo mt-35">
-                    <Link href="/">
+                    <Link legacyBehavior href="/">
                       <a><img src={logo} alt="" /></a>
                     </Link>
                   </div>

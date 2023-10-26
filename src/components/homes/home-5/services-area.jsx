@@ -41,7 +41,7 @@ const ServicesArea = () => {
             <div className="tp-sv-space-wrapper">
               {ser_items.map((ser, i) => {
                 const { icon, title, top_border, id } = ser;
-                return <Link key={i} href={`/service-details/${id}`}>
+                return <Link legacyBehavior key={i} href={`/service-details/${id}`}>
                   <a >
                     <div className={`bg-white-wrapper ${top_border ? 'sv-border-top' : ''} sv-border-bottom service-space`}>
                       <div className="row align-items-center">

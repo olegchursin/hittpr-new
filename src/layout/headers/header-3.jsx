@@ -15,7 +15,7 @@ const HeaderThree = () => {
             <div className="row align-items-center">
               <div className="col-xxl-3 col-xl-3 col-lg-3">
                 <div className="tp-logo text-start">
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a><img src="/assets/img/logo/hittpr-logo-white.png" alt="" /></a>
                   </Link>
                 </div>
@@ -32,12 +32,12 @@ const HeaderThree = () => {
               <div className="col-xxl-3 col-xl-3 col-lg-3">
                 <div className="tp-header-left d-flex align-items-center justify-content-end">
                   <div className="tp-header-login tp-login-primary  d-lg-none d-xl-block">
-                    <Link href="/login">
+                    <Link legacyBehavior href="/login">
                       <a>Login</a>
                     </Link>
                   </div>
                   <div className="tp-header-yellow-button ml-55">
-                    <Link href="/contact">
+                    <Link legacyBehavior href="/contact">
                       <a className="tp-btn-yellow-semilar">Get Collax Free</a>
                     </Link>
                   </div>

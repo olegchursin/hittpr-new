@@ -48,14 +48,14 @@ const TeamArea = () => {
                     <div className="tp-team-item__info d-flex justify-content-between align-items-center">
                       <div className="tp-team-item__text">
                         <h5 className="tp-team-title">
-                          <Link href={`/about/${id}`}>
+                          <Link legacyBehavior href={`/about/${id}`}>
                             <a>{name}</a>
                           </Link>
                         </h5>
                         <h6 className="tp-team-subtitle">{title}</h6>
                       </div>
                       <div className="tp-team-item__icon">
-                        <Link href={`/about/${id}`}>
+                        <Link legacyBehavior href={`/about/${id}`}>
                           <a>
                             <i className="fal fa-long-arrow-up"></i>
                           </a>
@@ -77,11 +77,11 @@ const TeamArea = () => {
                 </div>
                 <div className="tp-team-overlay__info text-center">
                   <h6 className="team-title">
-                    <Link href="/about">
+                    <Link legacyBehavior href="/about">
                       <a>Join our Team</a>
                     </Link>
                   </h6>
-                  <Link href="/about">
+                  <Link legacyBehavior href="/about">
                     <a>
                       <i className="fal fa-long-arrow-up"></i>
                     </a>

@@ -38,7 +38,7 @@ const BlogArea = () => {
                     </div>
                     <div className="tp-blog-info">
                       <h3 className="tp-blog-title">
-                        <Link href={`/blog-details/${id}`}>
+                        <Link legacyBehavior href={`/blog-details/${id}`}>
                           <a>{title}</a>
                         </Link>
                       </h3>
