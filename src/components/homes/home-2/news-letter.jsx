@@ -28,7 +28,7 @@ const NewsLetter = () => {
               <div className="tp-news-letter-section-box-two pt-135 pb-145 wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".7s">
                 <h5 className="tp-subtitle">{subtitle}</h5>
                 <h2 className="tp-title tp-white-text pb-10">{title}</h2>
-                <Link href="/contact">
+                <Link legacyBehavior href="/contact">
                   <a className="tp-btn-border">{btn_text}</a>
                 </Link>
               </div>

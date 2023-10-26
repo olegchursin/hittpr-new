@@ -21,7 +21,7 @@ const SingleTeam = ({ team }) => {
         </div>
         <div className="tpteam__content">
           <h4 className="tp-team-sm-title">
-            <Link href={`/about/${id}`}>
+            <Link legacyBehavior href={`/about/${id}`}>
               <a>{name}</a>
             </Link>
           </h4>

@@ -22,7 +22,7 @@ const ServiceArea = () => {
                     </div>
                     <div className="tp-service-item-four__title">
                       <h3 className="tp-sv-sm-title">
-                        <Link href={`/service-details/${id}`}>
+                        <Link legacyBehavior href={`/service-details/${id}`}>
                           <a>{title}</a>
                         </Link>
                       </h3>

@@ -8,7 +8,7 @@ function FeatureItem({ title, subtitle, color }) {
         <div className={`ac-circle ${color ? `ac-cirle-color-${color}` : ''}`}></div>
         <div className="acfeature__item">
           <h3 className="ac-feature-sm-title">
-            <Link href="/about">
+            <Link legacyBehavior href="/about">
               <a>{title}</a>
             </Link>
           </h3>

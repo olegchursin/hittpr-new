@@ -34,7 +34,7 @@ const AboutArea = () => {
               <h2 className="tp-title tp-title-sm">{title}</h2>
               <p className="pb-25">{sm_desc}</p>
               <div className="tp-fea-button-five">
-                <Link href="/contact">
+                <Link legacyBehavior href="/contact">
                   <a className="tp-btn-sky">{btn_text}</a>
                 </Link>
               </div>

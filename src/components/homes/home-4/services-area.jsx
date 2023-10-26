@@ -33,7 +33,7 @@ const ServicesArea = () => {
                   </div>
                   <div className="tp-service-item-four__title">
                     <h3 className="tp-sv-sm-title">
-                      <Link href={`/service-details/${id}`}>
+                      <Link legacyBehavior href={`/service-details/${id}`}>
                         <a>{title}</a>
                       </Link>
                     </h3>
@@ -47,7 +47,7 @@ const ServicesArea = () => {
             <div className="sv-color-eight  mb-30">
               <div className="sv-color-eight__title text-center">
                 <h3 className="tp-sv-sm-title"><a href="#">More Services</a></h3>
-                <Link href={`/service-1`}>
+                <Link legacyBehavior href={`/service-1`}>
                   <a><i className="fal fa-long-arrow-up"></i></a>
                 </Link>
               </div>

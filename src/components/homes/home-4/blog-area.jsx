@@ -39,23 +39,23 @@ const BlogArea = () => {
             data-wow-duration=".3s" data-wow-delay=".5s">
             <div className="tp-blog-item-four">
               <div className="tp-blog-item-four__img mb-40 fix">
-                <Link href={`/blog-details/${big_item.id}`}>
+                <Link legacyBehavior href={`/blog-details/${big_item.id}`}>
                   <a><img className="w-100" src={big_item.img} alt="" /></a>
                 </Link>
               </div>
               <div className="tp-blog-item-four__content">
                 <div className="tp-blog-item-four__meta mb-20">
-                  <Link href={`/blog-details/${big_item.id}`}>
+                  <Link legacyBehavior href={`/blog-details/${big_item.id}`}>
                     <a>{big_item.meta_tag}</a>
                   </Link>
-                  <Link href={`/blog-details/${big_item.id}`}>
+                  <Link legacyBehavior href={`/blog-details/${big_item.id}`}>
                     <a className="tp-meta-text">
                       <i className="fal fa-clock"></i>{big_item.date}</a>
                   </Link>
                 </div>
                 <div className="tp-blog-item-four__title">
                   <h4 className="tp-blog-user-title">
-                    <Link href={`/blog-details/${big_item.id}`}>
+                    <Link legacyBehavior href={`/blog-details/${big_item.id}`}>
                       <a>{big_item.title}</a>
                     </Link>
                   </h4>
@@ -71,20 +71,20 @@ const BlogArea = () => {
                 return <div key={id} className="col-xl-12 mb-40">
                   <div className="tp-blog-right-side-sm d-flex align-items-center">
                     <div className="tp-blog-right-side-sm__img fix mr-40">
-                      <Link href={`/blog-details/${id}`}>
+                      <Link legacyBehavior href={`/blog-details/${id}`}>
                         <a><img src={img} alt="" /></a>
                       </Link>
                     </div>
                     <div className="tp-blog-right-side-sm__content">
                       <div className="tp-blog-right-side-sm__meta mb-25">
-                        <Link href={`/blog-details/${id}`}>
+                        <Link legacyBehavior href={`/blog-details/${id}`}>
                           <a>{meta_tag}</a>
                         </Link>
                         <a className="tp-meta-text" href="#"><i className="fal fa-clock"></i>{date}</a>
                       </div>
                       <div className="tp-blog-right-side-sm__title">
                         <h4 className="tp-blog-user-sm-title">
-                          <Link href={`/blog-details/${id}`}>
+                          <Link legacyBehavior href={`/blog-details/${id}`}>
                             <a>{title}</a>
                           </Link>
                         </h4>

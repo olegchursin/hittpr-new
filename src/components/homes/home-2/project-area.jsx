@@ -93,7 +93,7 @@ const ProjectArea = () => {
           <div className="row">
             <div className="col-12">
               <div className="tp-project-button text-center mt-25">
-                <Link href="/portfolio">
+                <Link legacyBehavior href="/portfolio">
                   <a className="tp-btn">View All Work</a>
                 </Link>
               </div>

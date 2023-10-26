@@ -41,7 +41,7 @@ const FooterFour = () => {
             <div className="col-xl-3 col-lg-4 col-md-6">
               <div className="tp-footer-widget">
                 <div className="tp-footer-widget__logo mb-30">
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a><img src={logo} alt="" /></a>
                   </Link>
                 </div>

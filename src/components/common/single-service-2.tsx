@@ -15,14 +15,14 @@ const SingleServiceTwo = ({ service, border = '' }) => {
         <div className={`tp-service-item ${border ? border : ''} d-flex mb-30`}>
           <div className="tp-sv-content pl-60">
             <h3 className="tp-sv-title mb-35">
-              <Link href={service.href}>
+              <Link legacyBehavior href={service.href}>
                 <a>{t(service.title)}</a>
               </Link>
             </h3>
             <p className="mb-30">{t(service.text_1)}</p>
             <p>{t(service.text_2)}</p>
             <div className="tp-sv-link mt-35">
-              <Link href={service.href}>
+              <Link legacyBehavior href={service.href}>
                 <a>
                   <i className="far fa-arrow-right"></i> {t('common.learnMore')}
                 </a>

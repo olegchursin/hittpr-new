@@ -73,7 +73,7 @@ const ProjectArea = () => {
                   <div className="tp-project-item-three__bg">
                     <div className="tp-project-item-three__bg-info">
                       <h3 className="tp-project-title">
-                        <Link href={`/portfolio-details/${id}`}>
+                        <Link legacyBehavior href={`/portfolio-details/${id}`}>
                           <a>{title}</a>
                         </Link>
                       </h3>

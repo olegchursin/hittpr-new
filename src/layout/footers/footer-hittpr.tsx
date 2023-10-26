@@ -70,7 +70,7 @@ const FooterHittpr = ({ home_four = false }) => {
                 <div className="tp-footer-widget">
                   {!home_four && (
                     <div className="tp-footer-widget__logo mb-30">
-                      <Link href="/">
+                      <Link legacyBehavior href="/">
                         <a>
                           <img src={logo} alt="" />
                         </a>
@@ -107,7 +107,7 @@ const FooterHittpr = ({ home_four = false }) => {
                         <ul>
                           {widget_lists.map(item => (
                             <li key={item.href}>
-                              <Link href={item.href}>{t(item.label)}</Link>
+                              <Link legacyBehavior href={item.href}>{t(item.label)}</Link>
                             </li>
                           ))}
                         </ul>

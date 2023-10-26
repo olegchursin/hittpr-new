@@ -65,7 +65,7 @@ const Testimonials = () => {
                 <h2 className="tp-title-sm">{t(info.title)}</h2>
               </div>
               <div className="tp-testi-button-right-side">
-                <Link href="/testimonials">
+                <Link legacyBehavior href="/testimonials">
                   <a className={'tp-btn'}>{t(info.btn_text)}</a>
                 </Link>
               </div>

@@ -44,14 +44,14 @@ const MasonryItems = () => {
               return <div key={id} className={`${big ? 'col-xl-8 col-lg-8 col-md-12' : 'col-xl-4 col-lg-4 col-md-6'}`}>
                 <div className="tp-project-item-four mb-30">
                   <div className="tp-project-item-four__img fix">
-                    <Link href={`/portfolio-details/${id}`}>
+                    <Link legacyBehavior href={`/portfolio-details/${id}`}>
                       <a><img className="w-100" src={img} alt="" /></a>
                     </Link>
                   </div>
                   <div className="tp-project-item-four__bg">
                     <div className="tp-project-item-four__bg-info">
                       <h3 className="tp-project-title">
-                        <Link href={`/portfolio-details/${id}`}>
+                        <Link legacyBehavior href={`/portfolio-details/${id}`}>
                           <a>{title}</a>
                         </Link>
                       </h3>

@@ -36,16 +36,16 @@ const BlogArea = () => {
               data-wow-duration={duration} data-wow-delay={delay}>
               <div className="tp-blog-item-three">
                 <div className="tp-blog-item-three__img fix">
-                  <Link href={`/blog-details/${id}`}>
+                  <Link legacyBehavior href={`/blog-details/${id}`}>
                     <a><img className="w-100" src={img} alt="" /></a>
                   </Link>
                 </div>
                 <div className="tp-blog-item-three__content">
                   <div className="tp-blog-item-three__meta pt-25 pb-15">
-                    <Link href={`/blog-details/${id}`}>
+                    <Link legacyBehavior href={`/blog-details/${id}`}>
                       <a>{meta_tag}</a>
                     </Link>
-                    <Link href={`/blog-details/${id}`}>
+                    <Link legacyBehavior href={`/blog-details/${id}`}>
                       <a className="tp-meta-text">
                         <i className="fal fa-calendar-alt"></i>{date}
                       </a>
@@ -53,14 +53,14 @@ const BlogArea = () => {
                   </div>
                   <div className="tp-blog-item-three__title">
                     <h4 className="tp-bp-title">
-                      <Link href={`/blog-details/${id}`}>
+                      <Link legacyBehavior href={`/blog-details/${id}`}>
                         <a>{title}</a>
                       </Link>
                     </h4>
                     <p>{short_desc}</p>
                   </div>
                   <div className="tp-blog-item-three__button">
-                    <Link href={`/blog-details/${id}`}>
+                    <Link legacyBehavior href={`/blog-details/${id}`}>
                       <a className="tp-btn-grey-sm">Read more</a>
                     </Link>
                   </div>

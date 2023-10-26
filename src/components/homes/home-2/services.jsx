@@ -31,7 +31,7 @@ const Services = () => {
                     <p>{text_1}</p>
                   </div>
                   <div className="tp-sv-icon-two">
-                    <Link href={`/service-details/${id}`}>
+                    <Link legacyBehavior href={`/service-details/${id}`}>
                       <a><i className="fas fa-long-arrow-up"></i></a>
                     </Link>
                   </div>

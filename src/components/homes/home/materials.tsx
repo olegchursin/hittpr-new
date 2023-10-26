@@ -132,12 +132,12 @@ const Materials = () => {
                   </div>
                   <div className="tp-project-content ml-20">
                     <h2 className="pro-lg-title">
-                      <Link href={item.href}>
+                      <Link legacyBehavior href={item.href}>
                         <a>{item.title}</a>
                       </Link>
                     </h2>
                     <p>{item.sm_text}</p>
-                    <Link href={item.href}>
+                    <Link legacyBehavior href={item.href}>
                       <a className="tp-btn">
                         Узнать больше <i className="far fa-arrow-right"></i>
                       </a>
@@ -156,12 +156,12 @@ const Materials = () => {
                       </div>
                       <div className="tp-project-sm-content">
                         <h3 className="pro-sm-title">
-                          <Link href={item.href}>
+                          <Link legacyBehavior href={item.href}>
                             <a>{item.title}</a>
                           </Link>
                         </h3>
                         <p>{item.sm_text}</p>
-                        <Link href={`${router.locale}/${item.href}`}>
+                        <Link legacyBehavior href={`${router.locale}/${item.href}`}>
                           <a className="tp-btn-white-sm">
                             {t('common.learnMore')}{' '}
                             <i className="far fa-arrow-right"></i>

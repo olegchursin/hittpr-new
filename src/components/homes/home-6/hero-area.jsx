@@ -36,7 +36,7 @@ const HeroArea = () => {
                 <p className="wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s">{sm_text}</p>
                 <div className="tp-hero-three-button-box d-flex align-items-center wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.1s">
                   <div className="xs-bottom-space">
-                    <Link href="/contact">
+                    <Link legacyBehavior href="/contact">
                       <a className="tp-btn-sky mr-55">Contact us</a>
                     </Link>
                   </div>

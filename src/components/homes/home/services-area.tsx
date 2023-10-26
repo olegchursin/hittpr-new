@@ -68,7 +68,7 @@ const ServicesArea = () => {
             >
               <h5 className="tp-subtitle pb-10">{t(meta.subtitle)}</h5>
               <h2 className="tp-title">{t(meta.title)}</h2>
-              <Link href="/pr">
+              <Link legacyBehavior href="/pr">
                 <a className="tp-btn">{t(meta.btn_text)}</a>
               </Link>
             </div>

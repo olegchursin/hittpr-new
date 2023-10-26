@@ -21,14 +21,14 @@ const Breadcrumb = ({ title, back_home = false, renderCTA = true }) => {
             <div className="breadcrumb__content p-relative z-index-1">
               <h3 className="breadcrumb__title">{title}</h3>
               {!back_home && renderCTA && (
-                <Link href="/contact">
+                <Link legacyBehavior href="/contact">
                   <a className="tp-btn-white-border">
                     {t(labels.contactUs)} <i className="far fa-arrow-right"></i>
                   </a>
                 </Link>
               )}
               {back_home && (
-                <Link href="/">
+                <Link legacyBehavior href="/">
                   <a className="tp-btn-white-border">
                     {t(labels.backHome)} <i className="far fa-arrow-right"></i>
                   </a>

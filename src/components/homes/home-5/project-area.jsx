@@ -88,12 +88,12 @@ const ProjectArea = () => {
                     <div className="tpproject">
                       <div className="tpproject__content pl-20">
                         <h4 className="tp-pj-subtitle">
-                          <Link href="/portfolio">
+                          <Link legacyBehavior href="/portfolio">
                             <a>{subtitle}</a>
                           </Link>
                         </h4>
                         <h3 className="tp-pj-title">
-                          <Link href="/portfolio">
+                          <Link legacyBehavior href="/portfolio">
                             <a>{title} <AngelRight /></a>
                           </Link>
                         </h3>

@@ -19,7 +19,7 @@ const NavMenus = () => {
         const megaMenuClass = menu.mega_menu ? 'has-mega-menu' : '';
         const menuItem = (
           <li key={i} className={`${dropdownClass} ${megaMenuClass}`}>
-            <Link href={menu.link}>
+            <Link legacyBehavior href={menu.link}>
               <a>
                 {t(menu.title)}{' '}
                 {menu.has_dropdown && <i className="fal fa-angle-down" />}
@@ -29,7 +29,7 @@ const NavMenus = () => {
               <ul className="submenu text-start">
                 {menu.sub_menus.map((subMenu, i) => (
                   <li key={i}>
-                    <Link href={subMenu.link}>
+                    <Link legacyBehavior href={subMenu.link}>
                       <a>{t(subMenu.title)}</a>
                     </Link>
                   </li>

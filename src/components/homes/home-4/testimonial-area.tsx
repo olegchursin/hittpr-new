@@ -99,7 +99,7 @@ const TestimonialArea = ({ home_6, style_2 = false }: TestimonialAreaProps) => {
                 </h2>
               </div>
               <div className="tp-testi-button-right-side">
-                <Link href="/testimonials">
+                <Link legacyBehavior href="/testimonials">
                   <a
                     className={`${
                       home_6 || style_2 ? 'tp-btn-yellow' : 'tp-btn'

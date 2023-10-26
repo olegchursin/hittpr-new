@@ -14,7 +14,7 @@ const HeaderFour = () => {
             <div className="row align-items-center">
               <div className="col-xxl-3 col-xl-3 col-lg-3">
                 <div className="tp-logo text-start">
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a><img src="/assets/img/logo/hittpr-logo.png" alt="" /></a>
                   </Link>
                 </div>
@@ -31,12 +31,12 @@ const HeaderFour = () => {
               <div className="col-xxl-4 col-xl-3 col-lg-3">
                 <div className="tp-header-left d-flex align-items-center justify-content-end">
                   <div className="tp-header-login login-color-black d-none d-xxl-block ">
-                    <Link href="/login">
+                    <Link legacyBehavior href="/login">
                       <a> <i className="fal fa-user"></i> Login</a>
                     </Link>
                   </div>
                   <div className="tp-header-yellow-button tp-yellow-space">
-                    <Link href="/contact">
+                    <Link legacyBehavior href="/contact">
                       <a className="tp-btn-black">Let’s Talk 👋</a>
                     </Link>
                   </div>
