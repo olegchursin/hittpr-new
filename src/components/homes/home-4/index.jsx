@@ -8,7 +8,6 @@ import HeroArea from './hero-area';
 import NewsLetter from './news-letter';
 import ProjectArea from './project-area';
 import ServicesArea from './services-area';
-import TestimonialArea from './testimonial-area';
 
 const HomeFour = () => {
   useEffect(() => {
@@ -20,14 +19,13 @@ const HomeFour = () => {
   return (
     <Wrapper>
       <HeaderFour />
-      <HeroArea/>
-      <BrandArea/>
-      <ServicesArea/>
-      <FeatureArea/>
-      <ProjectArea/>
-      <TestimonialArea/>
-      <NewsLetter/>
-      <BlogArea/>
+      <HeroArea />
+      <BrandArea />
+      <ServicesArea />
+      <FeatureArea />
+      <ProjectArea />
+      <NewsLetter />
+      <BlogArea />
       <FooterHittpr home_four={true} />
     </Wrapper>
   );
