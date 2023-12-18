@@ -1,5 +1,5 @@
 import HomeMain from '../components/homes/home';
-import SEO from '../components/seo';
+// import SEO from '../components/seo';
 import { DEFAULT_LOCALE, I18N_NS } from '../utils/i18n-utils';
 import { Header, Wrapper } from '../layout';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -17,7 +17,7 @@ export default function Home(
 
   return (
     <Wrapper>
-      <SEO pageTitle={t('common.homepage')} />
+      {/* <SEO pageTitle={t('common.homepage')} /> */}
       <Header />
       <HomeMain />
     </Wrapper>
