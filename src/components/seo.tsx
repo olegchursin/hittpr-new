@@ -8,7 +8,7 @@ interface SEOProps {
 
 const SEO = ({ pageTitle, font }: SEOProps) => (
   <Head>
-    <title>{pageTitle && `${pageTitle} | HITTPR`}</title>
+    <title>{`HITTPR | ${pageTitle}`}</title>
     <meta httpEquiv="x-ua-compatible" content="ie=edge" />
     <meta name="description" content="Продвижение бизнеса в новых условиях" />
     <meta name="robots" content="noindex, follow" />
@@ -18,7 +18,7 @@ const SEO = ({ pageTitle, font }: SEOProps) => (
     />
 
     {font && <Link href={font} rel="stylesheet" />}
-    <Link rel="icon" href="/favicon.ico" />
+    {/* <Link rel="icon" href="/favicon.ico" /> */}
   </Head>
 );
 
