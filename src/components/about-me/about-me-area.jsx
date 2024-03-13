@@ -24,7 +24,7 @@ const AboutMeArea = ({ team }) => {
                     <div className="amaboutinfo__experience">
                       <p>
                         <a href="mailto: marina@hittpr.com">
-                          <b>E-mail:</b>  marina@hittpr.com
+                          <strong>E-mail:</strong>  marina@hittpr.com
                         </a>
                       </p>
                     </div>

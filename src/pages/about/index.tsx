@@ -1,6 +1,6 @@
 import AboutMeMain from '../../components/about-me';
 import { useState, useEffect } from 'react';
-import SEO from '../../components/seo';
+// import SEO from '../../components/seo';
 import { DEFAULT_LOCALE, I18N_NS } from '../../utils/i18n-utils';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
@@ -50,7 +50,7 @@ const About = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 
   return (
     <Wrapper>
-      <SEO pageTitle={t('common.aboutUs')} />
+      {/* <SEO pageTitle={t('common.aboutUs')} /> */}
       <AboutMeMain team={team} />
     </Wrapper>
   );
